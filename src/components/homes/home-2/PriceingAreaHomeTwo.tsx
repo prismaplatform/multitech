@@ -1,6 +1,5 @@
- 
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 const PriceingAreaHomeTwo = () => {
   return (
@@ -23,13 +22,24 @@ const PriceingAreaHomeTwo = () => {
                 <div className="lonyo-pricing-body">
                   <p>What’s included:</p>
                   <ul>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Unlimited cards and smart controls</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Access to 15+ payment methods</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Automated expense management</li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Unlimited cards and smart controls
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Access to 15+ payment methods
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Automated expense management
+                    </li>
                   </ul>
                 </div>
                 <div className="lonyo-pricing-footer extra-mt">
-                  <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">Start your free 14-day trial</Link>
+                  <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">
+                    Start your free 14-day trial
+                  </Link>
                 </div>
               </div>
             </div>
@@ -45,15 +55,32 @@ const PriceingAreaHomeTwo = () => {
                 <div className="lonyo-pricing-body">
                   <p>What’s included:</p>
                   <ul>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Everything included in Basic</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Access to 35+ payment methods</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Automated expense management</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Unlimited customizable workflows</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Multi-currency card limits</li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Everything included in Basic
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Access to 35+ payment methods
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Automated expense management
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Unlimited customizable workflows
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Multi-currency card limits
+                    </li>
                   </ul>
                 </div>
                 <div className="lonyo-pricing-footer mt-50">
-                  <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">Get started now</Link>
+                  <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">
+                    Get started now
+                  </Link>
                 </div>
               </div>
             </div>
@@ -69,15 +96,32 @@ const PriceingAreaHomeTwo = () => {
                 <div className="lonyo-pricing-body">
                   <p>What’s included:</p>
                   <ul>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Everything included in Pro</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Access to 100+ payment methods</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Invoice tracking and payments</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Enterprise ERP integrations</li>
-                    <li><img src="assets/images/v2/icon7.svg" alt="" />Automated reports on cashflow</li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Everything included in Pro
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Access to 100+ payment methods
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Invoice tracking and payments
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Enterprise ERP integrations
+                    </li>
+                    <li>
+                      <img src="/assets/images/v2/icon7.svg" alt="" />
+                      Automated reports on cashflow
+                    </li>
                   </ul>
                 </div>
                 <div className="lonyo-pricing-footer mt-50">
-                  <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">Get started now</Link>
+                  <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">
+                    Get started now
+                  </Link>
                 </div>
               </div>
             </div>

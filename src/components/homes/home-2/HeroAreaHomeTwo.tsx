@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from "react";
 
 const HeroAreaHomeTwo = () => {
   return (
@@ -12,7 +11,7 @@ const HeroAreaHomeTwo = () => {
                 <div className="lonyo-hero-rating">
                   <ul>
                     <li>
-                      <img src="assets/images/v1/rating.svg" alt="ratting-stat" />
+                      <img src="/assets/images/v1/rating.svg" alt="ratting-stat" />
                     </li>
                     <li>4.8 / 5 rating by users</li>
                   </ul>
@@ -22,14 +21,21 @@ const HeroAreaHomeTwo = () => {
             </div>
             <div className="col-lg-5 d-flex align-items-center">
               <div className="lonyo-hero-text2" data-aos="fade-up" data-aos-duration="700">
-                <p className="text">Track your daily automatically. Manage your money in a friendly and way, making it easy to guilt-free and save effortlessly.</p>
+                <p className="text">
+                  Track your daily automatically. Manage your money in a friendly and way, making it
+                  easy to guilt-free and save effortlessly.
+                </p>
                 <div className="mt-50" data-aos="fade-up" data-aos-duration="900">
                   <ul>
                     <li>
-                      <a href="https://www.apple.com/app-store/"><img src="assets/images/v1/app-store.svg" alt="" /></a>
+                      <a href="https://www.apple.com/app-store/">
+                        <img src="/assets/images/v1/app-store.svg" alt="" />
+                      </a>
                     </li>
                     <li>
-                      <a href="https://playstore.com/"><img src="assets/images/v1/play-store.svg" alt="" /></a>
+                      <a href="https://playstore.com/">
+                        <img src="/assets/images/v1/play-store.svg" alt="" />
+                      </a>
                     </li>
                   </ul>
                 </div>

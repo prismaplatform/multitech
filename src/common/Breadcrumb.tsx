@@ -1,8 +1,7 @@
+import Link from "next/link";
+import React from "react";
 
-import Link from 'next/link'; 
-import React from 'react';
-
-const Breadcrumb = ({title, subtitle} : any) => {
+const Breadcrumb = ({ title, subtitle }: any) => {
   return (
     <>
       <div className="breadcrumb-wrapper light-bg">
@@ -13,15 +12,18 @@ const Breadcrumb = ({title, subtitle} : any) => {
               <div className="breadcrumb-menu-wrap">
                 <div className="breadcrumb-menu">
                   <ul>
-                    <li><Link href="/">Home</Link></li>
-                    <li><img src="assets/images/blog/right-arrow.svg" alt="right-arrow" /></li>
+                    <li>
+                      <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                      <img src="/assets/images/blog/right-arrow.svg" alt="right-arrow" />
+                    </li>
                     <li aria-current="page">{subtitle}</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </>

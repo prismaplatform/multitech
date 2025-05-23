@@ -1,5 +1,3 @@
- 
-
 "use client";
 import Link from "next/link";
 import { useState } from "react";
@@ -12,9 +10,9 @@ const pricingPlans = [
     features: [
       "Unlimited cards and smart controls",
       "Access to 15+ payment methods",
-      "Automated expense management", 
+      "Automated expense management",
       "Access to 15+ payment methods",
-      "Automated expense management", 
+      "Automated expense management",
     ],
     ctaText: "Start your free 14-day trial",
   },
@@ -47,7 +45,6 @@ const pricingPlans = [
   },
 ];
 
-
 const PricingOne = () => {
   const [isMonthly, setIsMonthly] = useState(false);
   const togglePricing = () => {
@@ -61,18 +58,12 @@ const PricingOne = () => {
           <div className="lonyo-section-title center">
             <h2 className="title">Pick from one of our ready packages</h2>
             <p className="mb-0">
-              Starts at just $20/month, with no ads or hidden fees, after a 14-day
-              free trial. Your card will not be charged until your free trial
-              ends.
+              Starts at just $20/month, with no ads or hidden fees, after a 14-day free trial. Your
+              card will not be charged until your free trial ends.
             </p>
             <div className="pricing-btn mt-50">
               <label htmlFor="toggle" className="toggle-switch">
-                <input
-                  id="toggle"
-                  type="checkbox"
-                  checked={isMonthly}
-                  onChange={togglePricing}
-                />
+                <input id="toggle" type="checkbox" checked={isMonthly} onChange={togglePricing} />
                 <span>Monthly</span>
                 <span>Yearly</span>
               </label>
@@ -81,7 +72,11 @@ const PricingOne = () => {
           <div className="row">
             {pricingPlans.map((plan, index) => (
               <div key={index} className="col-xl-4 col-lg-6">
-                <div className={`lonyo-pricing-wrap aos-init aos-animate ${plan.active ? "active" : ""}`}>
+                <div
+                  className={`lonyo-pricing-wrap aos-init aos-animate ${
+                    plan.active ? "active" : ""
+                  }`}
+                >
                   <div className="lonyo-pricing-header">
                     <h4>{plan.name}</h4>
                   </div>
@@ -98,7 +93,7 @@ const PricingOne = () => {
                     <ul>
                       {plan.features.map((feature, idx) => (
                         <li key={idx}>
-                          <img src="assets/images/v2/icon7.svg" alt="" />
+                          <img src="/assets/images/v2/icon7.svg" alt="" />
                           {feature}
                         </li>
                       ))}
@@ -118,6 +113,5 @@ const PricingOne = () => {
     </>
   );
 };
-
 
 export default PricingOne;

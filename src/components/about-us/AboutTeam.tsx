@@ -1,13 +1,12 @@
-
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 const AboutTeam = () => {
   return (
     <>
       <div className="lonyo-section-padding10 team-section">
         <div className="shape">
-          <img src="assets/images/about-us/shape1.svg" alt="" />
+          <img src="/assets/images/about-us/shape1.svg" alt="" />
         </div>
         <div className="container">
           <div className="lonyo-section-title center max-width-750">
@@ -17,7 +16,9 @@ const AboutTeam = () => {
             <div className="col-lg-3 col-md-6">
               <div className="lonyo-team-wrap" data-aos="fade-up" data-aos-duration="500">
                 <div className="lonyo-team-thumb">
-                  <Link href="/single-team"><img src="assets/images/about-us/t1.png" alt="" /></Link>
+                  <Link href="/single-team">
+                    <img src="/assets/images/about-us/t1.png" alt="" />
+                  </Link>
                 </div>
                 <div className="lonyo-team-content">
                   <Link href="/single-team">
@@ -30,7 +31,9 @@ const AboutTeam = () => {
             <div className="col-lg-3 col-md-6">
               <div className="lonyo-team-wrap" data-aos="fade-up" data-aos-duration="700">
                 <div className="lonyo-team-thumb">
-                  <Link href="/single-team"><img src="assets/images/about-us/t2.png" alt="" /></Link>
+                  <Link href="/single-team">
+                    <img src="/assets/images/about-us/t2.png" alt="" />
+                  </Link>
                 </div>
                 <div className="lonyo-team-content">
                   <Link href="/single-team">
@@ -43,7 +46,9 @@ const AboutTeam = () => {
             <div className="col-lg-3 col-md-6">
               <div className="lonyo-team-wrap" data-aos="fade-up" data-aos-duration="900">
                 <div className="lonyo-team-thumb">
-                  <Link href="/single-team"><img src="assets/images/about-us/t3.png" alt="" /></Link>
+                  <Link href="/single-team">
+                    <img src="/assets/images/about-us/t3.png" alt="" />
+                  </Link>
                 </div>
                 <div className="lonyo-team-content">
                   <Link href="/single-team">
@@ -56,7 +61,9 @@ const AboutTeam = () => {
             <div className="col-lg-3 col-md-6">
               <div className="lonyo-team-wrap" data-aos="fade-up" data-aos-duration="1100">
                 <div className="lonyo-team-thumb">
-                  <Link href="/single-team"><img src="assets/images/about-us/t4.png" alt="" /></Link>
+                  <Link href="/single-team">
+                    <img src="/assets/images/about-us/t4.png" alt="" />
+                  </Link>
                 </div>
                 <div className="lonyo-team-content">
                   <Link href="/single-team">
@@ -69,7 +76,9 @@ const AboutTeam = () => {
             <div className="col-lg-3 col-md-6">
               <div className="lonyo-team-wrap" data-aos="fade-up" data-aos-duration="500">
                 <div className="lonyo-team-thumb">
-                  <Link href="/single-team"><img src="assets/images/about-us/t5.png" alt="" /></Link>
+                  <Link href="/single-team">
+                    <img src="/assets/images/about-us/t5.png" alt="" />
+                  </Link>
                 </div>
                 <div className="lonyo-team-content">
                   <Link href="/single-team">
@@ -82,7 +91,9 @@ const AboutTeam = () => {
             <div className="col-lg-3 col-md-6">
               <div className="lonyo-team-wrap" data-aos="fade-up" data-aos-duration="700">
                 <div className="lonyo-team-thumb">
-                  <Link href="/single-team"><img src="assets/images/about-us/t6.png" alt="" /></Link>
+                  <Link href="/single-team">
+                    <img src="/assets/images/about-us/t6.png" alt="" />
+                  </Link>
                 </div>
                 <div className="lonyo-team-content">
                   <Link href="/single-team">
@@ -95,7 +106,9 @@ const AboutTeam = () => {
             <div className="col-lg-3 col-md-6">
               <div className="lonyo-team-wrap" data-aos="fade-up" data-aos-duration="900">
                 <div className="lonyo-team-thumb">
-                  <Link href="/single-team"><img src="assets/images/about-us/t7.png" alt="" /></Link>
+                  <Link href="/single-team">
+                    <img src="/assets/images/about-us/t7.png" alt="" />
+                  </Link>
                 </div>
                 <div className="lonyo-team-content">
                   <Link href="/single-team">
@@ -108,7 +121,9 @@ const AboutTeam = () => {
             <div className="col-lg-3 col-md-6">
               <div className="lonyo-team-wrap" data-aos="fade-up" data-aos-duration="1100">
                 <div className="lonyo-team-thumb">
-                  <Link href="/single-team"><img src="assets/images/about-us/t8.png" alt="" /></Link>
+                  <Link href="/single-team">
+                    <img src="/assets/images/about-us/t8.png" alt="" />
+                  </Link>
                 </div>
                 <div className="lonyo-team-content">
                   <Link href="/single-team">

@@ -1,12 +1,12 @@
- "use client";
-import Link from 'next/link';
-import { useState } from 'react';
+"use client";
+import Link from "next/link";
+import { useState } from "react";
 
 const SigninArea = () => {
-  const [passwordType, setPasswordType] = useState('password');
+  const [passwordType, setPasswordType] = useState("password");
 
   const togglePasswordVisibility = () => {
-    setPasswordType(passwordType === 'password' ? 'text' : 'password');
+    setPasswordType(passwordType === "password" ? "text" : "password");
   };
 
   return (
@@ -19,7 +19,7 @@ const SigninArea = () => {
         <div className="lonyo-account-box" data-aos="fade-up" data-aos-duration="700">
           <div className="login-with-google">
             <a href="https://www.google.com/">
-              <img src="assets/images/account/a1.svg" alt="Google Sign-in" />
+              <img src="/assets/images/account/a1.svg" alt="Google Sign-in" />
               <h6>Sign up with Google</h6>
             </a>
           </div>
@@ -39,10 +39,12 @@ const SigninArea = () => {
                   className="light-bg form-control"
                   type={passwordType}
                   name="password"
-                  defaultValue={'Min 8 characters'}
+                  defaultValue={"Min 8 characters"}
                 />
-                <div 
-                  className={`fa fa-fw field-icon toggle-password ${passwordType ? 'fa-eye-slash' : 'fa-eye'}`}
+                <div
+                  className={`fa fa-fw field-icon toggle-password ${
+                    passwordType ? "fa-eye-slash" : "fa-eye"
+                  }`}
                   onClick={togglePasswordVisibility}
                 ></div>
               </div>
