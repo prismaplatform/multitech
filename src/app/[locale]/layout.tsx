@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
 import "../../styles/index.css";
+import { CartProvider } from "@/context/CartContext";
 
 export default async function LocaleLayout({
   children,
@@ -20,7 +21,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <CartProvider>{children}</CartProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
