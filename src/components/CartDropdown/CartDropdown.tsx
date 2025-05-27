@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 
 const CartDropdown = () => {
-  const { cartItems } = useCart();
+  const { cartItems, addToCart, decrementQuantity } = useCart();
 
   return (
     <div
@@ -21,12 +21,27 @@ const CartDropdown = () => {
       <h5>Cart</h5>
       <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
         {cartItems.map((item: any) => (
-          <li key={item.id} style={{ marginBottom: 8, display: "flex", alignItems: "center" }}>
+          <li
+            key={item.id}
+            style={{
+              marginBottom: 8,
+              display: "flex",
+              alignItems: "center",
+              gap: 8,
+            }}
+          >
             <img src={item.image} alt={item.name} width={40} style={{ marginRight: 8 }} />
-            <div>
+            <div style={{ flexGrow: 1 }}>
               <div>{item.name}</div>
               <div>Quantity: {item.quantity}</div>
             </div>
+
+            <button onClick={() => decrementQuantity(item.id)} aria-label="Decrease quantity">
+              -
+            </button>
+            <button onClick={() => addToCart(item)} aria-label="Increase quantity">
+              +
+            </button>
           </li>
         ))}
       </ul>

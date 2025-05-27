@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
+import { useNotification } from "@/context/NotificationContext";
 
 const mockProduct = {
   id: "test",
@@ -14,6 +15,7 @@ const mockProduct = {
 
 const ProductPage = () => {
   const { addToCart } = useCart();
+  const { showNotification } = useNotification();
 
   return (
     <div className="container py-5">
@@ -36,7 +38,10 @@ const ProductPage = () => {
             <p className="text-muted mb-1">Category: {mockProduct.category}</p>
             <button
               className="btn btn-outline-primary w-100"
-              onClick={() => addToCart(mockProduct)}
+              onClick={() => {
+                addToCart(mockProduct);
+                showNotification(`${mockProduct.name} added to cart`);
+              }}
             >
               Add to Cart
             </button>

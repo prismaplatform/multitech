@@ -8,13 +8,17 @@ import { useRouter, usePathname } from "@/i18n/navigation";
 import { locales } from "@/i18n/routing";
 import CartDropdown from "@/components/CartDropdown/CartDropdown";
 import { ShoppingCart } from "lucide-react";
+import { useCart } from "@/context/CartContext";
 
 const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showCart, setShowCart] = useState(false); // Toggle cart dropdown
+  const [showCart, setShowCart] = useState(false);
   const { sticky } = useSticky();
   const router = useRouter();
   const pathname = usePathname();
+
+  const { cartItems } = useCart();
+  const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
   const changeLocale = (locale: string) => {
     router.push(pathname, { locale });
@@ -125,15 +129,40 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
               <button
                 onClick={() => setShowCart(!showCart)}
                 aria-label="Toggle Cart"
-                className="btn btn-sm ms-3 d-flex align-items-center"
+                className="position-relative d-flex align-items-center justify-center"
                 style={{
+                  width: "36px",
+                  height: "36px",
                   background: "transparent",
                   border: "none",
+                  borderRadius: "6px",
                   cursor: "pointer",
-                  padding: "6px",
+                  padding: 0,
                 }}
               >
                 <ShoppingCart size={24} />
+                {totalItems > 0 && (
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "0px",
+                      right: "0px",
+                      background: "red",
+                      color: "white",
+                      borderRadius: "50%",
+                      fontSize: "10px",
+                      width: "16px",
+                      height: "16px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontWeight: "bold",
+                      transform: "translate(25%, -25%)",
+                    }}
+                  >
+                    {totalItems}
+                  </span>
+                )}
               </button>
 
               <div className="lonyo-header-menu">

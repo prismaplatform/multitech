@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Trash2 } from "lucide-react";
 
 const CartPage = () => {
-  const { cartItems, removeFromCart } = useCart();
+  const { cartItems, removeFromCart, addToCart, decrementQuantity } = useCart();
 
   const [form, setForm] = useState({
     name: "",
@@ -54,7 +54,40 @@ const CartPage = () => {
                         <span>{item.name}</span>
                       </div>
                     </td>
-                    <td>{item.quantity}</td>
+                    <td className="text-center align-middle">
+                      <div className="d-flex justify-content-center align-items-center gap-2">
+                        <button
+                          type="button"
+                          className="btn btn-outline-secondary p-0 d-flex justify-content-center align-items-center"
+                          style={{
+                            width: "28px",
+                            height: "28px",
+                            minWidth: "28px",
+                            fontSize: "18px",
+                          }}
+                          onClick={() => decrementQuantity(item.id)}
+                          aria-label={`Decrease quantity of ${item.name}`}
+                        >
+                          −
+                        </button>
+                        <span className="mx-2">{item.quantity}</span>
+                        <button
+                          type="button"
+                          className="btn btn-outline-secondary p-0 d-flex justify-content-center align-items-center"
+                          style={{
+                            width: "28px",
+                            height: "28px",
+                            minWidth: "28px",
+                            fontSize: "18px",
+                          }}
+                          onClick={() => addToCart(item)}
+                          aria-label={`Increase quantity of ${item.name}`}
+                        >
+                          +
+                        </button>
+                      </div>
+                    </td>
+
                     <td style={{ textAlign: "center" }}>
                       <button
                         onClick={() => removeFromCart(item.id)}

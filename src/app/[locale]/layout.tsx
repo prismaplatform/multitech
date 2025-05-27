@@ -4,6 +4,7 @@ import { routing } from "@/i18n/routing";
 
 import "../../styles/index.css";
 import { CartProvider } from "@/context/CartContext";
+import { NotificationProvider } from "@/context/NotificationContext";
 
 export default async function LocaleLayout({
   children,
@@ -22,7 +23,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider>
-          <CartProvider>{children}</CartProvider>
+          <CartProvider>
+            <NotificationProvider>{children}</NotificationProvider>
+          </CartProvider>
         </NextIntlClientProvider>
       </body>
     </html>
