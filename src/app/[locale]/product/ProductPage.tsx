@@ -1,27 +1,27 @@
-// app/product/page.tsx
 "use client";
 
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 const mockProduct = {
-  id: 1,
-  name: "Advanced Digital Thermometer",
-  price: "$49.99",
-  category: "Thermometers",
-  description: `This advanced digital thermometer provides accurate and fast readings. Suitable for medical professionals and home use. Features a flexible tip and waterproof body for easy cleaning.`,
-  image: "/assets/images/career/c1.png",
+  id: "test",
+  name: "Blood Pressure Monitor",
+  category: "Diagnostics",
+  description: "test",
 };
 
 const ProductPage = () => {
+  const { addToCart } = useCart();
+
   return (
     <div className="container py-5">
       <div className="row g-4">
         {/* Image */}
         <div className="col-lg-6">
           <Image
-            src={mockProduct.image}
+            src={"/assets/images/products/1.png"}
             alt={mockProduct.name}
             width={600}
             height={400}
@@ -34,8 +34,10 @@ const ProductPage = () => {
           <div>
             <h2>{mockProduct.name}</h2>
             <p className="text-muted mb-1">Category: {mockProduct.category}</p>
-            <h4 className="text-primary mb-4">{mockProduct.price}</h4>
-            <button className="btn btn-primary w-100" onClick={() => {}}>
+            <button
+              className="btn btn-outline-primary w-100"
+              onClick={() => addToCart(mockProduct)}
+            >
               Add to Cart
             </button>
           </div>

@@ -92,7 +92,7 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
               </div>
             </div>
             <div className="col-auto d-flex align-items-center">
-              <div className="lonyo-header-info-wraper2">
+              {/* <div className="lonyo-header-info-wraper2">
                 <div className={`lonyo-header-info-content ${style_2 ? "content2" : ""}`}>
                   <ul>
                     <li>
@@ -100,7 +100,7 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
 
               {/* Locale Switcher */}
               <div className="locale-switcher d-flex ms-3">

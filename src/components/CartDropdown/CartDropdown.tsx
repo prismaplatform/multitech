@@ -25,9 +25,7 @@ const CartDropdown = () => {
             <img src={item.image} alt={item.name} width={40} style={{ marginRight: 8 }} />
             <div>
               <div>{item.name}</div>
-              <div>
-                {item.quantity} × ${item.price.toFixed(2)}
-              </div>
+              <div>Quantity: {item.quantity}</div>
             </div>
           </li>
         ))}

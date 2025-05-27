@@ -6,30 +6,27 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import Breadcrumb from "@/common/Breadcrumb";
 import { Link } from "@/i18n/navigation";
 import { X } from "lucide-react";
+import { useCart } from "@/context/CartContext";
+import { products } from "@/data/multitech-products";
 
-const products = [
-  { id: 1, name: "Digital Thermometer", category: "Diagnostics", price: 25, description: "test" },
-  { id: 2, name: "Surgical Gloves", category: "Protection", price: 15, description: "test" },
-  {
-    id: 3,
-    name: "Blood Pressure Monitor",
-    category: "Diagnostics",
-    price: 60,
-    description: "test",
-  },
-  { id: 4, name: "Face Mask", category: "Protection", price: 10, description: "test" },
-  { id: 5, name: "Stethoscope", category: "Diagnostics", price: 40, description: "test" },
-  { id: 6, name: "Wheelchair", category: "Mobility", price: 250, description: "test" },
-  { id: 7, name: "Crutches", category: "Mobility", price: 80, description: "test" },
-  { id: 8, name: "IV Stand", category: "Hospital Furniture", price: 100, description: "test" },
+const categories = [
+  "Inkjet Caractere Mici (CIJ)",
+  "Inkjet Termic (TIJ)",
+  "Transfer Termic (TTO)",
+  "Inkjet Caractere Mari (LCM)",
+  "Laser, Stații de Lucru",
+  "Micropercuție",
+  "Laser",
+  "Etichetare",
+  "Filtrare Fum",
+  "Robotică / Automatizare",
 ];
-
-const categories = ["Diagnostics", "Protection", "Mobility", "Hospital Furniture"];
 
 const ProductPage = () => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
+  const { addToCart } = useCart();
 
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
@@ -100,17 +97,24 @@ const ProductPage = () => {
 
               <div className="row">
                 {filteredProducts.map((product) => (
-                  <div key={product.id} className="col-md-6 col-lg-4 mb-4">
+                  <div key={product.name} className="col-md-6 col-lg-4 mb-4">
                     <div className="card h-100">
                       <Link href="/product" className="text-decoration-none text-dark">
                         <div className="card-body">
                           <h5 className="card-title">{product.name}</h5>
-                          <p className="card-text">{product.description}</p>
-                          <p className="card-text fw-bold">${product.price}</p>
+                          <p className="card-text">{product.brand}</p>
                         </div>
                       </Link>
                       <div className="card-footer bg-white border-top-0">
-                        <button className="btn btn-outline-primary w-100" onClick={() => {}}>
+                        <button
+                          className="btn btn-outline-primary w-100"
+                          onClick={() =>
+                            addToCart({
+                              ...product,
+                              id: product.name,
+                            })
+                          }
+                        >
                           Add to Cart
                         </button>
                       </div>
