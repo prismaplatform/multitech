@@ -22,7 +22,7 @@ const HomeOne = () => {
       <VideoAreaHomeOne />
       <TestimonialAreaHomeOne />
       <FaqAreaHomeOne />
-      <CtaAreaHomeOne />
+      {/* <CtaAreaHomeOne /> */}
       <FooterOne />
 		</>
 	);

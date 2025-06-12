@@ -4,8 +4,8 @@
 <rect width="526" height="420" rx="10" fill="white"/>
 </mask>
 <g mask="url(#mask0_0_2225)">
-<circle cx="254.936" cy="466.51" r="200.637" stroke="#142D6F" stroke-opacity="0.1" stroke-width="2" stroke-dasharray="9.72 9.72"/>
-<circle cx="254.709" cy="466.287" r="134.309" stroke="#142D6F" stroke-opacity="0.1" stroke-width="2" stroke-dasharray="9.72 9.72"/>
+<circle cx="254.936" cy="466.51" r="200.637" stroke="#008BCD" stroke-opacity="0.1" stroke-width="2" stroke-dasharray="9.72 9.72"/>
+<circle cx="254.709" cy="466.287" r="134.309" stroke="#008BCD" stroke-opacity="0.1" stroke-width="2" stroke-dasharray="9.72 9.72"/>
 <g filter="url(#filter0_d_0_2225)">
 <rect x="42.4414" y="334.451" width="70.7498" height="70.7498" rx="35.3749" fill="white"/>
 </g>

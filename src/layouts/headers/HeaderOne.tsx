@@ -9,19 +9,22 @@ import { locales } from "@/i18n/routing";
 import CartDropdown from "@/components/CartDropdown/CartDropdown";
 import { ShoppingCart } from "lucide-react";
 import { useCart } from "@/context/CartContext";
-
+import { useNotification } from "@/context/NotificationContext";
 const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const { sticky } = useSticky();
   const router = useRouter();
   const pathname = usePathname();
+const { showCartDrawer } = useNotification(); 
 
-  const { cartItems } = useCart();
-  const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  
 
   const changeLocale = (locale: string) => {
     router.push(pathname, { locale });
+  };
+  const handleCartClick = () => {
+    showCartDrawer(); // Modern drawer megnyitása
   };
 
   return (
@@ -126,44 +129,19 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
               </div>
 
               {/* Cart Toggle Button */}
-              <button
-                onClick={() => setShowCart(!showCart)}
-                aria-label="Toggle Cart"
-                className="position-relative d-flex align-items-center justify-center"
-                style={{
-                  width: "36px",
-                  height: "36px",
-                  background: "transparent",
-                  border: "none",
-                  borderRadius: "6px",
-                  cursor: "pointer",
-                  padding: 0,
-                }}
-              >
-                <ShoppingCart size={24} />
-                {totalItems > 0 && (
-                  <span
-                    style={{
-                      position: "absolute",
-                      top: "0px",
-                      right: "0px",
-                      background: "red",
-                      color: "white",
-                      borderRadius: "50%",
-                      fontSize: "10px",
-                      width: "16px",
-                      height: "16px",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      fontWeight: "bold",
-                      transform: "translate(25%, -25%)",
-                    }}
+             <div className="header-action-item">
+                  <button
+                    onClick={handleCartClick}
+                    className="modern-cart-btn"
+                    aria-label="Kosár megnyitása"
                   >
-                    {totalItems}
-                  </span>
-                )}
-              </button>
+                    <div className="cart-icon-wrapper">
+                      <ShoppingCart size={20} />
+                     
+                    </div>
+
+                  </button>
+                </div>
 
               <div className="lonyo-header-menu">
                 <nav className="navbar site-navbar justify-content-between">

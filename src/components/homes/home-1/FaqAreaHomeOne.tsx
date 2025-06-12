@@ -93,11 +93,7 @@ const FaqAreaHomeOne = ({ style_2, style_3, style_4 }: any) => {
           </div>
         </div>
       </div>
-      {style_4 ? null : (
-        <div className={`${style_3 ? "lonyo-content-shape" : "lonyo-content-shape3"}`}>
-          <img src="/assets/images/shape/shape2.svg" alt="" />
-        </div>
-      )}
+     
     </>
   );
 };

@@ -12,7 +12,7 @@ const Product = () => {
       <Breadcrumb subtitle="Product" />
       <ProductPage />
       <CtaAreaHomeOne style_2={true} />
-      <FooterOne />
+      {/* <FooterOne /> */}
     </>
   );
 };

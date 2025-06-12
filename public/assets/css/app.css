@@ -16,15 +16,19 @@
 **/
 :root
 {
---heading-color: #142D6F;
---heading-bg: #142D6F;
---body-color: #A3BDFF;
+--heading-color: #1E1E1E;
+--heading-bg: #008BCD;
+--body-color: #828485;
 --white-color: #ffffff;
 --white-bg: #ffffff;
---light-color: #F6F4EF;
+--light-color: #F2F2F2;
 --light-color2: #A3BDFF;
 --light-color3: #b2b7c7;
 --light-color4: #C9CCD5;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --primary: #008BCD;
+  --secondary: #5BC2E7;
 }
 
 /*1.0 base css*/
@@ -68,7 +72,7 @@ height: 100%;
 body
 {
 color: var(--heading-color);
-font-family: "DM Sans", sans-serif;
+font-family: 'Segoe UI', system-ui, sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 vertical-align: baseline;
@@ -77,7 +81,7 @@ font-weight: 400;
 overflow-x: hidden;
 background-color: var(--white-bg);
 counter-reset: my-sec-counter;
-font-size: 20px;
+font-size: 1rem;
 line-height: 1.3em;
 }
 
@@ -287,34 +291,34 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  color: var(--heading-color);
+
+  color: #1E1E1E;
   font-weight: 700;
   margin: 0;
 }
 
 h1,
 .h1 {
-  font-size: 100px;
+  font-size: 80px;
   line-height: 1.05em;
   letter-spacing: -2px;
 }
 @media (max-width: 1399px) {
   h1,
   .h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 @media (max-width: 1199px) {
   h1,
   .h1 {
-    font-size: 75px;
+    font-size: 65px;
   }
 }
 @media (max-width: 767px) {
   h1,
   .h1 {
-    font-size: 48px;
+    font-size: 38px;
   }
 }
 
@@ -2472,6 +2476,7 @@ a.light-color {
   padding: 130px 0 0;
   position: relative;
   overflow: hidden;
+  background-color: #F2F2F2;
 }
 @media (max-width: 991px) {
   .lonyo-footer-section {
@@ -2597,7 +2602,7 @@ a.light-color {
   position: absolute;
   width: 90px;
   height: 90px;
-  background: linear-gradient(47.56deg, #A3BDFF -40.67%, #142D6F 78.6%);
+  background: linear-gradient(47.56deg, #A3BDFF -40.67%, #008BCD 78.6%);
   border-radius: 100px;
   right: 100px;
   top: 45%;
@@ -2678,7 +2683,7 @@ a.light-color {
   width: 150px;
   height: 150px;
   border-radius: 100px;
-  background: linear-gradient(48.01deg, #a3bdff -82.43%, #142d6f 89.75%);
+  background: linear-gradient(48.01deg, #a3bdff -82.43%, #008BCD 89.75%);
 }
 @media (max-width: 1800px) {
   .lonyo-hero-shape2::before {
@@ -5420,7 +5425,7 @@ blockquote::before {
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
   border-radius: 100px;
-  background: linear-gradient(48.01deg, #A3BDFF -82.43%, #142D6F 89.75%);
+  background: linear-gradient(48.01deg, #A3BDFF -82.43%, #008BCD 89.75%);
 }
 @media (max-width: 1800px) {
   .lonyo-tab-section::before {
@@ -5694,7 +5699,7 @@ blockquote::before {
     padding-top: 40px;
   }
 }
-.lonyo-hero-thumb::before {
+/* .lonyo-hero-thumb::before {
   content: "";
   position: absolute;
   top: 73px;
@@ -5707,13 +5712,13 @@ blockquote::before {
   animation: updown 3s ease-in-out infinite;
   border-radius: 100px;
   background: linear-gradient(47.56deg, #A3BDFF -40.67%, #F6F4EF 78.6%);
-}
+} */
 @media (max-width: 1560px) {
   .lonyo-hero-thumb::before {
     display: none;
   }
 }
-.lonyo-hero-thumb::after {
+/* .lonyo-hero-thumb::after {
   content: "";
   position: absolute;
   bottom: 73px;
@@ -5726,7 +5731,7 @@ blockquote::before {
   -webkit-animation: updown 4s ease-in-out infinite;
   animation: updown 4s ease-in-out infinite;
   background: linear-gradient(47.56deg, #A3BDFF -40.67%, #F6F4EF 78.6%);
-}
+} */
 @media (max-width: 1560px) {
   .lonyo-hero-thumb::after {
     display: none;
@@ -6115,7 +6120,7 @@ blockquote::before {
   top: 140px;
 }
 
-input[type=text],
+/* input[type=text],
 input[type=email],
 input[type=password],
 input[type=url],
@@ -6134,7 +6139,7 @@ input, textarea {
   padding: 15px 0;
   border: none;
   transition: all 0.4s;
-}
+} */
 
 textarea {
   height: 145px;
@@ -6627,7 +6632,7 @@ textarea::placeholder { /* Most modern browsers support this now. */
   transform: translatey(0);
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
-  background: linear-gradient(47.56deg, #A3BDFF -40.67%, #142D6F 78.6%);
+  background: linear-gradient(47.56deg, #A3BDFF -40.67%, #008BCD 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-cta-thumb::before {
@@ -6642,7 +6647,7 @@ textarea::placeholder { /* Most modern browsers support this now. */
   width: 550px;
   height: 550px;
   border-radius: 100%;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #142d6f 78.6%);
+  background: linear-gradient(47.56deg, #a3bdff -40.67%, #008BCD 78.6%);
   z-index: 0;
   transform: rotate(180deg);
 }
@@ -7819,7 +7824,7 @@ textarea::placeholder { /* Most modern browsers support this now. */
 .breadcrumb-wrapper {
   z-index: 0;
   text-align: center;
-  padding: 200px 0 130px;
+  padding: 150px 0 50px;
   position: relative;
   transition: all 0.4s;
 }
@@ -7861,12 +7866,12 @@ textarea::placeholder { /* Most modern browsers support this now. */
 }
 @media (max-width: 1199px) {
   .breadcrumb-wrapper {
-    padding: 180px 0 100px;
+    padding:120px 0 60px;
   }
 }
 @media (max-width: 767px) {
   .breadcrumb-wrapper {
-    padding: 120px 0 80px;
+    padding: 100px 0 50px;
   }
 }
 .breadcrumb-content {
@@ -8181,7 +8186,7 @@ a.lonyo-default-btn.sm-size {
   top: 0;
   bottom: 0;
   z-index: 9999;
-  background-color: #142D6F;
+  background-color: #008BCD;
   display: flex;
   align-items: center;
   justify-content: center;

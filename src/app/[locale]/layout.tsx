@@ -5,6 +5,12 @@ import { routing } from "@/i18n/routing";
 import "../../styles/index.css";
 import { CartProvider } from "@/context/CartContext";
 import { NotificationProvider } from "@/context/NotificationContext";
+import { univiaPro } from '../fonts'
+
+export const metadata = {
+  title: 'Your App',
+  description: 'Your app description',
+}
 
 export default async function LocaleLayout({
   children,
@@ -20,8 +26,8 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body>
+    <html lang={locale} className={univiaPro.variable}>
+      <body className={univiaPro.className}>
         <NextIntlClientProvider>
           <CartProvider>
             <NotificationProvider>{children}</NotificationProvider>
