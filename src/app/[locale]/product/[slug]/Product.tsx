@@ -9,7 +9,7 @@ const Product = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb subtitle="Product" />
+      <Breadcrumb title="Hidraulikus Kotrógép" subtitle="Product" />
       <ProductPage />
       <CtaAreaHomeOne style_2={true} />
       {/* <FooterOne /> */}

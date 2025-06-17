@@ -176,7 +176,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
         {cartItems.length > 0 && (
           <div className="cart-footer">
             
-            <button onClick={handleViewCart} className="action-btn secondary">
+            <button onClick={handleViewCart} className="action-btn secondary w-100">
               <div className="btn-content">
                 <ShoppingCart size={18} />
                 <span>Kosár megtekintése</span>

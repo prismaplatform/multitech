@@ -9,14 +9,17 @@ import TestimonialAreaHomeOne from "./TestimonialAreaHomeOne";
 import FaqAreaHomeOne from "./FaqAreaHomeOne";
 import CtaAreaHomeOne from "./CtaAreaHomeOne";
 import FooterOne from "@/layouts/footers/FooterOne";
- 
+import BrandAreaHomeTwo from "../home-2/BrandAreaHomeTwo";
+import AboutMission from "@/components/about-us/AboutMission";
 
 const HomeOne = () => {
-	return (
-		<>
-			<HeaderOne />
+  return (
+    <>
+      <HeaderOne />
       <HeroAreaHomeOne />
       <FeaturesAreaHomeOne />
+      <BrandAreaHomeTwo />
+      <AboutMission />
       <FinancialDecisionsAreaHomeOne />
       <FinancialUpdateHomeOne />
       <VideoAreaHomeOne />
@@ -24,8 +27,8 @@ const HomeOne = () => {
       <FaqAreaHomeOne />
       {/* <CtaAreaHomeOne /> */}
       <FooterOne />
-		</>
-	);
+    </>
+  );
 };
 
 export default HomeOne;

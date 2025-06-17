@@ -12,7 +12,7 @@ const Career = () => {
 		<>
 			<HeaderOne />
 			<Breadcrumb title="Career" subtitle="Career" />
-      <BrandAreaHomeTwo style_2={true} /> 
+      {/* <BrandAreaHomeTwo style_2={true} />  */}
       <FeaturesAreaHomeOne style_3={true} />
       <CareerArea />
 			<CtaAreaHomeOne style_2={true} />

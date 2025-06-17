@@ -1,18 +1,38 @@
+import Image from "next/image";
 import React from "react";
-
+import aboutBanner from "../../../public/assets/images/hero/multitech_15years.png";
 const AboutMission = () => {
   return (
     <>
-      <div className="lonyo-section-padding3">
+<div 
+  className="" 
+  style={{
+    backgroundImage: "url('/assets/images/hero/bacground.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }}
+>
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
               <div
-                className="lonyo-about-us-thumb2 pr-51"
+                className="lonyo-about-us-thumb2 pr-51 h-100"
                 data-aos="fade-up"
                 data-aos-duration="700"
+                style={{
+                  position: "relative",
+                  minHeight: "400px", // vagy bármilyen fix magasság
+                }}
               >
-                <img src="/assets/images/about-us/img7.png" alt="" />
+                <Image
+                  src={aboutBanner}
+                  fill
+                  alt="De ce să alegeți Multitech"
+                  style={{
+                    objectFit: "contain", // vagy 'contain'
+                  }}
+                />
               </div>
             </div>
             <div className="col-lg-7 d-flex align-items-center">
@@ -21,20 +41,18 @@ const AboutMission = () => {
                 data-aos="fade-up"
                 data-aos-duration="900"
               >
-                <h2>Our mission is to bring financial wellness</h2>
+                <h2>De ce să alegeți Multitech?</h2>
                 <p>
-                  We believe financial wellness is key to a better life. Our mission is to empower
-                  individuals and businesses with the tools they need to understand, manage, and
-                  grow their financial health.
+                  Pentru că avem{" "}
+                  <strong>o experiență remarcabilă de peste 15 ani </strong>și
+                  un portofoliu de sute de proiecte de succes într-o varietate
+                  completă de industrii, de la fabricarea de mașini până la
+                  sectorul alimentar.
                 </p>
                 <p>
-                  With our app, you can easily track spending, set budgets, automate savings, and
-                  get real-time insights into your financial world.{" "}
-                </p>
-                <p>
-                  For businesses, our software offers seamless integration with your existing tools
-                  to ensure that your accounting, invoicing, and financial reporting are effortless
-                  and organized.
+                  Astăzi probabil ați cumpărat sau ați folosit un produs
+                  inscripționat sau manipulat de un echipament furnizat de
+                  Multitech.
                 </p>
               </div>
             </div>

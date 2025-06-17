@@ -19,6 +19,7 @@
     "react-modal-video": "^2.0.2",
     "react-responsive-masonry": "^2.7.1",
     "react-slick": "^0.30.3",
+    "react-type-animation": "^3.2.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
@@ -31,7 +32,6 @@
     "@types/react-slick": "^0.23.13",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.4",
-
     "typescript": "^5"
   }
 }
