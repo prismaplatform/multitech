@@ -7,13 +7,13 @@ const Breadcrumb = ({ title, subtitle }: any) => {
       <div className="breadcrumb-wrapper light-bg">
         <div className="container">
           <div className="breadcrumb-content">
-            <h1 className="breadcrumb-title pb-0">{title}</h1>
+            <h2 className="breadcrumb-title pb-0">{title}</h2>
             <div className="breadcrumb-menu-wrapper">
               <div className="breadcrumb-menu-wrap">
                 <div className="breadcrumb-menu">
                   <ul>
                     <li>
-                      <Link href="/">Home</Link>
+                      <Link href="/">Acasă</Link>
                     </li>
                     <li>
                       <img src="/assets/images/blog/right-arrow.svg" alt="right-arrow" />

@@ -40,9 +40,9 @@ const FeaturesAreaHomeOne = ({ style_2, style_3 }: any) => {
             <h2>special concepute pentru aplicația dumneavoastră</h2>
           </div>
 
-          <div className="row">
+          <div className="row d-flex justify-content-center">
             {feature_data.map((item, i) => (
-              <div key={i} className="col-xl-4 col-lg-6 col-md-6 d-flex">
+              <div key={i} className="col-xl-4 col-lg-6 col-md-6 d-flex mb-4 mb-lg-0">
                 <div
                   className="summary-card h-100 d-flex flex-column"
                   data-aos="fade-up"

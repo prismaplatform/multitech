@@ -11,8 +11,8 @@ const Product = () => {
       <HeaderOne />
       <Breadcrumb title="Hidraulikus Kotrógép" subtitle="Product" />
       <ProductPage />
-      <CtaAreaHomeOne style_2={true} />
-      {/* <FooterOne /> */}
+      {/* <CtaAreaHomeOne style_2={true} /> */}
+      <FooterOne />
     </>
   );
 };

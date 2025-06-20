@@ -8,37 +8,37 @@ const faq_data = [
   {
     id: 1,
     delay: 500,
-    question: "Is my financial data safe and secure?",
+    question: "Datele mele financiare sunt sigure?",
     answer:
-      "Yes, this finance app uses bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Da, aplicația folosește criptare la nivel bancar, autentificare multi-factor și alte măsuri de securitate pentru a proteja informațiile sensibile.",
   },
   {
     id: 2,
     delay: 700,
-    question: "Can I link multiple bank accounts and credit cards?",
+    question: "Pot conecta mai multe conturi bancare și carduri?",
     answer:
-      "Yes, you can link multiple bank accounts and credit cards to get a complete financial overview in one place.",
+      "Da, puteți conecta mai multe conturi bancare și carduri pentru a obține o imagine completă a finanțelor într-un singur loc.",
   },
   {
     id: 3,
     delay: 900,
-    question: "How does the app help me stick to my budget?",
+    question: "Cum mă ajută aplicația să respect bugetul?",
     answer:
-      "The app helps you by categorizing your spending, setting budget limits, and providing real-time notifications when you exceed your set budget.",
+      "Aplicația vă ajută prin clasificarea cheltuielilor, stabilirea de limite bugetare și notificări în timp real când depășiți bugetul.",
   },
   {
     id: 4,
     delay: 1100,
-    question: "Can I track my investments with the app?",
+    question: "Pot urmări investițiile mele în aplicație?",
     answer:
-      "Yes, you can track your investments, monitor market trends, and get insights into your portfolio's performance.",
+      "Da, puteți urmări investițiile, analiza tendințele pieței și obține informații despre performanța portofoliului.",
   },
   {
     id: 5,
     delay: 1300,
-    question: "Is the app free, or are there subscription fees?",
+    question: "Aplicația este gratuită sau există taxe de abonament?",
     answer:
-      "The app offers both free and premium subscription plans with additional features in the paid version.",
+      "Aplicația oferă atât un plan gratuit, cât și planuri premium cu funcționalități suplimentare contra cost.",
   },
 ];
 
@@ -50,7 +50,7 @@ const FaqAreaHomeOne = ({ style_2, style_3, style_4 }: any) => {
   }, []);
 
   useEffect(() => {
-    AOS.refresh(); // Refresh AOS on state change
+    AOS.refresh();
   }, [activeIndex]);
 
   return (
@@ -62,7 +62,7 @@ const FaqAreaHomeOne = ({ style_2, style_3, style_4 }: any) => {
       >
         <div className="container">
           <div className="lonyo-section-title center">
-            <h2>Find answers to all questions below</h2>
+            <h2>Găsește răspunsuri la toate întrebările de mai jos</h2>
           </div>
           {style_3 ? null : style_4 ? null : <div className="lonyo-faq-shape"></div>}
           <div className="lonyo-faq-wrap1">
@@ -88,12 +88,11 @@ const FaqAreaHomeOne = ({ style_2, style_3, style_4 }: any) => {
           </div>
           <div className="faq-btn" data-aos="fade-up" data-aos-duration="700">
             <Link className="lonyo-default-btn faq-btn2" href="/faq">
-              Can't find your answer
+              Nu găsești răspunsul tău?
             </Link>
           </div>
         </div>
       </div>
-     
     </>
   );
 };

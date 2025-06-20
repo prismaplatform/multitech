@@ -34,8 +34,7 @@ const FooterOne = ({ style_2 }: any) => {
                     </Link>
                   </div>
                   <p>
-                    This tool simplifies your spending and saving to organize
-                    your money.
+                    Soluții integrate de marcare, etichetare și automatizare pentru linii de producție: orice produs, orice industrie. Livrare din stoc și service în 24h.
                   </p>
 
                   <div className="lonyo-social-wrap2">
@@ -122,7 +121,7 @@ const FooterOne = ({ style_2 }: any) => {
                     style_2 ? "menu2" : ""
                   }`}
                 >
-                  <h4>Join our newsletter</h4>
+                  <h4>Newsletter</h4>
                   <div
                     className={`${
                       style_2

@@ -11,7 +11,7 @@ const Cart = () => {
       <HeaderOne />
       <Breadcrumb title="Cart" subtitle="Cart" />
       <CartPage />
-      <CtaAreaHomeOne style_2={true} />
+      {/* <CtaAreaHomeOne style_2={true} /> */}
       <FooterOne />
     </>
   );

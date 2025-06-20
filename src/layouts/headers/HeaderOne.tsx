@@ -1,28 +1,27 @@
+// components/HeaderOne.tsx
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import OffCanvas from "@/common/OffCanvas";
-import menu_data from "@/data/menu-data";
+import menu_data from "@/data/menu-data"; // Ensure this path is correct
 import useSticky from "@/hooks/use-sticky";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { locales } from "@/i18n/routing";
 import CartDropdown from "@/components/CartDropdown/CartDropdown";
 import { ShoppingCart } from "lucide-react";
-import { useCart } from "@/context/CartContext";
-import { useNotification } from "@/context/NotificationContext";
+import { useNotification } from "@/context/NotificationContext"; // Assuming useNotification is needed for cart drawer
+
 const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showCart, setShowCart] = useState(false);
   const { sticky } = useSticky();
   const router = useRouter();
   const pathname = usePathname();
-const { showCartDrawer } = useNotification(); 
-
-  
+  const { showCartDrawer } = useNotification();
 
   const changeLocale = (locale: string) => {
     router.push(pathname, { locale });
   };
+
   const handleCartClick = () => {
     showCartDrawer(); // Modern drawer megnyitása
   };
@@ -30,7 +29,7 @@ const { showCartDrawer } = useNotification();
   return (
     <>
       <header
-        className={`${sticky ? "sticky-menu" : ""} site-header  ${
+        className={`${sticky ? "sticky-menu" : ""} site-header ${
           style_2
             ? "bg-heading lonyo-header-section"
             : style_3
@@ -64,9 +63,9 @@ const { showCartDrawer } = useNotification();
                         <Link href={item.link} className={`${style_2 ? "light-color" : ""}`}>
                           {item.title}
                         </Link>
-                        {item.has_dropdown && (
+                        {item.has_dropdown && item.sub_menus && (
                           <ul className="sub-menu">
-                            {item.sub_menus?.map((sub_item, index) => (
+                            {item.sub_menus.map((sub_item, index) => (
                               <li
                                 key={index}
                                 className={`${
@@ -79,11 +78,41 @@ const { showCartDrawer } = useNotification();
                                 >
                                   {sub_item.title}
                                 </Link>
-                                {sub_item.inner_submenu && (
+                                {sub_item.inner_submenu && sub_item.sub_menu && (
                                   <ul className="sub-menu">
-                                    {sub_item.sub_menu?.map((inner_item, inner_index) => (
-                                      <li key={inner_index}>
-                                        <Link href={inner_item.link}>{inner_item.title}</Link>
+                                    {sub_item.sub_menu.map((inner_item, inner_index) => (
+                                      <li
+                                        key={inner_index}
+                                        className={`${
+                                          // Added for potential fourth level if needed, or just for styling
+                                          (inner_item as any).inner_submenu
+                                            ? "menu-item-has-children"
+                                            : ""
+                                        }`}
+                                      >
+                                        <Link
+                                          href={inner_item.link}
+                                          className={`${
+                                            (inner_item as any).inner_submenu ? "no-border" : ""
+                                          }`}
+                                        >
+                                          {inner_item.title}
+                                        </Link>
+                                        {/* Potentially add another level if (inner_item as any).inner_submenu is true */}
+                                        {(inner_item as any).inner_submenu &&
+                                          (inner_item as any).sub_menu && (
+                                            <ul className="sub-menu">
+                                              {(inner_item as any).sub_menu.map(
+                                                (deep_item: any, deep_index: any) => (
+                                                  <li key={deep_index}>
+                                                    <Link href={deep_item.link}>
+                                                      {deep_item.title}
+                                                    </Link>
+                                                  </li>
+                                                )
+                                              )}
+                                            </ul>
+                                          )}
                                       </li>
                                     ))}
                                   </ul>
@@ -99,7 +128,7 @@ const { showCartDrawer } = useNotification();
               </div>
             </div>
             <div className="col-auto d-flex align-items-center">
-              {/* <div className="lonyo-header-info-wraper2">
+              <div className="lonyo-header-info-wraper2">
                 <div className={`lonyo-header-info-content ${style_2 ? "content2" : ""}`}>
                   <ul>
                     <li>
@@ -107,7 +136,7 @@ const { showCartDrawer } = useNotification();
                     </li>
                   </ul>
                 </div>
-              </div> */}
+              </div>
 
               {/* Locale Switcher */}
               <div className="locale-switcher d-flex ms-3">
@@ -121,6 +150,7 @@ const { showCartDrawer } = useNotification();
                       border: "1px solid #ccc",
                       borderRadius: "4px",
                       fontWeight: "bold",
+                      cursor: "pointer", // Add cursor pointer for better UX
                     }}
                   >
                     {loc.toUpperCase()}
@@ -129,19 +159,17 @@ const { showCartDrawer } = useNotification();
               </div>
 
               {/* Cart Toggle Button */}
-             <div className="header-action-item">
-                  <button
-                    onClick={handleCartClick}
-                    className="modern-cart-btn"
-                    aria-label="Kosár megnyitása"
-                  >
-                    <div className="cart-icon-wrapper">
-                      <ShoppingCart size={20} />
-                     
-                    </div>
-
-                  </button>
-                </div>
+              <div className="header-action-item">
+                <button
+                  onClick={handleCartClick}
+                  className="modern-cart-btn"
+                  aria-label="Kosár megnyitása"
+                >
+                  <div className="cart-icon-wrapper">
+                    <ShoppingCart size={20} />
+                  </div>
+                </button>
+              </div>
 
               <div className="lonyo-header-menu">
                 <nav className="navbar site-navbar justify-content-between">
@@ -160,20 +188,7 @@ const { showCartDrawer } = useNotification();
         </div>
       </header>
 
-      {/* Conditional CartDropdown */}
-      {showCart && (
-        <div
-          style={{
-            position: "absolute",
-            right: "20px",
-            top: "100px",
-            zIndex: 1000,
-            transition: "all 0.3s ease",
-          }}
-        >
-          <CartDropdown />
-        </div>
-      )}
+     
 
       <OffCanvas setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
     </>

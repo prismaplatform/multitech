@@ -16,17 +16,17 @@
 **/
 :root {
   --heading-color: #1e1e1e;
-  --heading-bg: #008bcd;
+  --heading-bg: #008BCD;
   --body-color: #828485;
   --white-color: #ffffff;
   --white-bg: #ffffff;
   --light-color: #f2f2f2;
-  --light-color2: #a3bdff;
+  --light-color2: #FFEAC0;
   --light-color3: #b2b7c7;
   --light-color4: #c9ccd5;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
-  --primary: #008bcd;
+  --primary: #008BCD;
   --secondary: #5bc2e7;
 }
 
@@ -79,7 +79,7 @@ body {
   overflow-x: hidden;
   background-color: var(--white-bg);
   counter-reset: my-sec-counter;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.3em;
 }
 
@@ -1815,7 +1815,7 @@ img {
 }
 
 .bg-light2 {
-  background: linear-gradient(
+  background-color: linear-gradient(
     180deg,
     #01011d -20%,
     rgba(15, 15, 16, 0.65) 1076%
@@ -2301,7 +2301,8 @@ a.lonyo-header-info img {
   opacity: 0;
   text-align: left;
   visibility: hidden;
-  min-width: 220px;
+  min-width: 240px;
+  width:100%;
   border-radius: 0 0 6px 6px;
 }
 .main-menu ul.sub-menu li {
@@ -2353,12 +2354,129 @@ a.lonyo-header-info img {
   top: 0;
   margin: 0 0;
   margin-left: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .main-menu ul.sub-menu li ul.sub-menu li ul {
   left: 100%;
   right: auto;
 }
+
+
+.main-menu ul.sub-menu li ul.sub-menu {
+  /* This style makes the second-level dropdown appear next to the parent */
+  left: 100%; /* Position to the right of the parent li */
+  right: auto;
+  top: 0; /* Align with the top of the parent li */
+  margin: 0; /* Reset any default margins */
+  margin-left: 20px; /* Optional: Add some space between parent and child dropdown */
+
+  /* Ensure proper display on hover */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px); /* For smooth animation */
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+/* When a second-level item with a submenu is hovered, show its child submenu (the third level) */
+.main-menu ul.sub-menu li.menu-item-has-children:hover > ul.sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Ensure the arrow rotates correctly for third-level dropdowns */
+.main-menu ul.sub-menu li.menu-item-has-children a.no-border:after {
+  position: absolute;
+  right: 0;
+  content: "\ea6d"; /* Right arrow icon */
+}
+
+.main-menu ul.sub-menu li.menu-item-has-children:hover a.no-border::after {
+  transform: rotate(90deg) !important; /* Rotate to point down or left as needed for nested menu */
+}
+
+/* You might need to adjust padding/margins for nested list items for better visual spacing */
+.main-menu ul.sub-menu li ul.sub-menu li {
+  padding: 5px 10px 5px 20px; /* Consistent padding for all submenu items */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ul.sub-menu li a {
   color: var(--heading-color) !important;
@@ -2539,7 +2657,7 @@ a.light-color {
   padding: 130px 0 0;
   position: relative;
   overflow: hidden;
-  background-color: #008bcd;
+  background-color: #008BCD;
 }
 @media (max-width: 991px) {
   .lonyo-footer-section {
@@ -2664,7 +2782,7 @@ a.light-color {
   width: 90px;
   height: 90px;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
   right: 100px;
   top: 45%;
   overflow: hidden;
@@ -2681,7 +2799,7 @@ a.light-color {
   position: absolute;
   width: 90px;
   height: 90px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #008bcd 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #008BCD 78.6%);
   border-radius: 100px;
   right: 100px;
   top: 45%;
@@ -2762,7 +2880,7 @@ a.light-color {
   width: 150px;
   height: 150px;
   border-radius: 100px;
-  background: linear-gradient(48.01deg, #a3bdff -82.43%, #008bcd 89.75%);
+  background: linear-gradient(48.01deg, #FFEAC0 -82.43%, #008BCD 89.75%);
 }
 @media (max-width: 1800px) {
   .lonyo-hero-shape2::before {
@@ -2803,7 +2921,7 @@ a.light-color {
   transform: translatey(0);
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-content-shape2 {
@@ -2848,7 +2966,7 @@ a.light-color {
   transform: rotate(180deg);
   position: absolute;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .pricing-shape {
@@ -2884,7 +3002,7 @@ a.light-color {
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-feature-shape {
@@ -2899,7 +3017,7 @@ a.light-color {
   position: absolute;
   border-radius: 100px;
   transform: rotate(145deg);
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-feature-shape.shape2 {
@@ -2914,7 +3032,7 @@ a.light-color {
   position: absolute;
   border-radius: 100px;
   transform: rotate(145deg);
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-feature-shape.shape3 {
@@ -3070,7 +3188,7 @@ a.light-color {
   align-items: center;
   border-radius: 5px;
   justify-content: center;
-  background-color: var(--body-color);
+  background-color: var(--light-color);
 }
 .lonyo-contact-us-content a {
   color: var(--heading-color);
@@ -3431,11 +3549,11 @@ a.light-color {
   }
 }
 .lonyo-video-section h2 {
-  color: var(--light-color);
+  color: var(--white-color);
   padding-bottom: 20px;
 }
 .lonyo-video-section p {
-  color: var(--light-color);
+  color: var(--white-color);
   margin: 0;
 }
 .lonyo-video-thumb {
@@ -3598,7 +3716,7 @@ a.light-color {
   transform: translatey(0);
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-t-wraper::before {
@@ -4163,7 +4281,7 @@ a.light-color {
   transform: translatey(0);
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-faq-shape::before {
@@ -5342,7 +5460,7 @@ blockquote::before {
   height: 550px;
   border-radius: 100%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #ffffff 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #ffffff 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-content-thumb::before {
@@ -5483,14 +5601,14 @@ blockquote::before {
   background-color: var(--light-color2);
 }
 .lonyo-process-title h4 {
-  color: var(--light-color);
+  color: var(--white-color);
 }
 .lonyo-process-data p {
   margin: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  color: var(--light-color);
+  color: var(--white-color);
 }
 
 .lonyo-tab-section {
@@ -5508,7 +5626,7 @@ blockquote::before {
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
   border-radius: 100px;
-  background: linear-gradient(48.01deg, #a3bdff -82.43%, #008bcd 89.75%);
+  background: linear-gradient(48.01deg, #FFEAC0 -82.43%, #008BCD 89.75%);
 }
 @media (max-width: 1800px) {
   .lonyo-tab-section::before {
@@ -5794,7 +5912,7 @@ blockquote::before {
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #A3BDFF -40.67%, #F6F4EF 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #F6F4EF 78.6%);
 } */
 @media (max-width: 1560px) {
   .lonyo-hero-thumb::before {
@@ -5813,7 +5931,7 @@ blockquote::before {
   transform: translatey(0);
   -webkit-animation: updown 4s ease-in-out infinite;
   animation: updown 4s ease-in-out infinite;
-  background: linear-gradient(47.56deg, #A3BDFF -40.67%, #F6F4EF 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #F6F4EF 78.6%);
 } */
 @media (max-width: 1560px) {
   .lonyo-hero-thumb::after {
@@ -5894,7 +6012,7 @@ blockquote::before {
   padding: 230px 0 680px;
   position: relative;
   z-index: 0;
-  background: linear-gradient(180deg, rgba(163, 189, 255, 0) 0%, #a3bdff 100%);
+  background: linear-gradient(180deg, rgba(163, 189, 255, 0) 0%, #FFEAC0 100%);
 }
 @media (max-width: 1399px) {
   .lonyo-hero-section3 {
@@ -5930,7 +6048,7 @@ blockquote::before {
   content: "";
   border-radius: 100px;
   position: absolute;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
   transform: rotate(130deg);
   transform: translatey(0);
   -webkit-animation: updown 3s ease-in-out infinite;
@@ -5949,7 +6067,7 @@ blockquote::before {
   content: "";
   border-radius: 180px;
   position: absolute;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
   transform: rotate(130deg);
   transform: translatey(0);
   -webkit-animation: updown 2s ease-in-out infinite;
@@ -6557,7 +6675,7 @@ textarea::placeholder {
   content: "";
   position: absolute;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-account-section::before {
@@ -6572,7 +6690,7 @@ textarea::placeholder {
   content: "";
   position: absolute;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-account-section::after {
@@ -6741,7 +6859,7 @@ textarea::placeholder {
   transform: translatey(0);
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #008bcd 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #008BCD 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-cta-thumb::before {
@@ -6756,7 +6874,7 @@ textarea::placeholder {
   width: 550px;
   height: 550px;
   border-radius: 100%;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #008bcd 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #008BCD 78.6%);
   z-index: 0;
   transform: rotate(180deg);
 }
@@ -6786,7 +6904,7 @@ textarea::placeholder {
 .lonyo-cta-section2 {
   padding: 50px 0 130px 0;
   position: relative;
-  background: linear-gradient(180deg, rgba(163, 189, 255, 0) 0%, #a3bdff 100%);
+  background: linear-gradient(180deg, rgba(163, 189, 255, 0) 0%, #FFEAC0 100%);
 }
 @media (max-width: 991px) {
   .lonyo-cta-section2 {
@@ -6810,7 +6928,7 @@ textarea::placeholder {
   transform: translatey(0);
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-cta-section2::before {
@@ -6903,7 +7021,7 @@ textarea::placeholder {
   animation: updown 3s ease-in-out infinite;
   position: absolute;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-section-padding4.section::before {
@@ -6970,7 +7088,7 @@ textarea::placeholder {
   animation: updown 3s ease-in-out infinite;
   border-radius: 100px;
   transform: rotate(145deg);
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-section-padding7.section::before {
@@ -6992,7 +7110,7 @@ textarea::placeholder {
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .lonyo-section-padding7.section2::before {
@@ -7272,7 +7390,7 @@ textarea::placeholder {
   padding: 18px 39px;
   font-weight: 500;
   font-family: "DM Sans", sans-serif;
-  border-radius: 10px;
+  border-radius: 6px;
   width: fit-content;
   position: relative;
   z-index: 0;
@@ -7951,7 +8069,7 @@ textarea::placeholder {
   -webkit-animation: updown 2s ease-in-out infinite;
   animation: updown 2s ease-in-out infinite;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .breadcrumb-wrapper::before {
@@ -7969,7 +8087,7 @@ textarea::placeholder {
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
   border-radius: 100px;
-  background: linear-gradient(47.56deg, #a3bdff -40.67%, #f6f4ef 78.6%);
+  background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
 }
 @media (max-width: 1800px) {
   .breadcrumb-wrapper::after {
@@ -8302,7 +8420,7 @@ a.lonyo-default-btn.sm-size {
   top: 0;
   bottom: 0;
   z-index: 9999;
-  background-color: #008bcd;
+  background-color: #008BCD;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8369,4 +8487,10 @@ a.lonyo-default-btn.sm-size {
 
 .rk-slider .slick-list {
   height: auto !important;
+}
+.bg-light{
+  background-color: #f2f2f2 !important;
+}
+.bg-blue{
+  background-color: #008BCD !important;
 }

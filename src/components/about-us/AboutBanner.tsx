@@ -1,48 +1,38 @@
-import React from "react";
+"use client";
+import VideoPopup from "@/modals/VideoPopup";
+import React, { useState } from "react";
 
 const AboutBanner = () => {
+    const [isVideoOpen, setIsVideoOpen] = useState(false);
   return (
     <>
-      <div className="lonyo-section-padding10">
+      <div className="lonyo-section-padding2">
         <div className="container">
-          <div className="row">
-            <div className="col-xl-6">
-              <div className="lonyo-about-us-wrap" data-aos="fade-up" data-aos-duration="700">
-                <div className="lonyo-about-us-thumb">
-                  <img src="/assets/images/about-us/img1.png" alt="" />
-                </div>
-                <div className="lonyo-about-us-thumb">
-                  <img src="/assets/images/about-us/img2.png" alt="" />
-                  <div className="lonyo-about-us-card">
-                    <img src="/assets/images/about-us/card1.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="lonyo-about-us-thumb" data-aos="zoom-in" data-aos-duration="700">
-                <img src="/assets/images/about-us/img3.png" alt="" />
-                <div className="lonyo-about-us-card2">
-                  <img src="/assets/images/about-us/card2.svg" alt="" />
-                </div>
+           <div className="row">
+            <div className="col-lg-7">
+              <div className="lonyo-hero-dashbord h-100" data-aos="fade-right" data-aos-duration="700">
+                <img src="/assets/images/about-us/about_section_multitech.jpg"  style={{borderRadius:"10px",objectFit:"cover",height:"100%"}} alt="" />
               </div>
             </div>
-            <div className="col-xl-6">
-              <div className="lonyo-about-us-wrap">
-                <div className="lonyo-about-us-thumb" data-aos="zoom-in" data-aos-duration="500">
-                  <img src="/assets/images/about-us/img4.png" alt="" />
-                </div>
-                <div className="lonyo-about-us-thumb-wrap">
-                  <div className="lonyo-about-us-thumb">
-                    <img src="/assets/images/about-us/img5.png" alt="" />
-                  </div>
-                  <div className="lonyo-about-us-thumb" data-aos="fade-up" data-aos-duration="700">
-                    <img src="/assets/images/about-us/img6.png" alt="" />
-                  </div>
-                </div>
+            <div className="col-lg-5">
+              <div className="lonyo-video-thumb2 h-100" data-aos="fade-left" data-aos-duration="700">
+                <img src="/assets/images/about-us/about_section_consulting.jpg"  style={{objectFit:"cover"}}alt="" />
+                <a
+                  className="play-btn video-init"
+                  onClick={() => setIsVideoOpen(true)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <img src="/assets/images/shape/play-icon.svg" alt="" />
+                  <div className="waves wave-1"></div>
+                  <div className="waves wave-2"></div>
+                  <div className="waves wave-3"></div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
     </>
   );
 };

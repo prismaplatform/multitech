@@ -5,7 +5,7 @@ const AboutMission = () => {
   return (
     <>
 <div 
-  className="" 
+  className="lonyo-section-padding2" 
   style={{
     backgroundImage: "url('/assets/images/hero/bacground.png')",
     backgroundSize: "cover",

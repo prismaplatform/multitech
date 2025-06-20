@@ -6,15 +6,15 @@ import FooterOne from "@/layouts/footers/FooterOne";
 import FaqArea from "./FaqArea";
 
 const Faq = () => {
-	return (
-		<>
-			<HeaderOne />
-			<Breadcrumb title="Faq" subtitle="Faq" />
+  return (
+    <>
+      <HeaderOne />
+      <Breadcrumb title="Întrebări frecvente" subtitle="Întrebări frecvente" />
       <FaqArea />
-			<CtaAreaHomeOne style_2={true} />
-			<FooterOne />
-		</>
-	);
+      {/* <CtaAreaHomeOne style_2={true} /> */}
+      <FooterOne />
+    </>
+  );
 };
 
 export default Faq;

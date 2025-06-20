@@ -160,7 +160,7 @@ const ModernCartPage = () => {
           </div>
 
           {/* Recommended Products */}
-          <div className="recommended-section">
+          {/* <div className="recommended-section">
             <h3 className="recommended-title">Ajánlott termékek</h3>
             <div className="row g-4">
               {recommendedProducts.map((product) => (
@@ -178,7 +178,7 @@ const ModernCartPage = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );

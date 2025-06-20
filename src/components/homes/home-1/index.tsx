@@ -11,6 +11,7 @@ import CtaAreaHomeOne from "./CtaAreaHomeOne";
 import FooterOne from "@/layouts/footers/FooterOne";
 import BrandAreaHomeTwo from "../home-2/BrandAreaHomeTwo";
 import AboutMission from "@/components/about-us/AboutMission";
+import TestimonialAreaHomeTwo from "../home-2/TestimonialAreaHomeTwo";
 
 const HomeOne = () => {
   return (
@@ -20,10 +21,11 @@ const HomeOne = () => {
       <FeaturesAreaHomeOne />
       <BrandAreaHomeTwo />
       <AboutMission />
-      <FinancialDecisionsAreaHomeOne />
+      {/* <FinancialDecisionsAreaHomeOne /> */}
       <FinancialUpdateHomeOne />
-      <VideoAreaHomeOne />
-      <TestimonialAreaHomeOne />
+      {/* <VideoAreaHomeOne /> */}
+      {/* <TestimonialAreaHomeOne /> */}
+      {/* <TestimonialAreaHomeTwo/> */}
       <FaqAreaHomeOne />
       {/* <CtaAreaHomeOne /> */}
       <FooterOne />

@@ -5,17 +5,13 @@ import HeaderOne from "@/layouts/headers/HeaderOne";
 import FooterOne from "@/layouts/footers/FooterOne";
 import Breadcrumb from "@/common/Breadcrumb";
 import { products } from "@/data/multitech-products";
-import { Product } from "@/types/product-type"; // Győződj meg róla, hogy a product típus importálása helyes
-
-// Komponensek importálása
+import { Product } from "@/types/product-type"; 
 import ProductCard from "@/components/shop/ProductCard";
 import ProductFilter from "@/components/shop/ProductFilter";
 import ProductPagination from "@/components/shop/ProductPagination";
 import MobileFilterDrawer from "@/components/shop/MobileFilterDrawer";
 import ShopToolbar from "@/components/shop/ShopToolbar";
 import ActiveFilters from "@/components/shop/ActiveFilters";
-
-// Szűrőkhöz használt adataink
 const categories = [
   "Inkjet Caractere Mici (CIJ)",
   "Inkjet Termic (TIJ)",
@@ -55,9 +51,6 @@ const surfaces = [
 ];
 
 const ProductPage = () => {
-  // === STATE MANAGEMENT ===
-
-  // Fő state a szűrőknek és a megjelenítésnek
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [selectedSurfaces, setSelectedSurfaces] = useState<string[]>([]);
@@ -101,9 +94,7 @@ const ProductPage = () => {
       case "name-desc":
         filtered.sort((a, b) => b.name.localeCompare(a.name));
         break;
-      // Itt bővíthető a rendezés pl. ár alapján, ha az adatmodell tartalmazza
       default:
-        // Alapértelmezett rendezés (az eredeti sorrend marad)
         break;
     }
 
@@ -115,16 +106,12 @@ const ProductPage = () => {
     searchTerm,
     sortOption,
   ]);
-
-  // 2. Dinamikus darabszámok kiszámítása a szűrőkhöz
   const filterCounts = useMemo(() => {
     const counts = {
       categories: {} as Record<string, number>,
       brands: {} as Record<string, number>,
       surfaces: {} as Record<string, number>,
     };
-
-    // A logika itt változatlan, a teljes terméklistán dolgozik, hogy releváns számokat mutasson
     products
       .filter((p) => p.name.toLowerCase().includes(searchTerm.toLowerCase()))
       .forEach((product) => {
@@ -213,12 +200,6 @@ const ProductPage = () => {
     setSearchTerm("");
     setSortOption("default");
   };
-  // const productCount = filteredAndSortedProducts.length;
-  // const startItem = (currentPage - 1) * productsPerPage + 1;
-  // const endItem = Math.min(
-  //   startItem + productsPerPage - 1,
-  //   filteredAndSortedProducts.length
-  // );
   return (
     <>
       <HeaderOne />
@@ -228,7 +209,6 @@ const ProductPage = () => {
       <div className="lonyo-section-padding10">
         <div className="container">
           <div className="row">
-            {/* --- BAL OLDALI SÁV: DESKTOP SZŰRŐK --- */}
             <div className="col-lg-3 d-none d-lg-block">
               <ProductFilter
                 categories={categories}
@@ -243,10 +223,7 @@ const ProductPage = () => {
                 filterCounts={filterCounts}
               />
             </div>
-
-            {/* --- JOBB OLDALI SÁV: FŐ TARTALOM --- */}
             <div className="col-lg-9">
-              {/* Mobil szűrő gomb */}
               <div className="d-block d-lg-none mb-3">
                 <button
                   className="btn btn-outline-primary w-100"
@@ -255,8 +232,6 @@ const ProductPage = () => {
                   Filter & Sort Products
                 </button>
               </div>
-
-              {/* Felső vezérlőpult: Kereső, Rendezés, Nézetváltó */}
               <ShopToolbar
                 searchTerm={searchTerm}
                 setSearchTerm={setSearchTerm}
@@ -268,18 +243,6 @@ const ProductPage = () => {
                 totalProducts={products.length}
                 currentPage={currentPage}
                 productsPerPage={productsPerPage}
-
-                 selectedCategories={selectedCategories}
-                setSelectedCategories={setSelectedCategories}
-                selectedBrands={selectedBrands}
-                setSelectedBrands={setSelectedBrands}
-                selectedSurfaces={selectedSurfaces}
-                setSelectedSurfaces={setSelectedSurfaces}
-                onClearAll={handleClearAllFilters}
-              />
-
-              {/* Aktív szűrők kijelzése */}
-              {/* <ActiveFilters
                 selectedCategories={selectedCategories}
                 setSelectedCategories={setSelectedCategories}
                 selectedBrands={selectedBrands}
@@ -287,13 +250,7 @@ const ProductPage = () => {
                 selectedSurfaces={selectedSurfaces}
                 setSelectedSurfaces={setSelectedSurfaces}
                 onClearAll={handleClearAllFilters}
-              /> */}
-              {/* <p className="text-muted mb-4">
-                {productCount > 0
-                  ? `Showing ${startItem}–${endItem} of ${productCount} results`
-                  : "No products found"}
-              </p> */}
-              {/* Terméklista */}
+              />
               <div
                 className={`row ${
                   viewMode === "grid"
@@ -317,8 +274,6 @@ const ProductPage = () => {
                   </div>
                 )}
               </div>
-
-              {/* Lapozó (Pagination) */}
               {filteredAndSortedProducts.length > 0 && totalPages > 1 && (
                 <div className="mt-5 d-flex justify-content-center">
                   <ProductPagination
@@ -332,8 +287,6 @@ const ProductPage = () => {
           </div>
         </div>
       </div>
-
-      {/* --- OLDALON KÍVÜLI ELEM: MOBIL SZŰRŐ FIÓK --- */}
       <MobileFilterDrawer
         isOpen={mobileFilterOpen}
         onClose={() => setMobileFilterOpen(false)}

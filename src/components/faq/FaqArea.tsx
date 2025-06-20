@@ -7,99 +7,99 @@ import "aos/dist/aos.css";
 const faq_data1 = [
   {
     delay: 500,
-    question: "Is my financial data safe and secure?",
+    question: "Datele mele financiare sunt sigure?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Da, aplicația folosește criptare la nivel bancar, autentificare multi-factor și alte măsuri de securitate pentru a vă proteja informațiile sensibile.",
   },
   {
     delay: 700,
-    question: "Can I link multiple bank accounts and credit cards?",
+    question: "Pot conecta mai multe conturi bancare și carduri?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Da, puteți conecta mai multe conturi și carduri pentru a vedea toate tranzacțiile într-un singur loc, în siguranță.",
   },
   {
     delay: 900,
-    question: "How does the app help me stick to my budget?",
+    question: "Cum mă ajută aplicația să respect bugetul meu?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Aplicația vă oferă categorii de cheltuieli, alerte și rapoarte care vă ajută să vă mențineți în limitele bugetului stabilit.",
   },
   {
     delay: 1100,
-    question: "Can I track my investments with the app?",
+    question: "Pot urmări investițiile mele în aplicație?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Da, puteți vizualiza și urmări evoluția investițiilor direct din aplicație, într-un tablou de bord dedicat.",
   },
   {
     delay: 1300,
-    question: "Is the app free, or are there subscription fees?",
+    question: "Aplicația este gratuită sau există taxe de abonament?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Aplicația oferă un plan gratuit cu funcționalități de bază, iar pentru opțiuni avansate există planuri cu abonament.",
   },
 ];
 
 const faq_data2 = [
   {
     delay: 500,
-    question: "What is your refund policy?",
+    question: "Care este politica de rambursare?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Oferim rambursări în termen de 14 zile de la activarea abonamentului, conform politicii noastre de returnare.",
   },
   {
     delay: 700,
-    question: "How do you handle my personal and financial data?",
+    question: "Cum sunt gestionate datele mele personale și financiare?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Respectăm toate reglementările privind protecția datelor și utilizăm protocoale avansate pentru a le păstra în siguranță.",
   },
   {
     delay: 900,
-    question: "Is there a contract or commitment?",
+    question: "Există un contract sau un angajament obligatoriu?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Nu, vă puteți abona și dezabona oricând, fără obligații pe termen lung.",
   },
   {
     delay: 1100,
-    question: "What happens if I cancel my subscription?",
+    question: "Ce se întâmplă dacă îmi anulez abonamentul?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Veți păstra accesul la serviciu până la sfârșitul perioadei de facturare curente, fără taxe suplimentare.",
   },
   {
     delay: 1300,
-    question: "Do you comply with data protection regulations?",
+    question: "Respectați reglementările privind protecția datelor?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Da, respectăm GDPR și alte norme relevante pentru protejarea confidențialității dumneavoastră.",
   },
 ];
 
 const faq_data3 = [
   {
     delay: 500,
-    question: "How can I contact support?",
+    question: "Cum pot contacta echipa de suport?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Ne puteți contacta prin formularul de pe site sau prin e-mail la adresa support@exemplu.ro.",
   },
   {
     delay: 700,
-    question: "Do you offer onboarding or training?",
+    question: "Oferiți sesiuni de instruire sau onboarding?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Da, oferim tutoriale, ghiduri și asistență personalizată pentru o tranziție ușoară.",
   },
   {
     delay: 900,
-    question: "Is there a help center or knowledge base?",
+    question: "Aveți un centru de ajutor sau bază de cunoștințe?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Da, găsiți articole utile și întrebări frecvente în centrul nostru de ajutor online.",
   },
   {
     delay: 1100,
-    question: "What should I do if I encounter a technical issue?",
+    question: "Ce fac dacă întâmpin o problemă tehnică?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Contactați echipa noastră de suport și vom încerca să rezolvăm problema cât mai rapid posibil.",
   },
   {
     delay: 1300,
-    question: "Can I request custom features?",
+    question: "Pot solicita funcționalități personalizate?",
     answer:
-      "Yes, this finance apps use bank-level encryption, multi-factor authentication, and other security measures to protect your sensitive information.",
+      "Da, suntem deschiși la sugestii și dezvoltăm funcții noi în funcție de nevoile utilizatorilor.",
   },
 ];
 
@@ -113,16 +113,8 @@ const FaqArea = () => {
   }, []);
 
   useEffect(() => {
-    AOS.refresh(); // Refresh AOS on state change
-  }, [open]);
-
-  useEffect(() => {
-    AOS.refresh(); // Refresh AOS on state change
-  }, [open2]);
-
-  useEffect(() => {
-    AOS.refresh(); // Refresh AOS on state change
-  }, [open3]);
+    AOS.refresh();
+  }, [open, open2, open3]);
 
   return (
     <>
@@ -130,7 +122,7 @@ const FaqArea = () => {
         <div className="container">
           <div className="lonyo-faq-wrap1">
             <div className="lonyo-faq-title">
-              <h2>General FAQs</h2>
+              <h2>Întrebări generale</h2>
             </div>
             {faq_data1.map((item, i) => (
               <div
@@ -152,9 +144,10 @@ const FaqArea = () => {
               </div>
             ))}
           </div>
+
           <div className="lonyo-faq-wrap1">
             <div className="lonyo-faq-title">
-              <h2>Policy FAQs</h2>
+              <h2>Politici și abonamente</h2>
             </div>
             {faq_data2.map((item, i) => (
               <div
@@ -176,9 +169,10 @@ const FaqArea = () => {
               </div>
             ))}
           </div>
+
           <div className="lonyo-faq-wrap1">
             <div className="lonyo-faq-title">
-              <h2>Support FAQs</h2>
+              <h2>Suport tehnic</h2>
             </div>
             {faq_data3.map((item, i) => (
               <div
@@ -200,9 +194,10 @@ const FaqArea = () => {
               </div>
             ))}
           </div>
+
           <div className="faq-btn" data-aos="fade-up" data-aos-duration="700">
-            <Link className="lonyo-default-btn faq-btn2" href="/contact-us">
-              Can't find your answer
+            <Link className="lonyo-default-btn faq-btn2" href="/contact">
+              Nu găsești răspunsul tău?
             </Link>
           </div>
         </div>
