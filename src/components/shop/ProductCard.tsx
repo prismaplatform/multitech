@@ -52,7 +52,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode }) => {
               </p>
               
               <button className="view-details-btn">
-                View Details
+                Vezi detalii
               </button>
             </div>
           </Link>
@@ -108,7 +108,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, viewMode }) => {
               
               <div className="list-actions">
                 <button className="list-view-btn">
-                  View Details →
+                  Vezi detalii →
                 </button>
               </div>
             </div>

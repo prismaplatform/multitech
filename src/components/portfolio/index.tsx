@@ -6,15 +6,15 @@ import Breadcrumb from "@/common/Breadcrumb";
 import PortfolioArea from "./PortfolioArea";
 
 const Portfolio = () => {
-	return (
-		<>
-			<HeaderOne />
-      <Breadcrumb title="Portfolio" subtitle="Portfolio" />
+  return (
+    <>
+      <HeaderOne />
+      <Breadcrumb title="Industrii" subtitle="Industrii" />
       <PortfolioArea />
-			<CtaAreaHomeOne style_2={true} />
-			<FooterOne />
-		</>
-	);
+      <CtaAreaHomeOne/>
+      <FooterOne />
+    </>
+  );
 };
 
 export default Portfolio;

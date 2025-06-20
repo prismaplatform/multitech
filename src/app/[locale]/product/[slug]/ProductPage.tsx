@@ -33,62 +33,64 @@ const ProductPage = () => {
 
   // Mock data
   const product = {
-    id: "excavator-cx210d",
-    name: "CX210D Hidraulikus Kotrógép",
-    category: "Nehéz Építőipari Gépek",
-    brand: "Industrial Pro",
-    model: "CX210D-2024",
-    description: "Fejlett 21 tonnás hidraulikus kotrógép, amely maximális hatékonyságot és teljesítményt biztosít a legkihívásbb építőipari környezetekben. Korszerű hidraulika technológiával és kiváló üzemanyag-gazdaságossággal.",
-    keyFeatures: [
-      "21 tonnás működési súly",
-      "Tier 4 Final megfelelő motor",
-      "Fejlett hidraulikus rendszer", 
-      "360° forgatási képesség",
-      "Klímavezérelt kabin",
-      "GPS követésre felkészített"
-    ],
-    specifications: {
-      "Működési súly": "21,000 kg",
-      "Motor teljesítmény": "159 kW (213 LE)",
-      "Kanál kapacitás": "1.0 m³",
-      "Max. ásási mélység": "6.5 m",
-      "Max. nyúlás": "10.1 m",
-      "Utazási sebesség": "5.5 km/h"
+  id: "excavator-cx210d",
+  name: "Videojet 9560",
+  category: "Inkjet Caractere Mici (CIJ)",
+  brand: "Videojet",
+  model: "9560",
+  description:
+    "Cu noua imprimantă Videojet 1280, Videojet redefinește fiabilitatea și simplitatea în utilizare. De la interfața intuitivă până la caracteristicile de design inteligent, imprimanta Videojet 1280 cu jet continuu de cerneală (Continuous InkJet) poate fi utilizată cu ușurință de orice operator.",
+  keyFeatures: [
+    "Greutate operațională de 21 tone",
+    "Motor conform standardului Tier 4 Final",
+    "Sistem hidraulic avansat",
+    "Capacitate de rotație de 360°",
+    "Cabină cu control climatic",
+    "Pregătit pentru urmărire GPS"
+  ],
+  specifications: {
+    "Greutate operațională": "21.000 kg",
+    "Putere motor": "159 kW (213 CP)",
+    "Capacitate cupă": "1,0 m³",
+    "Adâncime maximă de săpare": "6,5 m",
+    "Rază maximă de acțiune": "10,1 m",
+    "Viteză de deplasare": "5,5 km/h"
+  },
+  images: [
+    "https://www.multitech.ro/wp-content/uploads/2024/07/cat_videojet_lpa.jpg",
+    "https://www.multitech.ro/wp-content/uploads/2024/07/cat_videojet_lcm.jpg",
+    "https://www.multitech.ro/wp-content/uploads/2014/01/cat_videojet_tto.jpg",
+    "https://www.multitech.ro/wp-content/uploads/2014/01/cat_videojet_tij.jpg"
+  ],
+  documents: [
+    { name: "Specificații tehnice", type: "PDF", size: "2.3 MB" },
+    { name: "Manual de instalare", type: "PDF", size: "4.1 MB" },
+    { name: "Ghid de întreținere", type: "PDF", size: "3.7 MB" },
+    { name: "Instrucțiuni de siguranță", type: "PDF", size: "1.8 MB" }
+  ],
+  usageLocations: [
+    { location: "Șantier Budapesta", project: "Extinderea liniei de metrou", date: "2024" },
+    { location: "Parcul Industrial Debrecen", project: "Complex depozitare", date: "2023" },
+    { location: "Infrastructura Szeged", project: "Construcție pod", date: "2024" }
+  ],
+  reviews: [
+    {
+      author: "János Kovács",
+      company: "BuildCorp Kft.",
+      rating: 5,
+      text: "Performanță și fiabilitate excepționale. Eficiența consumului de combustibil este excelentă comparativ cu echipamentele noastre anterioare.",
+      date: "2024-02-15"
     },
-    images: [
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600", 
-      "/api/placeholder/800/600",
-      "/api/placeholder/800/600"
-    ],
-    documents: [
-      { name: "Műszaki specifikációk", type: "PDF", size: "2.3 MB" },
-      { name: "Telepítési kézikönyv", type: "PDF", size: "4.1 MB" },
-      { name: "Karbantartási útmutató", type: "PDF", size: "3.7 MB" },
-      { name: "Biztonsági utasítások", type: "PDF", size: "1.8 MB" }
-    ],
-    usageLocations: [
-      { location: "Budapest Építkezés", project: "Metró Vonal Bővítés", date: "2024" },
-      { location: "Debrecen Ipari Park", project: "Raktár Komplexum", date: "2023" },
-      { location: "Szegedi Infrastruktúra", project: "Híd Építés", date: "2024" }
-    ],
-    reviews: [
-      { 
-        author: "Kovács János", 
-        company: "BuildCorp Kft.", 
-        rating: 5, 
-        text: "Kivételes teljesítmény és megbízhatóság. Az üzemanyag-hatékonyság kiváló a korábbi berendezéseinkhez képest.",
-        date: "2024-02-15"
-      },
-      { 
-        author: "Nagy Péter", 
-        company: "Építés Mesterek", 
-        rating: 5, 
-        text: "Tökéletes a nehéz projekteinkhez. A hidraulikus rendszer hihetetlenül sima és érzékeny.",
-        date: "2024-01-28"
-      }
-    ]
-  };
+    {
+      author: "Péter Nagy",
+      company: "Építés Mesterek",
+      rating: 5,
+      text: "Perfect pentru proiectele noastre dificile. Sistemul hidraulic este incredibil de lin și receptiv.",
+      date: "2024-01-28"
+    }
+  ]
+};
+
 
   const relatedProducts = [
     { id: 1, name: "CX160D Kotrógép", image: "/api/placeholder/300/200", category: "Nehéz Gépek" },
@@ -163,10 +165,10 @@ const ProductPage = () => {
 
               <div className="d-flex flex-column flex-md-row gap-3 gap-md-4 mb-4 text-muted">
                 <div>
-                  <strong>Márka:</strong> {product.brand}
+                  <strong>Marca:</strong> {product.brand}
                 </div>
                 <div>
-                  <strong>Modell:</strong> {product.model}
+                  <strong>Model:</strong> {product.model}
                 </div>
               </div>
 
@@ -181,7 +183,7 @@ const ProductPage = () => {
                   onClick={handleAddToCart}
                 >
                   <ShoppingCart size={18} />
-                  Kosárhóz adás
+                  Adaugă în coș
                 </button>
                 <button
                   className={`btn-icon d-flex align-items-center justify-content-center ${isFavorite ? 'active' : ''}`}
@@ -197,9 +199,9 @@ const ProductPage = () => {
               {/* Service Badges */}
               <div className="d-flex flex-wrap gap-3 mb-4">
                 {[
-                  { icon: Truck, text: 'Ingyenes szállítás' },
-                  { icon: Shield, text: '2 év garancia' },
-                  { icon: Wrench, text: 'Telepítési szolgáltatás' }
+                  { icon: Truck, text: 'Livrare gratuită' },
+                  { icon: Shield, text: '2 ani garanție' },
+                  { icon: Wrench, text: 'Serviciul de instalare' }
                 ].map((service, index) => (
                   <div key={index} className="service-badge px-3 py-2 d-flex align-items-center gap-2">
                     <service.icon size={16} />
@@ -209,8 +211,8 @@ const ProductPage = () => {
               </div>
 
               {/* Key Features */}
-              <h4 className="mb-3">Főbb jellemzők</h4>
-              <div className="row g-2">
+              {/* <h4 className="mb-3">Főbb jellemzők</h4> */}
+              {/* <div className="row g-2">
                 {product.keyFeatures.map((feature, index) => (
                   <div key={index} className="col-12 col-xl-6">
                     <div className="feature-item p-3 d-flex align-items-center gap-2">
@@ -219,7 +221,7 @@ const ProductPage = () => {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -227,11 +229,11 @@ const ProductPage = () => {
           <div className="tabs-container mb-5">
             <div className="tabs-nav d-flex">
               {[
-                { id: 'description', label: 'Leírás', icon: FileText },
-                { id: 'specifications', label: 'Specifikációk', icon: Award },
-                { id: 'documents', label: 'Dokumentumok', icon: Download },
-                { id: 'locations', label: 'Használati helyek', icon: MapPin },
-                { id: 'reviews', label: 'Értékelések', icon: Star }
+                { id: 'description', label: 'Descriere', icon: FileText },
+                { id: 'specifications', label: 'Specificații', icon: Award },
+                { id: 'documents', label: 'Documente', icon: Download },
+                { id: 'locations', label: 'Locuri de utilizare', icon: MapPin },
+                { id: 'reviews', label: 'Recenzii', icon: Star }
               ].map(tab => (
                 <button
                   key={tab.id}
@@ -247,19 +249,21 @@ const ProductPage = () => {
             <div className="p-3 p-lg-4">
               {activeTab === 'description' && (
                 <div>
-                  <h4 className="mb-3">Termék leírás</h4>
+                  <h4 className="mb-3">Descriere</h4>
                   <p className="fs-5 lh-base mb-3">
-                    {product.description}
+                   Cu noua imprimantă Videojet 1280, Videojet redefinește fiabilitatea și simplitatea în utilizare. De la interfața intuitivă și până la caracteristicile de design inteligent, imprimanta Videojet 1280 cu jet continuu de cerneală (Continuous InkJet) se poate utiliza cu ușurință de către orice operator.</p>
+                  <p className="fs-5 lh-base mb-3">
+                   Imprimanta dispune de interfața SIMPLICiTY™, o interfață intuitivă cu ecran tactil de 8” inspirată de la tablete, care reduce considerabil interacțiunile operatorului cu imprimanta pentru a ajuta la eliminarea erorilor potențiale.
                   </p>
                   <p className="lh-base">
-                    Ez a korszerű kotrógép egyesíti az erőt, hatékonyságot és megbízhatóságot, hogy megbirkózzon a legkihívásabb építési és földmunkákkal. Prémium alkatrészekkel és fejlett mérnöki munkával építve kivételes teljesítményt nyújt, miközben alacsony működési költségeket tart fenn.
+                   Sistemul fără mizerie, fără risipă, fără greșeli Videojet Smart Cartridge™, se asigură de eliminarea fluidelor din cartușe și oferă o protecție suplimentară împotriva scurgerilor în timpul transportului și a manipulării. În combinație cu Videojet SmartCell™, nu există scurgeri de deșeuri periculoase de care să vă faceți griji, contribuind la simplificarea întreținerii de rutină.
                   </p>
                 </div>
               )}
 
               {activeTab === 'specifications' && (
                 <div>
-                  <h4 className="mb-3">Műszaki specifikációk</h4>
+                  <h4 className="mb-3">Specificații</h4>
                   <div className="row g-3">
                     {Object.entries(product.specifications).map(([key, value]) => (
                       <div key={key} className="col-12 col-lg-6">
@@ -275,7 +279,7 @@ const ProductPage = () => {
 
               {activeTab === 'documents' && (
                 <div>
-                  <h4 className="mb-3">Dokumentumok letöltése</h4>
+                  <h4 className="mb-3">Documente</h4>
                   <div className="row g-3">
                     {product.documents.map((doc, index) => (
                       <div key={index} className="col-12 col-md-6 col-xl-4">
@@ -302,7 +306,7 @@ const ProductPage = () => {
 
               {activeTab === 'locations' && (
                 <div>
-                  <h4 className="mb-3">Használati helyek</h4>
+                  <h4 className="mb-3">Locuri de utilizare</h4>
                   {product.usageLocations.map((location, index) => (
                     <div key={index} className="location-card p-3 mb-3">
                       <div className="d-flex justify-content-between align-items-start mb-2">
@@ -311,7 +315,7 @@ const ProductPage = () => {
                           {location.date}
                         </span>
                       </div>
-                      <p className="mb-0 text-muted">Projekt: {location.project}</p>
+                      <p className="mb-0 text-muted">Project: {location.project}</p>
                     </div>
                   ))}
                 </div>
@@ -319,7 +323,7 @@ const ProductPage = () => {
 
               {activeTab === 'reviews' && (
                 <div>
-                  <h4 className="mb-3">Vásárlói értékelések</h4>
+                  <h4 className="mb-3">Recenzii</h4>
                   {product.reviews.map((review, index) => (
                     <div key={index} className="review-card p-3 mb-3">
                       <div className="d-flex justify-content-between align-items-start mb-3">
@@ -348,7 +352,7 @@ const ProductPage = () => {
           </div>
 
           {/* Related Products */}
-          <div className="bg-white rounded-4 shadow-sm p-4">
+          {/* <div className="bg-white rounded-4 shadow-sm p-4">
             <h4 className="mb-1">Kapcsolódó termékek</h4>
             <p className="text-muted mb-4">Ezek a termékek is érdekelhetik</p>
             <div className="row g-4">
@@ -369,7 +373,7 @@ const ProductPage = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -29,7 +29,7 @@ const HeroAreaHomeOne = () => {
                   data-aos="fade-up"
                   data-aos-duration="900"
                 >
-                  <Link href="/sign-up" className="lonyo-default-btn hero-btn">
+                  <Link href="/about-us" className="lonyo-default-btn hero-btn">
                    Mai departe
                   </Link>
                 </div>

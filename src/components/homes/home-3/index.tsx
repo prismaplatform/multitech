@@ -20,7 +20,7 @@ const HomeThree = () => {
       <FinancialDecisionsHomeTwo style_2={true} />
       <SpendingSmarterAreaHomeThree />
       <VideoAreaHomeOne style_2={true} />
-      <FinancialUpdateHomeOne style_2={true} />
+      <FinancialUpdateHomeOne  />
       <BrandAreaHomeThree />
       <BlogAreaHomeThree />
       <CtaAreaHomeThree />

@@ -9,7 +9,7 @@ const Product = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title="Hidraulikus Kotrógép" subtitle="Product" />
+      <Breadcrumb title="Videojet 9560" subtitle="Produse" />
       <ProductPage />
       {/* <CtaAreaHomeOne style_2={true} /> */}
       <FooterOne />

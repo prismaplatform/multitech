@@ -26,9 +26,17 @@ const Breadcrumb = ({ title, subtitle }: any) => {
           </div>
         </div>
       </div>
-       <div className="lonyo-content-shape">
-          <img src="/assets/images/shape/shape2_rotate.svg" alt="" />
-        </div>
+
+        <div
+        className="lonyo-content-shape"
+        style={{
+          height: "25px",
+          backgroundImage: "url('/assets/images/shape/shape2_rotate.svg')", // Corrected URL syntax
+          backgroundSize: "cover", // Ensure the image covers the area
+          backgroundPosition: "left", // Center the background image
+          backgroundRepeat: "no-repeat", // Prevent image repetition
+        }}
+      ></div>
     </>
   );
 };

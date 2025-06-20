@@ -10,7 +10,7 @@ const AboutTeam = () => {
         </div>
         <div className="container">
           <div className="lonyo-section-title center max-width-750">
-            <h2>We always believe in the strength of our team</h2>
+            <h2>Echipa noastră</h2>
           </div>
           <div className="row">
             <div className="col-lg-3 col-md-6">

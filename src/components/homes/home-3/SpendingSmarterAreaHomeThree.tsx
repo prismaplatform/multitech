@@ -79,9 +79,16 @@ const SpendingSmarterAreaHomeThree = () => {
 
   return (
     <>
-      <div className="lonyo-content-shape1">
-        <img src="/assets/images/shape/shape1.svg" alt="" />
-      </div>
+ <div
+        className="lonyo-content-shape1"
+        style={{
+          height: "105px",
+          backgroundImage: "url('/assets/images/shape/shape1.svg')", // Corrected URL syntax
+          backgroundSize: "cover", // Ensure the image covers the area
+          backgroundPosition: "left", // Center the background image
+          backgroundRepeat: "no-repeat", // Prevent image repetition
+        }}
+      ></div>
       <div className="lonyo-section-padding2">
         <div className="container">
           <div className="lonyo-default-content">
@@ -147,9 +154,16 @@ const SpendingSmarterAreaHomeThree = () => {
           </div>
         </div>
       </div>
-      <div className="lonyo-content-shape3">
-        <img src="/assets/images/shape/shape2.svg" alt="" />
-      </div>
+     <div
+        className="lonyo-content-shape3"
+        style={{
+          height: "25px",
+          backgroundImage: "url('/assets/images/shape/shape2.svg')", // Corrected URL syntax
+          backgroundSize: "cover", // Ensure the image covers the area
+          backgroundPosition: "center", // Center the background image
+          backgroundRepeat: "no-repeat", // Prevent image repetition
+        }}
+      ></div>
     </>
   );
 };

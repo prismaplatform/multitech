@@ -65,7 +65,7 @@ const FinancialUpdateHomeOne = () => {
                       </li>
                     ))}
                   </ul>
-                    <Link href="/sign-up" className="lonyo-default-btn hero-btn mt-4">
+                    <Link href="/" className="lonyo-default-btn hero-btn mt-4">
                   Vedeți toate evenimentele
                   </Link>
                 </div>

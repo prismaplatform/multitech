@@ -62,11 +62,11 @@ const ModernCartPage = () => {
   const validateForm = () => {
     const errors: { [key: string]: string } = {};
 
-    if (!form.name.trim()) errors.name = "Név megadása kötelező";
-    if (!form.email.trim()) errors.email = "Email megadása kötelező";
+    if (!form.name.trim()) errors.name = "Este obligatoriu să introduceți numele";
+    if (!form.email.trim()) errors.email = "Este obligatoriu să introduceți email-ul";
     else if (!/\S+@\S+\.\S+/.test(form.email))
-      errors.email = "Érvénytelen email formátum";
-    if (!form.phone.trim()) errors.phone = "Telefonszám megadása kötelező";
+      errors.email = "Format de email invalid";
+    if (!form.phone.trim()) errors.phone = "Este obligatoriu să introduceți numărul de telefon";
 
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
@@ -76,7 +76,7 @@ const ModernCartPage = () => {
     e.preventDefault();
 
     if (!validateForm()) {
-      showNotification("Kérjük töltse ki a kötelező mezőket!");
+      showNotification("Vă rugăm să completați câmpurile obligatorii!");
       return;
     }
 
@@ -86,7 +86,7 @@ const ModernCartPage = () => {
     setTimeout(() => {
       console.log("Form submitted:", form);
       console.log("Cart items:", cartItems);
-      showNotification("Ajánlatkérés sikeresen elküldve!");
+      showNotification("Cererea de ofertă a fost trimisă cu succes!");
       setIsSubmitting(false);
 
       // Reset form
@@ -103,33 +103,33 @@ const ModernCartPage = () => {
   };
 
   const exportToPDF = () => {
-    showNotification("PDF letöltés kezdődik...");
+    showNotification("Descărcarea PDF-ului începe...");
     // Implement PDF export logic
   };
 
   const shareCart = () => {
     navigator.clipboard.writeText(window.location.href);
-    showNotification("Kosár link másolva!");
+    showNotification("Link-ul coșului a fost copiat!");
   };
 
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-  const estimatedDelivery = "3-5 munkanap";
+  const estimatedDelivery = "3-5 zile lucrătoare";
 
   // Mock recommended products
   const recommendedProducts = [
     {
       id: "rec1",
-      name: "Hidraulikus tömlő szett",
+      name: "Set furtunuri hidraulice",
       image: "/api/placeholder/150/100",
     },
     {
       id: "rec2",
-      name: "Karbantartási csomag",
+      name: "Pachet de mentenanță",
       image: "/api/placeholder/150/100",
     },
     {
       id: "rec3",
-      name: "Biztonsági felszerelés",
+      name: "Echipament de siguranță",
       image: "/api/placeholder/150/100",
     },
   ];
@@ -146,22 +146,22 @@ const ModernCartPage = () => {
               </div>
             </div>
 
-            <h2 className="empty-title">A kosár üres</h2>
+            <h2 className="empty-title">Coșul este gol</h2>
             <p className="empty-subtitle">
-              Kezdj el vásárolni és válassz a kiváló termékek közül!
+              Începe să cumperi și alege dintre produsele excelente!
             </p>
 
             <div className="empty-actions">
               <button className="btn-primary-custom">
                 <Package size={18} />
-                Termékek böngészése
+                Căutare produse
               </button>
             </div>
           </div>
 
           {/* Recommended Products */}
           {/* <div className="recommended-section">
-            <h3 className="recommended-title">Ajánlott termékek</h3>
+            <h3 className="recommended-title">Produse recomandate</h3>
             <div className="row g-4">
               {recommendedProducts.map((product) => (
                 <div key={product.id} className="col-md-4">
@@ -171,7 +171,7 @@ const ModernCartPage = () => {
                       <h4>{product.name}</h4>
                       <button className="btn-outline-custom">
                         <Plus size={16} />
-                        Hozzáadás
+                        Adaugă
                       </button>
                     </div>
                   </div>
@@ -191,19 +191,19 @@ const ModernCartPage = () => {
         <div className="cart-header-section">
           <div className="cart-header-content">
             <div className="cart-header-info">
-              <h3>Kosár</h3>
+              <h3>Coș</h3>
               <p className="cart-subtitle">
-                Válassz az alábbi lehetőségek közül
+                Alege dintre opțiunile de mai jos
               </p>
             </div>
             <div className="cart-header-actions">
               <button onClick={shareCart} className="header-action-btn">
                 <Share2 size={18} />
-                Megosztás
+                Partajare
               </button>
               <button onClick={exportToPDF} className="header-action-btn">
                 <Download size={18} />
-                PDF export
+                Export PDF
               </button>
             </div>
           </div>
@@ -221,7 +221,7 @@ const ModernCartPage = () => {
                 >
                   <div className="item-image-section">
                     <img
-                      src={item.image || "/api/placeholder/120/120"}
+                      src={item.image || "https://www.multitech.ro/wp-content/uploads/2024/07/cat_videojet_lpa.jpg"}
                       alt={item.name}
                     />
                    
@@ -232,10 +232,10 @@ const ModernCartPage = () => {
                       <h3 className="item-name">{item.name}</h3>
                       <div className="item-meta">
                         <span className="service-badge px-3 py-2 d-flex align-items-center gap-2">
-                          {item.category || "Építőipari gép"}
+                          {item.category || "Mașină de construcții"}
                         </span>
                         <span className="item-model align-items-center d-flex">
-                          Modell: {item.model || "CX210D"}
+                          Model: {item.model || "CX210D"}
                         </span>
                       </div>
                     </div>
@@ -244,7 +244,7 @@ const ModernCartPage = () => {
 
                     <div className="item-actions">
                       <div className="quantity-section">
-                        <span className="quantity-label">Mennyiség</span>
+                        <span className="quantity-label">Cantitate</span>
                         <div className="quantity-controls">
                           <button
                             className="quantity-btn decrease"
@@ -268,7 +268,7 @@ const ModernCartPage = () => {
                          <button
                         className="remove-btn"
                         onClick={() => removeFromCart(item.id)}
-                        title="Eltávolítás"
+                        title="Eliminare"
                       >
                         <Trash2 size={16} />
                         <div className="remove-ripple"></div>
@@ -286,34 +286,34 @@ const ModernCartPage = () => {
             <div className="cart-summary-section">
               {/* Summary Card */}
               <div className="summary-card">
-                <h3 className="summary-title">Összesítő</h3>
+                <h3 className="summary-title">Sumar</h3>
                 <div className="summary-items">
                   <div className="summary-row">
-                    <span>Termékek száma:</span>
-                    <span className="summary-value">{totalItems} db</span>
+                    <span>Numărul de produse:</span>
+                    <span className="summary-value">{totalItems} buc</span>
                   </div>
                   <div className="summary-row">
-                    <span>Becsült szállítás:</span>
+                    <span>Livrare estimată:</span>
                     <span className="summary-value">{estimatedDelivery}</span>
                   </div>
                   <div className="summary-row">
-                    <span>Szállítási költség:</span>
-                    <span className="summary-value free">Ingyenes</span>
+                    <span>Cost de transport:</span>
+                    <span className="summary-value free">Gratuit</span>
                   </div>
                 </div>
 
                 <div className="summary-features">
                   <div className="feature-item">
                     <Shield size={16} />
-                    <span>Garancia minden termékre</span>
+                    <span>Garanție pentru toate produsele</span>
                   </div>
                   <div className="feature-item">
                     <Truck size={16} />
-                    <span>Profi telepítési szolgáltatás</span>
+                    <span>Serviciu de instalare profesional</span>
                   </div>
                   <div className="feature-item">
                     <Star size={16} />
-                    <span>Prémium ügyfélszolgálat</span>
+                    <span>Serviciul clienți premium</span>
                   </div>
                 </div>
               </div>
@@ -325,9 +325,9 @@ const ModernCartPage = () => {
                     <FileText size={24} />
                   </div>
                   <div>
-                    <h3 className="form-title">Ajánlatkérés</h3>
+                    <h3 className="form-title">Cerere de ofertă</h3>
                     <p className="form-subtitle">
-                      Töltse ki az adatokat az egyedi ajánlatért
+                      Completați datele pentru o ofertă personalizată
                     </p>
                   </div>
                 </div>
@@ -336,7 +336,7 @@ const ModernCartPage = () => {
                   <div className="form-group">
                     <label className="form-label">
                       <User size={16} />
-                      Teljes név *
+                      Nume complet *
                     </label>
                     <input
                       type="text"
@@ -344,7 +344,7 @@ const ModernCartPage = () => {
                       className={`form-input ${formErrors.name ? "error" : ""}`}
                       value={form.name}
                       onChange={handleChange}
-                      placeholder="Kovács János"
+                      placeholder="Ion Popescu"
                     />
                     {formErrors.name && (
                       <span className="error-text">{formErrors.name}</span>
@@ -354,7 +354,7 @@ const ModernCartPage = () => {
                   <div className="form-group">
                     <label className="form-label">
                       <Building size={16} />
-                      Cégnév
+                      Numele companiei
                     </label>
                     <input
                       type="text"
@@ -362,7 +362,7 @@ const ModernCartPage = () => {
                       className="form-input"
                       value={form.company}
                       onChange={handleChange}
-                      placeholder="Építő Kft."
+                      placeholder="Construcții SRL"
                     />
                   </div>
 
@@ -380,7 +380,7 @@ const ModernCartPage = () => {
                         }`}
                         value={form.email}
                         onChange={handleChange}
-                        placeholder="kovacs@email.hu"
+                        placeholder="ion@email.ro"
                       />
                       {formErrors.email && (
                         <span className="error-text">{formErrors.email}</span>
@@ -400,7 +400,7 @@ const ModernCartPage = () => {
                         }`}
                         value={form.phone}
                         onChange={handleChange}
-                        placeholder="+36 30 123 4567"
+                        placeholder="+40 720 123 456"
                       />
                       {formErrors.phone && (
                         <span className="error-text">{formErrors.phone}</span>
@@ -411,14 +411,14 @@ const ModernCartPage = () => {
                   <div className="form-group">
                     <label className="form-label">
                       <MessageSquare size={16} />
-                      Megjegyzés
+                      Observații
                     </label>
                     <textarea
                       name="message"
                       className="form-textarea"
                       value={form.message}
                       onChange={handleChange}
-                      placeholder="További információk, speciális igények..."
+                      placeholder="Informații suplimentare, cerințe speciale..."
                       rows={3}
                     />
                   </div>
@@ -426,7 +426,7 @@ const ModernCartPage = () => {
                   <div className="form-row">
                     <div className="form-group">
                       <label className="form-label">
-                        Kapcsolatfelvétel módja
+                        Metoda de contact
                       </label>
                       <select
                         name="preferredContact"
@@ -436,21 +436,21 @@ const ModernCartPage = () => {
                       >
                         <option value="email">Email</option>
                         <option value="phone">Telefon</option>
-                        <option value="both">Mindkettő</option>
+                        <option value="both">Ambele</option>
                       </select>
                     </div>
 
                     <div className="form-group">
-                      <label className="form-label">Sürgősség</label>
+                      <label className="form-label">Urgență</label>
                       <select
                         name="urgency"
                         className="form-select"
                         value={form.urgency}
                         onChange={handleChange}
                       >
-                        <option value="normal">Normál</option>
-                        <option value="urgent">Sürgős</option>
-                        <option value="asap">Azonnal</option>
+                        <option value="normal">Normal</option>
+                        <option value="urgent">Urgent</option>
+                        <option value="asap">Imediat</option>
                       </select>
                     </div>
                   </div>
@@ -463,12 +463,12 @@ const ModernCartPage = () => {
                     {isSubmitting ? (
                       <>
                         <div className="loading-spinner"></div>
-                        Küldés...
+                        Se trimite...
                       </>
                     ) : (
                       <>
                         <Calculator size={18} />
-                        Ajánlat kérése
+                        Cerere de ofertă
                         <ArrowRight size={16} />
                       </>
                     )}

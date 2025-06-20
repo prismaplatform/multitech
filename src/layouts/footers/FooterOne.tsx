@@ -12,9 +12,16 @@ const FooterOne = ({ style_2 }: any) => {
   style_2 = 1;
   return (
     <>
-      <div className="lonyo-content-shape3">
-        <img src="/assets/images/shape/shape2.svg" alt="" />
-      </div>
+      <div
+        className="lonyo-content-shape3"
+        style={{
+          height: "25px",
+          backgroundImage: "url('/assets/images/shape/shape2.svg')", // Corrected URL syntax
+          backgroundSize: "cover", // Ensure the image covers the area
+          backgroundPosition: "center", // Center the background image
+          backgroundRepeat: "no-repeat", // Prevent image repetition
+        }}
+      ></div>
       <footer className="lonyo-footer-section">
         <div className="container">
           <div className="lonyo-footer-one">
@@ -34,7 +41,9 @@ const FooterOne = ({ style_2 }: any) => {
                     </Link>
                   </div>
                   <p>
-                    Soluții integrate de marcare, etichetare și automatizare pentru linii de producție: orice produs, orice industrie. Livrare din stoc și service în 24h.
+                    Soluții integrate de marcare, etichetare și automatizare
+                    pentru linii de producție: orice produs, orice industrie.
+                    Livrare din stoc și service în 24h.
                   </p>
 
                   <div className="lonyo-social-wrap2">
@@ -70,48 +79,85 @@ const FooterOne = ({ style_2 }: any) => {
               </div>
               <div className="col-xxl-3 col-xl-4 col-md-6">
                 <div className={`lonyo-footer-menu ${style_2 ? "menu2" : ""}`}>
-                <div className="footer-menu">
-                  <h4>Produse</h4>
-                  <ul>
-                    <li><Link href="/videojet">Videojet – Marcare</Link></li>
-                    <li><Link href="/foba">Foba – Marcare Laser</Link></li>
-                    <li><Link href="/couth">Couth – Micropercuție</Link></li>
-                    <li><Link href="/eidos">Eidos – Transfer Termic</Link></li>
-                    <li><Link href="/etipack">Etipack – Etichetare</Link></li>
-                    <li><Link href="/novexx">Novexx – Etichetare</Link></li>
-                    <li><Link href="/bofa">Bofa – Filtrare Fum</Link></li>
-                    <li><Link href="/ur">UR – Brațe Robotizate</Link></li>
-                    <li><Link href="/mir">MiR – Roboți Mobili</Link></li>
-                    <li><Link href="/consumabile">Consumabile</Link></li>
-                  </ul>
-                </div>
+                  <div className="footer-menu">
+                    <h4>Produse</h4>
+                    <ul>
+                      <li>
+                        <Link href="/videojet">Videojet – Marcare</Link>
+                      </li>
+                      <li>
+                        <Link href="/foba">Foba – Marcare Laser</Link>
+                      </li>
+                      <li>
+                        <Link href="/couth">Couth – Micropercuție</Link>
+                      </li>
+                      <li>
+                        <Link href="/eidos">Eidos – Transfer Termic</Link>
+                      </li>
+                      <li>
+                        <Link href="/etipack">Etipack – Etichetare</Link>
+                      </li>
+                      <li>
+                        <Link href="/novexx">Novexx – Etichetare</Link>
+                      </li>
+                      <li>
+                        <Link href="/bofa">Bofa – Filtrare Fum</Link>
+                      </li>
+                      <li>
+                        <Link href="/ur">UR – Brațe Robotizate</Link>
+                      </li>
+                      <li>
+                        <Link href="/mir">MiR – Roboți Mobili</Link>
+                      </li>
+                      <li>
+                        <Link href="/consumabile">Consumabile</Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div className="col-xxl-2 col-xl-4 col-md-6">
-                <div
-                  className="lonyo-footer-menu pl-30 menu2"
-                   
-                >
+                <div className="lonyo-footer-menu pl-30 menu2">
                   <h4>Aplicații</h4>
                   <ul>
-                    <li><Link href="/automatizare">Automatizare</Link></li>
-                    <li><Link href="/marcare-plastic">Marcare Plastic</Link></li>
-                    <li><Link href="/marcare-metal">Marcare Metal</Link></li>
-                    <li><Link href="/marcare-sticla">Marcare Sticlă</Link></li>
-                    <li><Link href="/marcare-alte-materiale">Marcare Alte Materiale</Link></li>
+                    <li>
+                      <Link href="/automatizare">Automatizare</Link>
+                    </li>
+                    <li>
+                      <Link href="/marcare-plastic">Marcare Plastic</Link>
+                    </li>
+                    <li>
+                      <Link href="/marcare-metal">Marcare Metal</Link>
+                    </li>
+                    <li>
+                      <Link href="/marcare-sticla">Marcare Sticlă</Link>
+                    </li>
+                    <li>
+                      <Link href="/marcare-alte-materiale">
+                        Marcare Alte Materiale
+                      </Link>
+                    </li>
                   </ul>
-                  
                 </div>
-                 <div
-                  className="lonyo-footer-menu pl-30 menu2"
-                   
-                >
-                <h4 className="mt-4">Industrii</h4>
+                <div className="lonyo-footer-menu pl-30 menu2">
+                  <h4 className="mt-4">Industrii</h4>
                   <ul>
-                    <li><Link href="/alimente-bauturi">Alimente și Băuturi</Link></li>
-                    <li><Link href="/industrii-prelucrătoare">Industrii Prelucrătoare</Link></li>
-                    <li><Link href="/farma-larg-consum">Farma și Larg Consum</Link></li>
-                    <li><Link href="/alte-industrii">Alte Industrii</Link></li>
+                    <li>
+                      <Link href="/alimente-bauturi">Alimente și Băuturi</Link>
+                    </li>
+                    <li>
+                      <Link href="/industrii-prelucrătoare">
+                        Industrii Prelucrătoare
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/farma-larg-consum">
+                        Farma și Larg Consum
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/alte-industrii">Alte Industrii</Link>
+                    </li>
                   </ul>
                 </div>
               </div>

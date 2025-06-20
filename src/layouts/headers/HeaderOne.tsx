@@ -1,29 +1,63 @@
 // components/HeaderOne.tsx
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import OffCanvas from "@/common/OffCanvas";
-import menu_data from "@/data/menu-data"; // Ensure this path is correct
+import menu_data from "@/data/menu-data";
 import useSticky from "@/hooks/use-sticky";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { locales } from "@/i18n/routing";
 import CartDropdown from "@/components/CartDropdown/CartDropdown";
-import { ShoppingCart } from "lucide-react";
-import { useNotification } from "@/context/NotificationContext"; // Assuming useNotification is needed for cart drawer
-
+import { ShoppingCart, ChevronDown } from "lucide-react";
+import { useNotification } from "@/context/NotificationContext";
+import Image from "next/image";
+import { useLocale } from 'next-intl';
 const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
   const { sticky } = useSticky();
   const router = useRouter();
   const pathname = usePathname();
   const { showCartDrawer } = useNotification();
+  const languageDropdownRef = useRef<HTMLDivElement>(null);
+  const currentLocale = useLocale();
+
+  // Aktuális nyelv meghatározása
+
+
+  // Nyelv konfigurációk zászlókkal és nevekkel
+const languageConfig = {
+  en: { flag: '/assets/images/flags/en.png', name: 'En' },
+  ro: { flag: '/assets/images/flags/ro.webp', name: 'Ro' },
+  hu: { flag: '/assets/images/flags/hu.webp', name: 'Hu' }
+};
+
+  // Kívülre kattintás kezelése a nyelv dropdownhoz
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (languageDropdownRef.current && !languageDropdownRef.current.contains(event.target as Node)) {
+        setLanguageDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const changeLocale = (locale: string) => {
     router.push(pathname, { locale });
+    setLanguageDropdownOpen(false);
   };
 
   const handleCartClick = () => {
-    showCartDrawer(); // Modern drawer megnyitása
+    showCartDrawer();
+  };
+
+  // Aktív menüpont ellenőrzése
+  const isActive = (href: string) => {
+    return pathname === href;
   };
 
   return (
@@ -40,7 +74,7 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
       >
         <div className="container">
           <div className="row gx-3 align-items-center justify-content-between">
-            <div className="col-8 col-sm-auto">
+            <div className="col-6 col-sm-auto">
               <div className="header-logo1">
                 <Link href="/">
                   {style_2 ? (
@@ -53,18 +87,18 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
             </div>
             <div className="col">
               <div className="lonyo-main-menu-item">
-                <nav className="main-menu menu-style1 d-none d-lg-block menu-left">
-                  <ul>
+                <nav className="main-menu menu-style1 d-none d-lg-block">
+                  <ul className="d-flex justify-content-center">
                     {menu_data.map((item, i) => (
                       <li
                         key={i}
                         className={`${item.has_dropdown ? "menu-item-has-children" : ""}`}
                       >
-                        <Link href={item.link} className={`${style_2 ? "light-color" : ""}`}>
+                     <Link href={item.link} className={`${style_2 ? "light-color" : ""}`}>
                           {item.title}
                         </Link>
                         {item.has_dropdown && item.sub_menus && (
-                          <ul className="sub-menu">
+                          <ul className="sub-menu shadow-lg rounded-md">
                             {item.sub_menus.map((sub_item, index) => (
                               <li
                                 key={index}
@@ -72,19 +106,19 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
                                   sub_item.inner_submenu ? "menu-item-has-children" : ""
                                 }`}
                               >
-                                <Link
+                                  <Link
                                   href={sub_item.link}
                                   className={`${sub_item.inner_submenu ? "no-border" : ""}`}
                                 >
                                   {sub_item.title}
                                 </Link>
+
                                 {sub_item.inner_submenu && sub_item.sub_menu && (
-                                  <ul className="sub-menu">
+                                  <ul className="sub-menu ml-4 bg-white shadow-md rounded-md">
                                     {sub_item.sub_menu.map((inner_item, inner_index) => (
                                       <li
                                         key={inner_index}
                                         className={`${
-                                          // Added for potential fourth level if needed, or just for styling
                                           (inner_item as any).inner_submenu
                                             ? "menu-item-has-children"
                                             : ""
@@ -98,16 +132,17 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
                                         >
                                           {inner_item.title}
                                         </Link>
-                                        {/* Potentially add another level if (inner_item as any).inner_submenu is true */}
+
                                         {(inner_item as any).inner_submenu &&
                                           (inner_item as any).sub_menu && (
-                                            <ul className="sub-menu">
+                                            <ul className="sub-menu ml-4 bg-white shadow-md rounded-md">
                                               {(inner_item as any).sub_menu.map(
                                                 (deep_item: any, deep_index: any) => (
                                                   <li key={deep_index}>
                                                     <Link href={deep_item.link}>
                                                       {deep_item.title}
                                                     </Link>
+
                                                   </li>
                                                 )
                                               )}
@@ -128,38 +163,65 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
               </div>
             </div>
             <div className="col-auto d-flex align-items-center">
-              <div className="lonyo-header-info-wraper2">
-                <div className={`lonyo-header-info-content ${style_2 ? "content2" : ""}`}>
-                  <ul>
-                    <li>
-                      <Link href="/sign-in">Log in</Link>
-                    </li>
-                  </ul>
-                </div>
+              {/* Lenyíló nyelvválasztó menü */}
+              <div className="language-dropdown" ref={languageDropdownRef}>
+                <button
+                  onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                  className={`language-dropdown-trigger ${
+                    style_2 ? 'text-white' : 'text-gray-700'
+                  } hover:bg-gray-100 transition-colors duration-200`}
+                  aria-label="Nyelvválasztó menü"
+                >
+                  <span className="current-language">
+                  <Image 
+  src={languageConfig[currentLocale as keyof typeof languageConfig]?.flag} 
+  alt={`${languageConfig[currentLocale as keyof typeof languageConfig]?.name} flag`}
+  className="flag-image"
+  width={15}
+  height={15}
+/>
+                    <span className="language-name d-sm-inline">
+                      {languageConfig[currentLocale as keyof typeof languageConfig]?.name}
+                    </span>
+                  </span>
+                  <ChevronDown 
+                    size={16} 
+                    className={`chevron ${languageDropdownOpen ? 'rotated' : ''}`}
+                  />
+                </button>
+                
+                {languageDropdownOpen && (
+                  <div className="language-dropdown-menu">
+                    {locales.map((locale) => (
+                      <button
+                        key={locale}
+                        onClick={() => changeLocale(locale)}
+                        className={`language-option ${
+                          currentLocale === locale ? 'active' : ''
+                        }`}
+                        disabled={currentLocale === locale}
+                      >
+                         <Image 
+  src={languageConfig[locale as keyof typeof languageConfig]?.flag} 
+  alt={`${languageConfig[locale as keyof typeof languageConfig]?.name} flag`}
+  className="flag-image"
+  width={15}
+  height={15}
+/>
+                        <span className="language-name">
+                          {languageConfig[locale as keyof typeof languageConfig]?.name}
+                        </span>
+                        {currentLocale === locale && (
+                          <span className="checkmark">✓</span>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              {/* Locale Switcher */}
-              <div className="locale-switcher d-flex ms-3">
-                {locales.map((loc) => (
-                  <button
-                    key={loc}
-                    onClick={() => changeLocale(loc)}
-                    className="text-sm px-2 py-1 me-2"
-                    style={{
-                      background: "transparent",
-                      border: "1px solid #ccc",
-                      borderRadius: "4px",
-                      fontWeight: "bold",
-                      cursor: "pointer", // Add cursor pointer for better UX
-                    }}
-                  >
-                    {loc.toUpperCase()}
-                  </button>
-                ))}
-              </div>
-
-              {/* Cart Toggle Button */}
-              <div className="header-action-item">
+              {/* Kosár gomb */}
+              <div className="header-action-item ms-2">
                 <button
                   onClick={handleCartClick}
                   className="modern-cart-btn"
@@ -171,6 +233,7 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
                 </button>
               </div>
 
+              {/* Mobilmenü gomb */}
               <div className="lonyo-header-menu">
                 <nav className="navbar site-navbar justify-content-between">
                   <button
@@ -188,9 +251,8 @@ const HeaderOne = ({ style_2, style_3, toggle_color }: any) => {
         </div>
       </header>
 
-     
-
       <OffCanvas setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+
     </>
   );
 };

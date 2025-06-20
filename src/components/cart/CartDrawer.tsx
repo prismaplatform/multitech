@@ -84,10 +84,10 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
               <div className="icon-glow"></div>
             </div>
             <div className="title-content">
-              <h3 className="cart-title">Kosár</h3>
+              <h3 className="cart-title">Cerere ofertă</h3>
               <p className="cart-subtitle">
                 <span className="item-count">{totalItems}</span>
-                <span className="item-text">termék kiválasztva</span>
+                <span className="item-text">produse selectate pentru ofertă</span>
               </p>
             </div>
           </div>
@@ -107,9 +107,9 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
                   
                 </div>
               </div>
-              <h4 className="empty-title">Kosár üres</h4>
+              <h4 className="empty-title">Coș gol</h4>
               <p className="empty-subtitle">
-                Kezdj el vásárolni és add hozzá kedvenc termékeidet!
+                Adaugă produse pentru a cere o ofertă personalizată.
               </p>
             </div>
           ) : (
@@ -124,7 +124,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
                   <div className="item-image-container">
                     <div className="item-image">
                       <img
-                        src={item.image || "/api/placeholder/60/60"}
+                        src={item.image || "https://www.multitech.ro/wp-content/uploads/2024/07/cat_videojet_lpa.jpg"}
                         alt={item.name}
                       />
                       <div className="image-overlay"></div>
@@ -135,7 +135,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
                     <h4 className="item-name">{item.name}</h4>
                     <div className="item-actions">
                       <div className="quantity-section">
-                        <span className="quantity-label">Mennyiség</span>
+                        <span className="quantity-label">Cantitate</span>
                         <div className="quantity-controls">
                           <button
                             className="quantity-btn decrease"
@@ -159,7 +159,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
                       <button
                         className="remove-btn"
                         onClick={() => removeFromCart(item.id)}
-                        title="Eltávolítás"
+                        title="Eliminare"
                       >
                         <Trash2 size={16} />
                         <div className="remove-ripple"></div>
@@ -179,7 +179,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
             <button onClick={handleViewCart} className="action-btn secondary w-100">
               <div className="btn-content">
                 <ShoppingCart size={18} />
-                <span>Kosár megtekintése</span>
+                <span>Revizuire cerere</span>
                 <ArrowRight size={16} className="btn-arrow" />
               </div>
               <div className="btn-bg"></div>
@@ -188,7 +188,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
             {/* <button onClick={handleRequestOffer} className="action-btn primary">
               <div className="btn-content">
                 <FileText size={18} />
-                <span>Ajánlatkérés</span>
+                <span>Cerere de ofertă</span>
                 <ArrowRight size={16} className="btn-arrow" />
               </div>
               <div className="btn-bg"></div>

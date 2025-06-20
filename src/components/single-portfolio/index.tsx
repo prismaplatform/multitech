@@ -9,7 +9,7 @@ const SinglePortfolio = () => {
 	return (
 		<>
 			<HeaderOne />
-			<Breadcrumb title="Portfolio Details" subtitle="Portfolio Details" />
+			<Breadcrumb title="Industrii" subtitle="Industrii" />
 			<PortfolioDetailsArea />
 			<CtaAreaHomeOne style_2={true} />
 			<FooterOne />
