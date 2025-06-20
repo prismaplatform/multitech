@@ -13,7 +13,7 @@ const HeroAreaHomeOne = () => {
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
-                <div className="color-orange line"></div>
+                <div className="color-orange line mb-3"></div>
                 <h1 className="hero-title">
                   Automatizare rapidă cu <span className="highlight">roboți colaborativi</span>
                 </h1>
