@@ -9,7 +9,7 @@ const Cart = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title="Cart" subtitle="Cart" />
+      <Breadcrumb title="Coș" subtitle="Coș" />
       <CartPage />
       {/* <CtaAreaHomeOne style_2={true} /> */}
       <FooterOne />

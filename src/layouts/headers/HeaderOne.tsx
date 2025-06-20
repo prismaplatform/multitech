@@ -65,10 +65,10 @@ const languageConfig = {
       <header
         className={`${sticky ? "sticky-menu" : ""} site-header ${
           style_2
-            ? "bg-heading lonyo-header-section"
+            ? "bg-heading multitech-header-section"
             : style_3
-            ? "lonyo-header-section3"
-            : "lonyo-header-section light-bg"
+            ? "multitech-header-section3"
+            : "multitech-header-section light-bg"
         }`}
         id="sticky-menu"
       >
@@ -86,7 +86,7 @@ const languageConfig = {
               </div>
             </div>
             <div className="col">
-              <div className="lonyo-main-menu-item">
+              <div className="multitech-main-menu-item">
                 <nav className="main-menu menu-style1 d-none d-lg-block">
                   <ul className="d-flex justify-content-center">
                     {menu_data.map((item, i) => (
@@ -234,11 +234,11 @@ const languageConfig = {
               </div>
 
               {/* Mobilmenü gomb */}
-              <div className="lonyo-header-menu">
+              <div className="multitech-header-menu">
                 <nav className="navbar site-navbar justify-content-between">
                   <button
                     onClick={() => setMenuOpen(!menuOpen)}
-                    className={`lonyo-menu-toggle d-inline-block d-lg-none ${
+                    className={`multitech-menu-toggle d-inline-block d-lg-none ${
                       toggle_color ? "white-color" : ""
                     }`}
                   >

@@ -4,16 +4,16 @@ import React from "react";
 const IntegrationArea = () => {
   return (
     <>
-      <div className="lonyo-section-padding2 section">
+      <div className="multitech-section-padding2 section">
         <div className="integration-shape"></div>
         <div className="container">
-          <div className="lonyo-section-title">
+          <div className="multitech-section-title">
             <h2 className="max-w1000">Avantaje Multitech</h2>
           </div>
           <div className="row">
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="lonyo-integration-wrap" data-aos="fade-up" data-aos-duration="500">
-                <div className="lonyo-integration-content">
+              <div className="multitech-integration-wrap" data-aos="fade-up" data-aos-duration="500">
+                <div className="multitech-integration-content">
                   <h4>Testare gratuită</h4>
                   <p>Testați înainte să cumpărați, astfel vă puteți asigura de fiabilitatea soluției oferite.</p>
                   {/* <Link className="title-btn" href="/single-integration">
@@ -36,64 +36,64 @@ const IntegrationArea = () => {
                     </svg>
                   </Link> */}
                 </div>
-                <div className="lonyo-integration-icon">
+                <div className="multitech-integration-icon">
                   <img src="/assets/images/about-us/ikon1.svg" width={80} alt="" />
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="lonyo-integration-wrap" data-aos="fade-up" data-aos-duration="700">
-                <div className="lonyo-integration-content">
+              <div className="multitech-integration-wrap" data-aos="fade-up" data-aos-duration="700">
+                <div className="multitech-integration-content">
                   <h4>Garanție extinsă</h4>
                   <p>Pachetele noastre de garanție extinsă și service sunt adaptate nevoilor dvs.</p>
                   
                 </div>
-                <div className="lonyo-integration-icon">
+                <div className="multitech-integration-icon">
                   <img src="/assets/images/about-us/ikon3.svg" width={80} alt="" />
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="lonyo-integration-wrap" data-aos="fade-up" data-aos-duration="900">
-                <div className="lonyo-integration-content">
+              <div className="multitech-integration-wrap" data-aos="fade-up" data-aos-duration="900">
+                <div className="multitech-integration-content">
                   <h4>Livrare rapidă</h4>
                   <p>Majoritatea produselor oferite sunt disponibile pe stoc și se pot livra rapid la destinație.</p>
                
                 </div>
-                <div className="lonyo-integration-icon">
+                <div className="multitech-integration-icon">
                   <img src="/assets/images/about-us/ikon4.svg" width={80} alt="" />
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="lonyo-integration-wrap" data-aos="fade-up" data-aos-duration="500">
-                <div className="lonyo-integration-content">
+              <div className="multitech-integration-wrap" data-aos="fade-up" data-aos-duration="500">
+                <div className="multitech-integration-content">
                   <h4>Service în 24h</h4>
                   <p>Este suficient să ne sunați sau să ne trimiteți un e-mail şi noi suntem gata să intervenim.
 
 </p>
                  
                 </div>
-                <div className="lonyo-integration-icon">
+                <div className="multitech-integration-icon">
                   <img src="/assets/images/about-us/ikon5.svg" width={80} alt="" />
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="lonyo-integration-wrap" data-aos="fade-up" data-aos-duration="700">
-                <div className="lonyo-integration-content">
+              <div className="multitech-integration-wrap" data-aos="fade-up" data-aos-duration="700">
+                <div className="multitech-integration-content">
                   <h4>Soluții de finanțare</h4>
                   <p>Vă oferim cele mai potrivite soluții de finantare când nu dispuneți de capital de investiții.</p>
                   
                 </div>
-                <div className="lonyo-integration-icon">
+                <div className="multitech-integration-icon">
                   <img src="/assets/images/about-us/ikon6.svg" width={80} alt="" />
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="lonyo-integration-wrap" data-aos="fade-up" data-aos-duration="900">
-                <div className="lonyo-integration-content">
+              <div className="multitech-integration-wrap" data-aos="fade-up" data-aos-duration="900">
+                <div className="multitech-integration-content">
                   <h4>Suport clienți</h4>
                   <p>Echipa noastră este pregatită să vă răspundă la întrebări și să vă ofere asistență.</p>
                   {/* <Link className="title-btn" href="/single-integration">
@@ -116,7 +116,7 @@ const IntegrationArea = () => {
                     </svg>
                   </Link> */}
                 </div>
-                <div className="lonyo-integration-icon">
+                <div className="multitech-integration-icon">
                   <img src="/assets/images/about-us/ikon7.svg" alt="" width={80} />
                 </div>
               </div>

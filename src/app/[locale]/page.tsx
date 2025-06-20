@@ -5,8 +5,8 @@ import HomeOne from '@/components/homes/home-1';
 import type { Metadata } from 'next' 
 import Wrapper from '@/layouts/Wrapper';
 export const metadata: Metadata = {
-  title: "Lonyo - IT Solution & Technology Temaptle",
-  description: "Lonyo - IT Solution & Technology Temaptle",
+  title: "Multitech | Efficiency on the Production Line",
+  description: "Multitech | Efficiency on the Production Line",
 }
 
 

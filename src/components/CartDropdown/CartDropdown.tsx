@@ -45,7 +45,7 @@ const CartDropdown = () => {
           </li>
         ))}
       </ul>
-      <Link href="/cart" className="lonyo-default-btn mt-2 d-block text-center">
+      <Link href="/cart" className="multitech-default-btn mt-2 d-block text-center">
         View Cart
       </Link>
     </div>

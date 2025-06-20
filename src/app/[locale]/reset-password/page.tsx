@@ -6,8 +6,8 @@ import Wrapper from '@/layouts/Wrapper';
 import ResetPassword from '@/components/reset-password';
 
 export const metadata: Metadata = {
-  title: "Reset Password - Lonyo - IT Solution & Technology Temaptle",
-  description: "Lonyo - IT Solution & Technology Temaptle",
+  title: "Reset Password - Multitech | Efficiency on the Production Line",
+  description: "Multitech | Efficiency on the Production Line",
 }
 
  

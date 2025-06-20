@@ -4,22 +4,22 @@ import React from "react";
 const PriceingAreaHomeTwo = () => {
   return (
     <>
-      <div className="lonyo-section-padding10">
+      <div className="multitech-section-padding10">
         <div className="container">
-          <div className="lonyo-section-title center">
+          <div className="multitech-section-title center">
             <h2>Simple pricing plans with no added fees</h2>
           </div>
           <div className="row">
             <div className="col-xl-4 col-lg-6">
-              <div className="lonyo-pricing-wrap" data-aos="fade-right" data-aos-duration="700">
-                <div className="lonyo-pricing-header">
+              <div className="multitech-pricing-wrap" data-aos="fade-right" data-aos-duration="700">
+                <div className="multitech-pricing-header">
                   <h4>Basic plan</h4>
                 </div>
-                <div className="lonyo-pricing-price">
+                <div className="multitech-pricing-price">
                   <h2>$20</h2>
                   <p>/per user/mo</p>
                 </div>
-                <div className="lonyo-pricing-body">
+                <div className="multitech-pricing-body">
                   <p>What’s included:</p>
                   <ul>
                     <li>
@@ -36,23 +36,23 @@ const PriceingAreaHomeTwo = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-pricing-footer extra-mt">
-                  <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">
+                <div className="multitech-pricing-footer extra-mt">
+                  <Link className="multitech-default-btn d-block pricing-btn" href="/contact-us">
                     Start your free 14-day trial
                   </Link>
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6">
-              <div className="lonyo-pricing-wrap active" data-aos="fade-up" data-aos-duration="700">
-                <div className="lonyo-pricing-header">
+              <div className="multitech-pricing-wrap active" data-aos="fade-up" data-aos-duration="700">
+                <div className="multitech-pricing-header">
                   <h4>Pro plan</h4>
                 </div>
-                <div className="lonyo-pricing-price">
+                <div className="multitech-pricing-price">
                   <h2>$49</h2>
                   <p>/per user/mo</p>
                 </div>
-                <div className="lonyo-pricing-body">
+                <div className="multitech-pricing-body">
                   <p>What’s included:</p>
                   <ul>
                     <li>
@@ -77,23 +77,23 @@ const PriceingAreaHomeTwo = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-pricing-footer mt-50">
-                  <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">
+                <div className="multitech-pricing-footer mt-50">
+                  <Link className="multitech-default-btn d-block pricing-btn" href="/contact-us">
                     Get started now
                   </Link>
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6">
-              <div className="lonyo-pricing-wrap" data-aos="fade-left" data-aos-duration="700">
-                <div className="lonyo-pricing-header">
+              <div className="multitech-pricing-wrap" data-aos="fade-left" data-aos-duration="700">
+                <div className="multitech-pricing-header">
                   <h4>Basic plan</h4>
                 </div>
-                <div className="lonyo-pricing-price">
+                <div className="multitech-pricing-price">
                   <h2>$20</h2>
                   <p>/per user/mo</p>
                 </div>
-                <div className="lonyo-pricing-body">
+                <div className="multitech-pricing-body">
                   <p>What’s included:</p>
                   <ul>
                     <li>
@@ -118,8 +118,8 @@ const PriceingAreaHomeTwo = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-pricing-footer mt-50">
-                  <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">
+                <div className="multitech-pricing-footer mt-50">
+                  <Link className="multitech-default-btn d-block pricing-btn" href="/contact-us">
                     Get started now
                   </Link>
                 </div>

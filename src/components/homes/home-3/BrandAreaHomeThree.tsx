@@ -83,98 +83,98 @@ const setting2 = {
 const BrandAreaHomeThree = () => {
   return (
     <>
-      <section className="lonyo-section-padding3">
+      <section className="multitech-section-padding3">
         <div className="container">
-          <div className="lonyo-section-title center">
+          <div className="multitech-section-title center">
             <h2>It integrates with all your existing tools</h2>
           </div>
 
-          <Slider {...setting} className="lonyo-slider-icon-data">
-            <div className="lonyo-t-slider-icon">
+          <Slider {...setting} className="multitech-slider-icon-data">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t1.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t2.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t3.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t4.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t5.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t6.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t4.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t1.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t2.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t3.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t4.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t5.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t6.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t4.svg" alt="" />
             </div>
           </Slider>
 
-          <Slider {...setting2} className="lonyo-slider-icon-data">
-            <div className="lonyo-t-slider-icon">
+          <Slider {...setting2} className="multitech-slider-icon-data">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t7.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t8.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t9.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t10.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t11.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t7.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t9.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t7.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t8.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t9.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t10.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t11.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t7.svg" alt="" />
             </div>
-            <div className="lonyo-t-slider-icon">
+            <div className="multitech-t-slider-icon">
               <img src="/assets/images/v3/t9.svg" alt="" />
             </div>
           </Slider>

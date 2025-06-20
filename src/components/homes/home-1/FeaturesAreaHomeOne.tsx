@@ -11,7 +11,7 @@ const FeaturesAreaHomeOne = ({ style_2, style_3 }: any) => {
   return (
     <>
 <div
-        className="lonyo-content-shape1"
+        className="multitech-content-shape1"
         style={{
           height: "140px",
           backgroundImage: "url('/assets/images/shape/shape1.svg')", // Corrected URL syntax
@@ -20,9 +20,9 @@ const FeaturesAreaHomeOne = ({ style_2, style_3 }: any) => {
           backgroundRepeat: "no-repeat", // Prevent image repetition
         }}
       ></div>
-      <div className="lonyo-section-padding2 position-relative">
+      <div className="multitech-section-padding2 position-relative">
         <div className="container">
-          <div className="lonyo-section-title text-center"        data-aos="fade-up"
+          <div className="multitech-section-title text-center"        data-aos="fade-up"
                 data-aos-duration="700">
             <h2>
               La Multitech, avem soluții de{" "}

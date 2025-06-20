@@ -4,53 +4,53 @@ import React from "react";
 const PricngTwo = () => {
   return (
     <>
-      <section className="lonyo-section-padding7 section2 overflow-hidden">
+      <section className="multitech-section-padding7 section2 overflow-hidden">
         <div className="container">
-          <div className="lonyo-section-title">
+          <div className="multitech-section-title">
             <h2 className="max-w700">Compare features to choose the right plan</h2>
           </div>
-          <div className="lonyo-pricing-table">
+          <div className="multitech-pricing-table">
             <table>
               <thead>
                 <tr>
                   <th></th>
                   <th>
-                    <div className="lonyo-pricing-wrap2">
-                      <div className="lonyo-pricing-header header2">Basic plan</div>
-                      <div className="lonyo-pricing-price price2">
+                    <div className="multitech-pricing-wrap2">
+                      <div className="multitech-pricing-header header2">Basic plan</div>
+                      <div className="multitech-pricing-price price2">
                         <div className="pricing-title">$20</div>
                         <span>/Per Month</span>
                       </div>
-                      <div className="lonyo-pricing-footer mt-40">
-                        <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">
+                      <div className="multitech-pricing-footer mt-40">
+                        <Link className="multitech-default-btn d-block pricing-btn" href="/contact-us">
                           Start your free 14-day trial
                         </Link>
                       </div>
                     </div>
                   </th>
                   <th>
-                    <div className="lonyo-pricing-wrap2">
-                      <div className="lonyo-pricing-header header2">Pro plan</div>
-                      <div className="lonyo-pricing-price price2">
+                    <div className="multitech-pricing-wrap2">
+                      <div className="multitech-pricing-header header2">Pro plan</div>
+                      <div className="multitech-pricing-price price2">
                         <div className="pricing-title">$49</div>
                         <span>/Per Month</span>
                       </div>
-                      <div className="lonyo-pricing-footer mt-40">
-                        <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">
+                      <div className="multitech-pricing-footer mt-40">
+                        <Link className="multitech-default-btn d-block pricing-btn" href="/contact-us">
                           Get started now
                         </Link>
                       </div>
                     </div>
                   </th>
                   <th>
-                    <div className="lonyo-pricing-wrap2">
-                      <div className="lonyo-pricing-header header2">Expert Plan</div>
-                      <div className="lonyo-pricing-price price2">
+                    <div className="multitech-pricing-wrap2">
+                      <div className="multitech-pricing-header header2">Expert Plan</div>
+                      <div className="multitech-pricing-price price2">
                         <div className="pricing-title">$199</div>
                         <span>/Per Month</span>
                       </div>
-                      <div className="lonyo-pricing-footer mt-40">
-                        <Link className="lonyo-default-btn d-block pricing-btn" href="/contact-us">
+                      <div className="multitech-pricing-footer mt-40">
+                        <Link className="multitech-default-btn d-block pricing-btn" href="/contact-us">
                           Get started now
                         </Link>
                       </div>

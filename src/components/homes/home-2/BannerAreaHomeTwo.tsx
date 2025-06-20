@@ -8,19 +8,19 @@ const BannerAreaHomeTwo = () => {
 
   return (
     <>
-      <div className="lonyo-dasyboard-shape">
+      <div className="multitech-dasyboard-shape">
         <img src="/assets/images/shape/shape5.svg" alt="" />
       </div>
-      <div className="lonyo-video-section2">
+      <div className="multitech-video-section2">
         <div className="container">
           <div className="row">
             <div className="col-lg-7">
-              <div className="lonyo-hero-dashbord" data-aos="fade-right" data-aos-duration="700">
+              <div className="multitech-hero-dashbord" data-aos="fade-right" data-aos-duration="700">
                 <img src="/assets/images/hero/dashboard.png" alt="" />
               </div>
             </div>
             <div className="col-lg-5">
-              <div className="lonyo-video-thumb2" data-aos="fade-left" data-aos-duration="700">
+              <div className="multitech-video-thumb2" data-aos="fade-left" data-aos-duration="700">
                 <img src="/assets/images/hero/video1.png" alt="" />
                 <a
                   className="play-btn video-init"

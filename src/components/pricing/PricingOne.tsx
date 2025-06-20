@@ -53,9 +53,9 @@ const PricingOne = () => {
 
   return (
     <>
-      <div className="lonyo-section-padding10 position-relative">
+      <div className="multitech-section-padding10 position-relative">
         <div className="container">
-          <div className="lonyo-section-title center">
+          <div className="multitech-section-title center">
             <h2 className="title">Pick from one of our ready packages</h2>
             <p className="mb-0">
               Starts at just $20/month, with no ads or hidden fees, after a 14-day free trial. Your
@@ -73,22 +73,22 @@ const PricingOne = () => {
             {pricingPlans.map((plan, index) => (
               <div key={index} className="col-xl-4 col-lg-6">
                 <div
-                  className={`lonyo-pricing-wrap aos-init aos-animate ${
+                  className={`multitech-pricing-wrap aos-init aos-animate ${
                     plan.active ? "active" : ""
                   }`}
                 >
-                  <div className="lonyo-pricing-header">
+                  <div className="multitech-pricing-header">
                     <h4>{plan.name}</h4>
                   </div>
-                  <div className={`lonyo-pricing-price ${isMonthly ? "" : "d-none"}`}>
+                  <div className={`multitech-pricing-price ${isMonthly ? "" : "d-none"}`}>
                     <h2>{plan.monthlyPrice}</h2>
                     <span>/per user/month</span>
                   </div>
-                  <div className={`lonyo-pricing-price ${isMonthly ? "d-none" : ""}`}>
+                  <div className={`multitech-pricing-price ${isMonthly ? "d-none" : ""}`}>
                     <h2>{plan.annualPrice}</h2>
                     <span>/per user/year</span>
                   </div>
-                  <div className="lonyo-pricing-body">
+                  <div className="multitech-pricing-body">
                     <p>What’s included:</p>
                     <ul>
                       {plan.features.map((feature, idx) => (
@@ -99,8 +99,8 @@ const PricingOne = () => {
                       ))}
                     </ul>
                   </div>
-                  <div className="lonyo-pricing-footer mt-50">
-                    <Link className="lonyo-default-btn d-block pricing-btn2" href="/contact-us">
+                  <div className="multitech-pricing-footer mt-50">
+                    <Link className="multitech-default-btn d-block pricing-btn2" href="/contact-us">
                       {plan.ctaText}
                     </Link>
                   </div>

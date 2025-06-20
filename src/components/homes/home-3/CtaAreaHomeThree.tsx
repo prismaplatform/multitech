@@ -3,10 +3,10 @@ import React from "react";
 const CtaAreaHomeThree = () => {
   return (
     <>
-      <section className="lonyo-cta-section2">
+      <section className="multitech-cta-section2">
         <div className="container">
           <div
-            className="lonyo-section-title center max-width-750 pb-0"
+            className="multitech-section-title center max-width-750 pb-0"
             data-aos="fade-up"
             data-aos-duration="500"
           >
@@ -16,7 +16,7 @@ const CtaAreaHomeThree = () => {
               finances, helping users stay organized, track financial health and make informed
               decisions.
             </p>
-            <div className="lonyo-cta-info info2 mt-50">
+            <div className="multitech-cta-info info2 mt-50">
               <ul>
                 <li data-aos="fade-up" data-aos-duration="500">
                   <a href="https://www.apple.com/app-store/">
@@ -33,7 +33,7 @@ const CtaAreaHomeThree = () => {
           </div>
         </div>
       </section>
-      <div className="lonyo-cta-shape2">
+      <div className="multitech-cta-shape2">
         <img src="/assets/images/shape/bg-shape3.svg" alt="" />
       </div>
     </>

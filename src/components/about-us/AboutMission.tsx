@@ -5,7 +5,7 @@ const AboutMission = () => {
   return (
     <>
 <div 
-  className="lonyo-section-padding2" 
+  className="multitech-section-padding2" 
   style={{
     backgroundImage: "url('/assets/images/hero/bacground.png')",
     backgroundSize: "cover",
@@ -17,7 +17,7 @@ const AboutMission = () => {
           <div className="row">
             <div className="col-lg-5">
               <div
-                className="lonyo-about-us-thumb2 pr-51 h-100"
+                className="multitech-about-us-thumb2 pr-51 h-100"
                 data-aos="fade-up"
                 data-aos-duration="700"
                 style={{
@@ -37,7 +37,7 @@ const AboutMission = () => {
             </div>
             <div className="col-lg-7 d-flex align-items-center">
               <div
-                className="lonyo-default-content pl-32"
+                className="multitech-default-content pl-32"
                 data-aos="fade-up"
                 data-aos-duration="900"
               >

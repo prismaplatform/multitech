@@ -5,15 +5,15 @@ import React from "react";
 const SingleBlogArea = () => {
   return (
     <>
-      <div className="lonyo-section-padding7 overflow-hidden">
+      <div className="multitech-section-padding7 overflow-hidden">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
-              <div className="lonyo-blog-d-wrap">
-                <div className="lonyo-blog-d-thumb" data-aos="fade-up" data-aos-duration="700">
+              <div className="multitech-blog-d-wrap">
+                <div className="multitech-blog-d-thumb" data-aos="fade-up" data-aos-duration="700">
                   <img src="/assets/images/blog/b7.png" alt="" />
                 </div>
-                <div className="lonyo-blog-meta pb-0">
+                <div className="multitech-blog-meta pb-0">
                   <ul>
                     <li>
                       <Link href="/single-blog">
@@ -28,7 +28,7 @@ const SingleBlogArea = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-blog-d-content">
+                <div className="multitech-blog-d-content">
                   <h2>
                     <Link href="/single-blog">Why do need personal finance software?</Link>
                   </h2>
@@ -64,7 +64,7 @@ const SingleBlogArea = () => {
                     <h4 className="mt-10">– Daymond John</h4>
                   </blockquote>
                 </div>
-                <div className="lonyo-blog-d-content">
+                <div className="multitech-blog-d-content">
                   <h2>
                     <Link href="/single-blog">Advantages of personal finance software:</Link>
                   </h2>
@@ -89,7 +89,7 @@ const SingleBlogArea = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-blog-d-content">
+                <div className="multitech-blog-d-content">
                   <h2>
                     <Link href="/single-blog">Final thoughts personal finance software:</Link>
                   </h2>
@@ -104,10 +104,10 @@ const SingleBlogArea = () => {
                     integrate with payment systems and banks, and offer 24/7 customer support.  
                   </p>
                 </div>
-                <div className="lonyo-blog-d-content-wrap">
-                  <div className="lonyo-blog-widgets widgets2">
+                <div className="multitech-blog-d-content-wrap">
+                  <div className="multitech-blog-widgets widgets2">
                     <h4>Tags</h4>
-                    <div className="lonyo-blog-tags">
+                    <div className="multitech-blog-tags">
                       <ul>
                         <li>
                           <Link href="/blog">Software</Link>
@@ -196,13 +196,13 @@ const SingleBlogArea = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="lonyo-blog-d-comment-box">
+                <div className="multitech-blog-d-comment-box">
                   <h4>Comments:</h4>
-                  <div className="lonyo-blog-d-comment-wrap1">
-                    <div className="lonyo-blog-d-comment-thumb">
+                  <div className="multitech-blog-d-comment-wrap1">
+                    <div className="multitech-blog-d-comment-thumb">
                       <img src="/assets/images/blog/b8.png" alt="" />
                     </div>
-                    <div className="lonyo-blog-d-comment-data1">
+                    <div className="multitech-blog-d-comment-data1">
                       <h5>Vicky Smith</h5>
                       <span>June 21, 2025</span>
                       <p>
@@ -214,11 +214,11 @@ const SingleBlogArea = () => {
                       <Link href="/single-blog">Reply</Link>
                     </div>
                   </div>
-                  <div className="lonyo-blog-d-comment-wrap pl-101">
-                    <div className="lonyo-blog-d-comment-thumb">
+                  <div className="multitech-blog-d-comment-wrap pl-101">
+                    <div className="multitech-blog-d-comment-thumb">
                       <img src="/assets/images/blog/b9.png" alt="" />
                     </div>
-                    <div className="lonyo-blog-d-comment-data">
+                    <div className="multitech-blog-d-comment-data">
                       <h5>Adam Mac</h5>
                       <span>September 22, 2025</span>
                       <p>
@@ -230,11 +230,11 @@ const SingleBlogArea = () => {
                       <Link href="/single-blog">Reply</Link>
                     </div>
                   </div>
-                  <div className="lonyo-blog-d-comment-wrap1 wrap2">
-                    <div className="lonyo-blog-d-comment-thumb">
+                  <div className="multitech-blog-d-comment-wrap1 wrap2">
+                    <div className="multitech-blog-d-comment-thumb">
                       <img src="/assets/images/blog/b10.png" alt="" />
                     </div>
-                    <div className="lonyo-blog-d-comment-data1">
+                    <div className="multitech-blog-d-comment-data1">
                       <h5>William Thomas</h5>
                       <span>June 21, 2025</span>
                       <p>
@@ -248,30 +248,30 @@ const SingleBlogArea = () => {
                   </div>
                 </div>
                 <div
-                  className="lonyo-blog-d-comment-box2"
+                  className="multitech-blog-d-comment-box2"
                   data-aos="fade-up"
                   data-aos-duration="700"
                 >
                   <h4>Leave a comments:</h4>
-                  <div className="lonyo-contact-box">
+                  <div className="multitech-contact-box">
                     <form onSubmit={(e) => e.preventDefault()}>
-                      <div className="lonyo-main-field">
+                      <div className="multitech-main-field">
                         <p>Full name*</p>
                         <input type="text" placeholder="Enter your name" />
                       </div>
-                      <div className="lonyo-main-field">
+                      <div className="multitech-main-field">
                         <p>Email address*</p>
                         <input type="email" placeholder="Your email address" />
                       </div>
                       <p>Message</p>
-                      <div className="lonyo-main-field-textarea">
+                      <div className="multitech-main-field-textarea">
                         <textarea
                           className="button-text"
                           name="textarea"
                           placeholder="Write your message here..."
                         ></textarea>
                       </div>
-                      <button className="lonyo-default-btn extra-btn d-block" type="button">
+                      <button className="multitech-default-btn extra-btn d-block" type="button">
                         Submit A Comment
                       </button>
                     </form>
@@ -280,20 +280,20 @@ const SingleBlogArea = () => {
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="lonyo-blog-sidebar" data-aos="fade-left" data-aos-duration="700">
-                <div className="lonyo-blog-widgets">
+              <div className="multitech-blog-sidebar" data-aos="fade-left" data-aos-duration="700">
+                <div className="multitech-blog-widgets">
                   <form onSubmit={(e) => e.preventDefault()}>
-                    <div className="lonyo-search-box">
+                    <div className="multitech-search-box">
                       <input type="search" placeholder="Type keyword here" />
-                      <button id="lonyo-search-btn" type="button">
+                      <button id="multitech-search-btn" type="button">
                         <i className="ri-search-line"></i>
                       </button>
                     </div>
                   </form>
                 </div>
-                <div className="lonyo-blog-widgets">
+                <div className="multitech-blog-widgets">
                   <h4>Categories:</h4>
-                  <div className="lonyo-blog-categorie">
+                  <div className="multitech-blog-categorie">
                     <ul>
                       <li>
                         <Link href="/single-blog">
@@ -323,13 +323,13 @@ const SingleBlogArea = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="lonyo-blog-widgets">
+                <div className="multitech-blog-widgets">
                   <h4>Recent Posts</h4>
-                  <Link className="lonyo-blog-recent-post-item" href="/single-blog">
-                    <div className="lonyo-blog-recent-post-thumb">
+                  <Link className="multitech-blog-recent-post-item" href="/single-blog">
+                    <div className="multitech-blog-recent-post-thumb">
                       <img src="/assets/images/blog/b4.png" alt="" />
                     </div>
-                    <div className="lonyo-blog-recent-post-data">
+                    <div className="multitech-blog-recent-post-data">
                       <ul>
                         <li>
                           <img src="/assets/images/blog/date.svg" alt="" />
@@ -341,11 +341,11 @@ const SingleBlogArea = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link className="lonyo-blog-recent-post-item" href="/single-blog">
-                    <div className="lonyo-blog-recent-post-thumb">
+                  <Link className="multitech-blog-recent-post-item" href="/single-blog">
+                    <div className="multitech-blog-recent-post-thumb">
                       <img src="/assets/images/blog/b5.png" alt="" />
                     </div>
-                    <div className="lonyo-blog-recent-post-data">
+                    <div className="multitech-blog-recent-post-data">
                       <ul>
                         <li>
                           <img src="/assets/images/blog/date.svg" alt="" />
@@ -357,11 +357,11 @@ const SingleBlogArea = () => {
                       </div>
                     </div>
                   </Link>
-                  <Link className="lonyo-blog-recent-post-item" href="/single-blog">
-                    <div className="lonyo-blog-recent-post-thumb">
+                  <Link className="multitech-blog-recent-post-item" href="/single-blog">
+                    <div className="multitech-blog-recent-post-thumb">
                       <img src="/assets/images/blog/b6.png" alt="" />
                     </div>
-                    <div className="lonyo-blog-recent-post-data">
+                    <div className="multitech-blog-recent-post-data">
                       <ul>
                         <li>
                           <img src="/assets/images/blog/date.svg" alt="" />
@@ -374,9 +374,9 @@ const SingleBlogArea = () => {
                     </div>
                   </Link>
                 </div>
-                <div className="lonyo-blog-widgets">
+                <div className="multitech-blog-widgets">
                   <h4>Tags</h4>
-                  <div className="lonyo-blog-tags">
+                  <div className="multitech-blog-tags">
                     <ul>
                       <li>
                         <Link href="/single-blog">Software</Link>
@@ -400,16 +400,16 @@ const SingleBlogArea = () => {
             </div>
           </div>
           <div className="deivdead-line"></div>
-          <div className="lonyo-section-title center max-width-700">
+          <div className="multitech-section-title center max-width-700">
             <h2>Check out the related articles and news</h2>
           </div>
           <div className="row">
             <div className="col-lg-6">
-              <div className="lonyo-blog-wrap" data-aos="fade-up" data-aos-duration="700">
-                <div className="lonyo-blog-thumb">
+              <div className="multitech-blog-wrap" data-aos="fade-up" data-aos-duration="700">
+                <div className="multitech-blog-thumb">
                   <img src="/assets/images/blog/b11.png" alt="" />
                 </div>
-                <div className="lonyo-blog-meta">
+                <div className="multitech-blog-meta">
                   <ul>
                     <li>
                       <Link href="/blog">
@@ -424,7 +424,7 @@ const SingleBlogArea = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-blog-content">
+                <div className="multitech-blog-content">
                   <Link href="/blog">
                     <h2>Top 10 disruptive technologies in finance</h2>
                   </Link>
@@ -433,19 +433,19 @@ const SingleBlogArea = () => {
                     inseparable, with fintech leading global investment...
                   </p>
                 </div>
-                <div className="lonyo-blog-btn">
-                  <Link href="/blog" className="lonyo-default-btn blog-btn">
+                <div className="multitech-blog-btn">
+                  <Link href="/blog" className="multitech-default-btn blog-btn">
                     continue reading
                   </Link>
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="lonyo-blog-wrap" data-aos="fade-up" data-aos-duration="900">
-                <div className="lonyo-blog-thumb">
+              <div className="multitech-blog-wrap" data-aos="fade-up" data-aos-duration="900">
+                <div className="multitech-blog-thumb">
                   <img src="/assets/images/blog/b2.png" alt="" />
                 </div>
-                <div className="lonyo-blog-meta">
+                <div className="multitech-blog-meta">
                   <ul>
                     <li>
                       <Link href="/blog">
@@ -460,7 +460,7 @@ const SingleBlogArea = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-blog-content">
+                <div className="multitech-blog-content">
                   <Link href="/blog">
                     <h2>Business finance apps to save you time</h2>
                   </Link>
@@ -469,8 +469,8 @@ const SingleBlogArea = () => {
                     prepare for tax season...
                   </p>
                 </div>
-                <div className="lonyo-blog-btn">
-                  <Link href="/blog" className="lonyo-default-btn blog-btn">
+                <div className="multitech-blog-btn">
+                  <Link href="/blog" className="multitech-default-btn blog-btn">
                     continue reading
                   </Link>
                 </div>

@@ -4,16 +4,16 @@ import React from 'react';
 const SingleCareerArea = () => {
   return (
     <>
-      <div className="lonyo-section-padding9">
+      <div className="multitech-section-padding9">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
-              <div className="lonyo-default-content pb-35">
+              <div className="multitech-default-content pb-35">
                 <h2>Job description:</h2>
                 <p>We’re seeking a detail-oriented & analytical financial analyst to join our team. The successful candidate will play a pivotal role in analyzing financial data, preparing reports, and providing strategic recommendations to support business decisions. </p>
                 <p>This is an exciting opportunity for someone passionate about numbers and eager to contribute to organizational growth.</p>
               </div>
-              <div className="lonyo-default-content pb-35">
+              <div className="multitech-default-content pb-35">
                 <h2>Job description:</h2>
                 <div className="text">
                   <p><span>1. Financial Reporting:</span> Prepare accurate financial reports, forecasts, and models. Monitor financial performance and compare it to budgets and forecasts.</p>
@@ -23,7 +23,7 @@ const SingleCareerArea = () => {
                   <p><span>5. Market Research:</span> Stay updated on industry trends and competitor performance to inform strategic planning. Analyze economic & market data to assess potential impacts.</p>
                 </div>
               </div>
-              <div className="lonyo-default-content pb-35">
+              <div className="multitech-default-content pb-35">
                 <h2>What we are looking for:</h2>
                 <ul>
                   <li><span>Education:</span> Bachelor’s degree in Finance, Accounting, Economics, or a related field. A master’s degree or CFA certification is a plus.</li>
@@ -33,7 +33,7 @@ const SingleCareerArea = () => {
                   <li><span>Attention to Detail:</span> Accuracy in handling financial data and preparing reports. Ability to identify and correct discrepancies in financial records.</li>
                 </ul>
               </div>
-              <div className="lonyo-default-content pb-35 pb-60">
+              <div className="multitech-default-content pb-35 pb-60">
                 <h2>What we offer:</h2>
                 <div className="text4">
                   <ul>
@@ -45,39 +45,39 @@ const SingleCareerArea = () => {
                   <p>Join us and contribute to driving strategic decisions with impactful financial insights!</p>
                 </div>
               </div>
-              <div className="lonyo-blog-d-comment-box2">
+              <div className="multitech-blog-d-comment-box2">
                 <h4>Apply for this position:</h4>
-                <div className="lonyo-contact-box">
+                <div className="multitech-contact-box">
                   <form onClick={(e) => e.preventDefault()}>
-                    <div className="lonyo-main-field">
+                    <div className="multitech-main-field">
                       <p>Full name*</p>
                       <input type="text" placeholder="Enter your name" />
                     </div>
                     <div className="row">
                       <div className="col-lg-6">
-                        <div className="lonyo-main-field">
+                        <div className="multitech-main-field">
                           <p>Email address*</p>
                           <input type="email" placeholder="Your email address" />
                         </div>
                       </div>
                       <div className="col-lg-6">
-                        <div className="lonyo-main-field">
+                        <div className="multitech-main-field">
                           <p>Contact number*</p>
                           <input type="text" placeholder="Enter contact number" />
                         </div>
                       </div>
                     </div>
                     <p>Message</p>
-                    <div className="lonyo-main-field-textarea">
+                    <div className="multitech-main-field-textarea">
                       <textarea className="button-text" name="textarea" placeholder="Write your message here..."></textarea>
                     </div>
-                    <button className="lonyo-default-btn extra-btn2 d-block" type="button">Submit application</button>
+                    <button className="multitech-default-btn extra-btn2 d-block" type="button">Submit application</button>
                   </form>
                 </div>
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="lonyo-career-d-sidebar">
+              <div className="multitech-career-d-sidebar">
                 <ul>
                   <li>
                     <h4>Salary:</h4>

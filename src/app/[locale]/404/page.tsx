@@ -5,8 +5,8 @@ import Wrapper from '@/layouts/Wrapper';
 import NotFound from '@/components/not-found';
 
 export const metadata: Metadata = {
-  title: "Error || 404 - Lonyo - IT Solution & Technology Temaptle",
-  description: "Lonyo - IT Solution & Technology Temaptle",
+  title: "Error || 404 - Multitech | Efficiency on the Production Line",
+  description: "Multitech | Efficiency on the Production Line",
 }
 
  

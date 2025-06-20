@@ -5,7 +5,7 @@ const AboutEquipment = () => {
   return (
     <>
       <div
-        className="lonyo-section-padding2"
+        className="multitech-section-padding2"
         style={{
           backgroundImage: "url('/assets/images/hero/bacground.png')",
           backgroundSize: "cover",
@@ -14,13 +14,13 @@ const AboutEquipment = () => {
         }}
       >
         <div className="container">
-          <div className="lonyo-default-content text-center">
+          <div className="multitech-default-content text-center">
             <h2>Mii de echipamente instalate</h2>
           </div>
           <div className="row">
             <div className="col-lg-6">
               <div
-                className="lonyo-default-content"
+                className="multitech-default-content"
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
@@ -42,7 +42,7 @@ const AboutEquipment = () => {
             </div>
             <div className="col-lg-6">
               <div
-                className="lonyo-default-content"
+                className="multitech-default-content"
                 data-aos="fade-up"
                 data-aos-duration="900"
               >

@@ -3,12 +3,12 @@ import React from "react";
 const HeroAreaHomeTwo = () => {
   return (
     <>
-      <div className="lonyo-hero-section2 bg-heading">
+      <div className="multitech-hero-section2 bg-heading">
         <div className="container">
           <div className="row">
             <div className="col-lg-7">
-              <div className="lonyo-hero-content2" data-aos="fade-up" data-aos-duration="700">
-                <div className="lonyo-hero-rating">
+              <div className="multitech-hero-content2" data-aos="fade-up" data-aos-duration="700">
+                <div className="multitech-hero-rating">
                   <ul>
                     <li>
                       <img src="/assets/images/v1/rating.svg" alt="ratting-stat" />
@@ -20,7 +20,7 @@ const HeroAreaHomeTwo = () => {
               </div>
             </div>
             <div className="col-lg-5 d-flex align-items-center">
-              <div className="lonyo-hero-text2" data-aos="fade-up" data-aos-duration="700">
+              <div className="multitech-hero-text2" data-aos="fade-up" data-aos-duration="700">
                 <p className="text">
                   Track your daily automatically. Manage your money in a friendly and way, making it
                   easy to guilt-free and save effortlessly.
@@ -43,7 +43,7 @@ const HeroAreaHomeTwo = () => {
             </div>
           </div>
         </div>
-        <div className="lonyo-hero-shape2"></div>
+        <div className="multitech-hero-shape2"></div>
       </div>
     </>
   );

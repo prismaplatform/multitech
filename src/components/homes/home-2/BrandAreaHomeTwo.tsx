@@ -36,84 +36,84 @@ const setting = {
 const BrandAreaHomeTwo = () => {
   return (
     <>
-      <div className="lonyo-section-padding4">
+      <div className="multitech-section-padding4">
         <div className="container">
           <h4 className="text-center">
            Aveţi nevoie să marcați un cod pe ambalaj? Doriți să automatizați procesul de producție? Avem soluţii pentru îndeplinirea acestor cerinţe! Selectați mai jos domeniul de activitate:
           </h4>
         </div>
         <Slider {...setting} className="brand-slider-js-init my-5">
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand3.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand2.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item ml-10">
+          <div className="multitech-brand-slider-item ml-10">
             <img src="/assets/images/brand/brand4.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand5.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand6.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand7.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand5.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand2.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand3.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item ml-10">
+          <div className="multitech-brand-slider-item ml-10">
             <img src="/assets/images/brand/brand4.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand5.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand5.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand2.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand3.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item ml-10">
+          <div className="multitech-brand-slider-item ml-10">
             <img src="/assets/images/brand/brand4.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand5.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand6.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand7.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand3.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand2.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand3.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item ml-10">
+          <div className="multitech-brand-slider-item ml-10">
             <img src="/assets/images/brand/brand4.svg" alt="" />
           </div>
-          <div className="lonyo-brand-slider-item">
+          <div className="multitech-brand-slider-item">
             <img src="/assets/images/brand/brand5.svg" alt="" />
           </div>
         </Slider>
-        <div className="lonyo-brand-shape">
+        <div className="multitech-brand-shape">
           <img src="/assets/images/brand/overlay.svg" alt="" />
         </div>
       </div>

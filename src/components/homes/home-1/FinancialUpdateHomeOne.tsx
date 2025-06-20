@@ -16,12 +16,12 @@ const FinancialUpdateHomeOne = () => {
   const [activeTab, setActiveTab] = useState(1);
   return (
     <>
-      <div className="lonyo-section-padding2">
+      <div className="multitech-section-padding2">
         <div className="container">
           <div className="row">
             <div className="col-lg-5 order-lg-2">
               <div
-                className="lonyo-content-thumb"
+                className="multitech-content-thumb"
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
@@ -30,7 +30,7 @@ const FinancialUpdateHomeOne = () => {
             </div>
             <div className="col-lg-7 d-flex align-items-center">
               <div
-                className="lonyo-default-content pr-50"
+                className="multitech-default-content pr-50"
                 data-aos="fade-right"
                 data-aos-duration="700"
               >
@@ -65,14 +65,14 @@ const FinancialUpdateHomeOne = () => {
                       </li>
                     ))}
                   </ul>
-                    <Link href="/" className="lonyo-default-btn hero-btn mt-4">
+                    <Link href="/event" className="multitech-default-btn hero-btn mt-4">
                   Vedeți toate evenimentele
                   </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className="lonyo-content-shape2"></div>
+          <div className="multitech-content-shape2"></div>
         </div>
       </div>
     </>

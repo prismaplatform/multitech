@@ -118,77 +118,77 @@ const FaqArea = () => {
 
   return (
     <>
-      <div className="lonyo-section-padding9">
+      <div className="multitech-section-padding9">
         <div className="container">
-          <div className="lonyo-faq-wrap1">
-            <div className="lonyo-faq-title">
+          <div className="multitech-faq-wrap1">
+            <div className="multitech-faq-title">
               <h2>Întrebări generale</h2>
             </div>
             {faq_data1.map((item, i) => (
               <div
                 key={i}
-                className={`lonyo-faq-item item2 ${open === i ? "open" : ""}`}
+                className={`multitech-faq-item item2 ${open === i ? "open" : ""}`}
                 data-aos="fade-up"
                 data-aos-duration={item.delay}
               >
-                <div className="lonyo-faq-header">
+                <div className="multitech-faq-header">
                   <h4 onClick={() => setOpen(i)}>{item.question}</h4>
-                  <div className="lonyo-active-icon">
+                  <div className="multitech-active-icon">
                     <img className="plasicon" src="/assets/images/v1/mynus.svg" alt="" />
                     <img className="mynusicon" src="/assets/images/v1/plas.svg" alt="" />
                   </div>
                 </div>
-                <div className="lonyo-faq-body body2">
+                <div className="multitech-faq-body body2">
                   <p>{item.answer}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="lonyo-faq-wrap1">
-            <div className="lonyo-faq-title">
+          <div className="multitech-faq-wrap1">
+            <div className="multitech-faq-title">
               <h2>Politici și abonamente</h2>
             </div>
             {faq_data2.map((item, i) => (
               <div
                 key={i}
-                className={`lonyo-faq-item item2 ${open2 === i ? "open" : ""}`}
+                className={`multitech-faq-item item2 ${open2 === i ? "open" : ""}`}
                 data-aos="fade-up"
                 data-aos-duration={item.delay}
               >
-                <div className="lonyo-faq-header">
+                <div className="multitech-faq-header">
                   <h4 onClick={() => setOpen2(i)}>{item.question}</h4>
-                  <div className="lonyo-active-icon">
+                  <div className="multitech-active-icon">
                     <img className="plasicon" src="/assets/images/v1/mynus.svg" alt="" />
                     <img className="mynusicon" src="/assets/images/v1/plas.svg" alt="" />
                   </div>
                 </div>
-                <div className="lonyo-faq-body body2">
+                <div className="multitech-faq-body body2">
                   <p>{item.answer}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="lonyo-faq-wrap1">
-            <div className="lonyo-faq-title">
+          <div className="multitech-faq-wrap1">
+            <div className="multitech-faq-title">
               <h2>Suport tehnic</h2>
             </div>
             {faq_data3.map((item, i) => (
               <div
                 key={i}
-                className={`lonyo-faq-item item2 ${open3 === i ? "open" : ""}`}
+                className={`multitech-faq-item item2 ${open3 === i ? "open" : ""}`}
                 data-aos="fade-up"
                 data-aos-duration={item.delay}
               >
-                <div className="lonyo-faq-header">
+                <div className="multitech-faq-header">
                   <h4 onClick={() => setOpen3(i)}>{item.question}</h4>
-                  <div className="lonyo-active-icon">
+                  <div className="multitech-active-icon">
                     <img className="plasicon" src="/assets/images/v1/mynus.svg" alt="" />
                     <img className="mynusicon" src="/assets/images/v1/plas.svg" alt="" />
                   </div>
                 </div>
-                <div className="lonyo-faq-body body2">
+                <div className="multitech-faq-body body2">
                   <p>{item.answer}</p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const FaqArea = () => {
           </div>
 
           <div className="faq-btn" data-aos="fade-up" data-aos-duration="700">
-            <Link className="lonyo-default-btn faq-btn2" href="/contact">
+            <Link className="multitech-default-btn faq-btn2" href="/contact">
               Nu găsești răspunsul tău?
             </Link>
           </div>

@@ -41,12 +41,12 @@ const TabAreaHomeTwo = () => {
 
   return (
     <>
-      <section className="lonyo-section-padding7 lonyo-tab-section">
+      <section className="multitech-section-padding7 multitech-tab-section">
         <div className="container">
-          <div className="lonyo-section-title center max-width-700">
+          <div className="multitech-section-title center max-width-700">
             <h2>Automatically keep track of your finances</h2>
           </div>
-          <div className="lonyo-tab-wrap">
+          <div className="multitech-tab-wrap">
             <ul className="tabs tab2">
               {tabsData.map((item, i) => (
                 <li
@@ -67,7 +67,7 @@ const TabAreaHomeTwo = () => {
               ))}
             </ul>
           </div>
-          <div className="lonyo-tab-shape">
+          <div className="multitech-tab-shape">
             <img src="/assets/images/shape/shape6.svg" alt="" />
           </div>
         </div>

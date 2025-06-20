@@ -8,17 +8,17 @@ const CtaAreaHomeOne = ({ style_2 }: any) => {
         <>
         </>
       )}
-      <section className="lonyo-section-padding4  section">
+      <section className="multitech-section-padding4  section">
         <div className="container">
           <div className="row">
             {/* <div className="col-lg-6">
-              <div className="lonyo-cta-thumb" data-aos="fade-up" data-aos-duration="500">
+              <div className="multitech-cta-thumb" data-aos="fade-up" data-aos-duration="500">
                 <img src="/assets/images/v1/cta-thumb.png" alt="" />
               </div>
             </div> */}
             <div className="col-lg-12">
               <div
-                className="lonyo-default-content feature-wrap d-grid
+                className="multitech-default-content feature-wrap d-grid
                 "
                 data-aos="fade-up"
                 data-aos-duration="700"
@@ -29,10 +29,10 @@ const CtaAreaHomeOne = ({ style_2 }: any) => {
                 <p className="mb-4 text-center">
                   Solicitați acum un demo gratuit sunând la 0-7722-MULTI
                 </p>
-                <Link href="/contact" className="lonyo-default-btn hero-btn m-auto">
+                <Link href="/contact" className="multitech-default-btn hero-btn m-auto">
                   Informații de contact
                 </Link>
-                {/* <div className="lonyo-cta-info mt-50" data-aos="fade-up" data-aos-duration="900">
+                {/* <div className="multitech-cta-info mt-50" data-aos="fade-up" data-aos-duration="900">
                   <ul>
                     <li>
                       <a target="_blank" href="https://www.apple.com/app-store/">

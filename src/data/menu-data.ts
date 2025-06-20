@@ -200,59 +200,59 @@ const menu_data = [
   {
     id: 3,
     title: "Industrii",
-    link: "/portofolio",
+    link: "/portfolio",
     has_dropdown: true,
     sub_menus: [
       {
-        link: "/portofolio",
+        link: "/portfolio",
         title: "Alimente și Băuturi",
         inner_submenu: true,
         sub_menu: [
-          { link: "/portofolio", title: "Panificație și Cereale" },
-          { link: "/portofolio", title: "Băuturi" },
-          { link: "/portofolio", title: "Bomboane și Cofetărie" },
-          { link: "/portofolio", title: "Lactate" },
-          { link: "/portofolio", title: "Ouă" },
-          { link: "/portofolio", title: "Fructe şi Legume" },
-          { link: "/portofolio", title: "Carne" },
-          { link: "/portofolio", title: "Hrană Animale" },
-          { link: "/portofolio", title: "Gustări Sărate" },
-          { link: "/portofolio", title: "Alte Produse Alimentare" }
+          { link: "/portfolio", title: "Panificație și Cereale" },
+          { link: "/portfolio", title: "Băuturi" },
+          { link: "/portfolio", title: "Bomboane și Cofetărie" },
+          { link: "/portfolio", title: "Lactate" },
+          { link: "/portfolio", title: "Ouă" },
+          { link: "/portfolio", title: "Fructe şi Legume" },
+          { link: "/portfolio", title: "Carne" },
+          { link: "/portfolio", title: "Hrană Animale" },
+          { link: "/portfolio", title: "Gustări Sărate" },
+          { link: "/portfolio", title: "Alte Produse Alimentare" }
         ]
       },
       {
-        link: "/portofolio",
+        link: "/portfolio",
         title: "Industrii Prelucrătoare",
         inner_submenu: true,
         sub_menu: [
-          { link: "/portofolio", title: "Autovehicule" },
-          { link: "/portofolio", title: "Materiale de Construcții" },
-          { link: "/portofolio", title: "Produse Chimice" },
-          { link: "/portofolio", title: "Electrice și Electronice" },
-          { link: "/portofolio", title: "Fire, Cabluri și Țevi" }
+          { link: "/portfolio", title: "Autovehicule" },
+          { link: "/portfolio", title: "Materiale de Construcții" },
+          { link: "/portfolio", title: "Produse Chimice" },
+          { link: "/portfolio", title: "Electrice și Electronice" },
+          { link: "/portfolio", title: "Fire, Cabluri și Țevi" }
         ]
       },
       {
-        link: "/portofolio",
+        link: "/portfolio",
         title: "Farma și Larg Consum",
         inner_submenu: true,
         sub_menu: [
-          { link: "/portofolio", title: "Cosmetice și Îngrijire" },
-          { link: "/portofolio", title: "Farmaceutice" },
-          { link: "/portofolio", title: "Tutun" }
+          { link: "/portfolio", title: "Cosmetice și Îngrijire" },
+          { link: "/portfolio", title: "Farmaceutice" },
+          { link: "/portfolio", title: "Tutun" }
         ]
       },
       {
-        link: "/portofolio",
+        link: "/portfolio",
         title: "Alte Industrii",
         inner_submenu: true,
         sub_menu: [
-          { link: "/portofolio", title: "Imprimare Comercială" },
-          { link: "/portofolio", title: "Unelte și Matrițe" },
-          { link: "/portofolio", title: "Securitate" },
-          { link: "/portofolio", title: "Ceasuri și Bijuterii" },
-          { link: "/portofolio", title: "Monetărie" },
-          { link: "/portofolio", title: "Tehnologii Medicale" }
+          { link: "/portfolio", title: "Imprimare Comercială" },
+          { link: "/portfolio", title: "Unelte și Matrițe" },
+          { link: "/portfolio", title: "Securitate" },
+          { link: "/portfolio", title: "Ceasuri și Bijuterii" },
+          { link: "/portfolio", title: "Monetărie" },
+          { link: "/portfolio", title: "Tehnologii Medicale" }
         ]
       }
     ]

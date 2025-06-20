@@ -6,11 +6,11 @@ const NotFound = () => {
   return (
     <>
       <HeaderOne />
-      <div className="lonyo-error-section light-bg">
+      <div className="multitech-error-section light-bg">
         <div className="container">
-          <div className="lonyo-error-content" data-aos="fade-up" data-aos-duration="700">
+          <div className="multitech-error-content" data-aos="fade-up" data-aos-duration="700">
             <div
-              className="lonyo-error-thumb aos-init aos-animate"
+              className="multitech-error-thumb aos-init aos-animate"
               data-aos="fade-up"
               data-aos-duration="700"
             >
@@ -22,7 +22,7 @@ const NotFound = () => {
               currently unavailable.
             </p>
             <Link
-              className="lonyo-default-btn career-btn mt-50"
+              className="multitech-default-btn career-btn mt-50"
               data-aos="fade-up"
               data-aos-duration="900"
               href="/"

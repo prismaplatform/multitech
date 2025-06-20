@@ -362,13 +362,13 @@
 .light-color .site-menu-main .nav-link-item {
   color: var(--white-color);
 }
-.lonyo-header2 .site-menu-main .nav-link-item {
+.multitech-header2 .site-menu-main .nav-link-item {
   color: var(--heading-color2);
 }
-.lonyo-header4 .site-menu-main .nav-link-item {
+.multitech-header4 .site-menu-main .nav-link-item {
   color: var(--heading-color3);
 }
-.lonyo-header5 .site-menu-main .nav-link-item {
+.multitech-header5 .site-menu-main .nav-link-item {
   color: var(--light-color4);
 }
 
@@ -1011,7 +1011,7 @@ a.log-in-btn:hover:after {
 }
 
 /* rk theme */
-/* .lonyo-portfolio-column div > div > div > div{
+/* .multitech-portfolio-column div > div > div > div{
   display: inline !important;
 } */
 
@@ -2021,18 +2021,18 @@ a.log-in-btn:hover:after {
 }
 
 .btn-primary-custom {
-  background: linear-gradient(135deg, #f2a900 0%, #ffb84d 100%);
+  background: linear-gradient(135deg, #f2a900 0%, #f2a900 100%);
   border: none;
   color: white;
   border-radius: 10px;
   font-weight: 600;
   transition: all 0.2s;
-  box-shadow: 0 4px 16px rgba(242, 169, 0, 0.3);
+  /* box-shadow: 0 4px 16px rgba(242, 169, 0, 0.3); */
 }
 
 .btn-primary-custom:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(242, 169, 0, 0.4);
+  /* box-shadow: 0 6px 20px rgba(242, 169, 0, 0.4); */
 }
 
 .btn-icon {
@@ -3267,12 +3267,12 @@ a.log-in-btn:hover:after {
   gap: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 139, 205, 0.3);
+  /* box-shadow: 0 8px 20px rgba(0, 139, 205, 0.3); */
 }
 
 .btn-primary-custom:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(0, 139, 205, 0.4);
+  /* box-shadow: 0 12px 30px rgba(0, 139, 205, 0.4); */
 }
 
 .recommended-section {

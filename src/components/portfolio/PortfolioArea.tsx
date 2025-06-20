@@ -35,9 +35,9 @@ const PortfolioArea = () => {
 
   return (
     <>
-      <div className="lonyo-section-padding2">
+      <div className="multitech-section-padding2">
         <div className="container">
-          <div className="lonyo-default-content mb-5 w-100">
+          <div className="multitech-default-content mb-5 w-100">
             <h2>În ce industrie activați?</h2>
             <p >
               Fiecare domeniu de activitate se confruntă cu un ansamblu unic de provocări în ceea ce privește marcarea și codificarea, cum ar fi condiţii dificile de mediu, procese de producţie continue, reglementări stricte, linii de producție mare viteză şi o varietate de tipuri de produse şi de ambalaje.
@@ -51,7 +51,7 @@ Selectaţi un domeniu de activitate pentru a afla mai multe:
             <p></p>
           </div>
           <div
-            className="lonyo-portfolio-menu lonyo-section-title"
+            className="multitech-portfolio-menu multitech-section-title"
             data-aos="fade-up"
             data-aos-duration="500"
           >
@@ -73,7 +73,7 @@ Selectaţi un domeniu de activitate pentru a afla mai multe:
               ))}
             </ul>
           </div>
-          <div className="lonyo-portfolio-column" id="lonyo-portfolio-grid">
+          <div className="multitech-portfolio-column" id="multitech-portfolio-grid">
             <ResponsiveMasonry
               columnsCountBreakPoints={{ 0: 1, 750: 2, 992: 2 }}
             >
@@ -81,13 +81,13 @@ Selectaţi un domeniu de activitate pentru a afla mai multe:
                 {items.map((item, i) => (
                   <div
                     key={i}
-                    className="lonyo-p-thumb"
+                    className="multitech-p-thumb"
                     data-aos="fade-up"
                     data-aos-duration="700"
                   >
                     <img className="w100" src={item.image} alt="" />
-                    <div className="lonyo-p-data-wrap">
-                      <div className="lonyo-p-content">
+                    <div className="multitech-p-data-wrap">
+                      <div className="multitech-p-content">
                         <h4>{item.title}</h4>
                         <ul>
                           {item.tags.map((tag, index) => (
@@ -97,7 +97,7 @@ Selectaţi un domeniu de activitate pentru a afla mai multe:
                           ))}
                         </ul>
                       </div>
-                      <div className="lonyo-p-title-btn">
+                      <div className="multitech-p-title-btn">
                         <Link className="title-btn" href="/single-portfolio">
                           Learn more
                           <svg

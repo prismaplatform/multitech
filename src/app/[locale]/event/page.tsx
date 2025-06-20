@@ -1,7 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Wrapper from "@/layouts/Wrapper";
-import Product from "./Product";
+import Event from "./Event";
 
 export const metadata: Metadata = {
   title: "Sign in - Multitech | Efficiency on the Production Line",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const index = () => {
   return (
     <Wrapper>
-      <Product />
+        <Event/>
     </Wrapper>
   );
 };

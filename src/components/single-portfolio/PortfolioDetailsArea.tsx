@@ -4,27 +4,27 @@ import React from "react";
 const PortfolioDetailsArea = () => {
   return (
     <>
-      <div className="lonyo-section-padding9">
+      <div className="multitech-section-padding9">
         <div className="container">
-          <div className="lonyo-integration-d-wrap">
-            <div className="lonyo-section-title">
-              <div className="lonyo-p-d-thumb" data-aos="fade-up" data-aos-duration="500">
+          <div className="multitech-integration-d-wrap">
+            <div className="multitech-section-title">
+              <div className="multitech-p-d-thumb" data-aos="fade-up" data-aos-duration="500">
                 <img src="/assets/images/portfolio/p7.png" alt="" />
               </div>
-              <div className="lonyo-p-d-data-wrap">
-                <div className="lonyo-p-d-data-text">
+              <div className="multitech-p-d-data-wrap">
+                <div className="multitech-p-d-data-text">
                   <p>Client:</p>
                   <h4>XYZ Company</h4>
                 </div>
-                <div className="lonyo-p-d-data-text">
+                <div className="multitech-p-d-data-text">
                   <p>Services:</p>
                   <h4>Web Design</h4>
                 </div>
-                <div className="lonyo-p-d-data-text">
+                <div className="multitech-p-d-data-text">
                   <p>Duration:</p>
                   <h4>2 Weeks</h4>
                 </div>
-                <div className="lonyo-p-d-data-text">
+                <div className="multitech-p-d-data-text">
                   <p>Websit:</p>
                   <Link className="title-btn" href="/single-portfolio">
                     <h4>Live preview</h4>
@@ -48,7 +48,7 @@ const PortfolioDetailsArea = () => {
                 </div>
               </div>
             </div>
-            <div className="lonyo-default-content pb-35">
+            <div className="multitech-default-content pb-35">
               <h2>Project description:</h2>
               <p>
                 BudgetEase is an innovative personal finance app designed to simplify money
@@ -57,7 +57,7 @@ const PortfolioDetailsArea = () => {
                 and achieve their financial goals effortlessly.
               </p>
             </div>
-            <div className="lonyo-default-content pb-35">
+            <div className="multitech-default-content pb-35">
               <h2>Key features:</h2>
               <div className="text text2">
                 <p>
@@ -82,7 +82,7 @@ const PortfolioDetailsArea = () => {
                 </p>
               </div>
             </div>
-            <div className="lonyo-default-content pb-35">
+            <div className="multitech-default-content pb-35">
               <h2>Mission:</h2>
               <p>
                 BudgetEase is dedicated to empowering users to take control of their financial
@@ -90,7 +90,7 @@ const PortfolioDetailsArea = () => {
                 simplifies money management.
               </p>
             </div>
-            <div className="lonyo-default-content border-b">
+            <div className="multitech-default-content border-b">
               <h2>Target audience:</h2>
               <p>
                 BudgetEase is perfect for individuals, families, and young professionals looking for
@@ -99,15 +99,15 @@ const PortfolioDetailsArea = () => {
               </p>
             </div>
           </div>
-          <div className="lonyo-section-title center">
+          <div className="multitech-section-title center">
             <h2>We have several projects to show you</h2>
           </div>
           <div className="row">
             <div className="col-lg-5">
-              <div className="lonyo-p-thumb thumb2" data-aos="fade-up" data-aos-duration="700">
+              <div className="multitech-p-thumb thumb2" data-aos="fade-up" data-aos-duration="700">
                 <img className="w100" src="/assets/images/portfolio/p5.png" alt="" />
-                <div className="lonyo-p-data-wrap wrap2">
-                  <div className="lonyo-p-content">
+                <div className="multitech-p-data-wrap wrap2">
+                  <div className="multitech-p-content">
                     <h4>DebtFreePath</h4>
                     <ul>
                       <li>
@@ -118,7 +118,7 @@ const PortfolioDetailsArea = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="lonyo-p-title-btn">
+                  <div className="multitech-p-title-btn">
                     <Link className="title-btn" href="/portfolio">
                       Learn more
                       <svg
@@ -143,10 +143,10 @@ const PortfolioDetailsArea = () => {
               </div>
             </div>
             <div className="col-lg-7">
-              <div className="lonyo-p-thumb thumb2 mb-0" data-aos="fade-up" data-aos-duration="900">
+              <div className="multitech-p-thumb thumb2 mb-0" data-aos="fade-up" data-aos-duration="900">
                 <img className="w100" src="/assets/images/portfolio/p6.png" alt="" />
-                <div className="lonyo-p-data-wrap">
-                  <div className="lonyo-p-content">
+                <div className="multitech-p-data-wrap">
+                  <div className="multitech-p-content">
                     <h4>DebtFreePath</h4>
                     <ul>
                       <li>
@@ -157,7 +157,7 @@ const PortfolioDetailsArea = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="lonyo-p-title-btn">
+                  <div className="multitech-p-title-btn">
                     <Link className="title-btn" href="/portfolio">
                       Learn more
                       <svg

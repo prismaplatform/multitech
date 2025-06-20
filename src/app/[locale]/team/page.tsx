@@ -5,8 +5,8 @@ import Wrapper from '@/layouts/Wrapper';
 import Team from '@/components/team';
 
 export const metadata: Metadata = {
-  title: "Team - Lonyo - IT Solution & Technology Temaptle",
-  description: "Lonyo - IT Solution & Technology Temaptle",
+  title: "Team - Multitech | Efficiency on the Production Line",
+  description: "Multitech | Efficiency on the Production Line",
 }
 
  

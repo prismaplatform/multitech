@@ -25,6 +25,7 @@ import {
   ShoppingCart,
   Package,
 } from "lucide-react";
+import Link from "next/link";
 
 const ModernCartPage = () => {
   const { cartItems, removeFromCart, addToCart, decrementQuantity, clearCart } =
@@ -152,10 +153,12 @@ const ModernCartPage = () => {
             </p>
 
             <div className="empty-actions">
+              <Link href="/shop">
               <button className="btn-primary-custom">
                 <Package size={18} />
                 Căutare produse
               </button>
+              </Link>
             </div>
           </div>
 

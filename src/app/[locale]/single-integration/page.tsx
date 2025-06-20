@@ -5,8 +5,8 @@ import Wrapper from '@/layouts/Wrapper';
 import SingleIntegration from '@/components/single-integration';
 
 export const metadata: Metadata = {
-  title: "Integration Details - Lonyo - IT Solution & Technology Temaptle",
-  description: "Lonyo - IT Solution & Technology Temaptle",
+  title: "Integration Details - Multitech | Efficiency on the Production Line",
+  description: "Multitech | Efficiency on the Production Line",
 }
 
 

@@ -16,17 +16,17 @@ const FinancialDecisionsAreaHomeOne = () => {
 
   return (
     <>
-      <section className="lonyo-section-padding6">
+      <section className="multitech-section-padding6">
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
-              <div className="lonyo-content-thumb" data-aos="fade-up" data-aos-duration="700">
+              <div className="multitech-content-thumb" data-aos="fade-up" data-aos-duration="700">
                 <img src="/assets/images/v1/content-thumb.png" alt="" />
               </div>
             </div>
             <div className="col-lg-7 d-flex align-items-center">
               <div
-                className="lonyo-default-content pl-50"
+                className="multitech-default-content pl-50"
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
@@ -36,48 +36,48 @@ const FinancialDecisionsAreaHomeOne = () => {
                   savings goals, and say goodbye to financial worries. Get ready for a clearer view
                   of your finances like never before!
                 </p>
-                <div className="lonyo-faq-wrap1 mt-50">
+                <div className="multitech-faq-wrap1 mt-50">
                   {faq_data.map((item, i) => (
                     <div
                       key={i}
-                      className={`lonyo-faq-item ${activeIndex === i ? "open" : ""}`}
+                      className={`multitech-faq-item ${activeIndex === i ? "open" : ""}`}
                       data-aos="fade-up"
                       data-aos-duration={item.delay}
                     >
-                      <div className="lonyo-faq-header">
+                      <div className="multitech-faq-header">
                         <h4 onClick={() => setActiveIndex(i)}>{item.question}</h4>
-                        <div className="lonyo-active-icon">
+                        <div className="multitech-active-icon">
                           <img className="plasicon" src="/assets/images/v1/mynus.svg" alt="" />
                           <img className="mynusicon" src="/assets/images/v1/plas.svg" alt="" />
                         </div>
                       </div>
-                      <div className="lonyo-faq-body">
+                      <div className="multitech-faq-body">
                         <p>{item.answer}</p>
                       </div>
                     </div>
                   ))}
 
-                  {/* <div className="lonyo-faq-item" data-aos="fade-up" data-aos-duration="700">
-                    <div className="lonyo-faq-header">
+                  {/* <div className="multitech-faq-item" data-aos="fade-up" data-aos-duration="700">
+                    <div className="multitech-faq-header">
                       <h4>Comprehensive Financial Overview:</h4>
-                      <div className="lonyo-active-icon">
+                      <div className="multitech-active-icon">
                         <img className="plasicon" src="/assets/images/v1/mynus.svg" alt="" />
                         <img className="mynusicon" src="/assets/images/v1/plas.svg" alt="" />
                       </div>
                     </div>
-                    <div className="lonyo-faq-body">
+                    <div className="multitech-faq-body">
                       <p>Automatically and syncs with bank accounts and credit cards to provide instant updates on spending, helping users stay aware of their all daily transactions.</p>
                     </div>
                   </div>
-                  <div className="lonyo-faq-item" data-aos="fade-up" data-aos-duration="900">
-                    <div className="lonyo-faq-header">
+                  <div className="multitech-faq-item" data-aos="fade-up" data-aos-duration="900">
+                    <div className="multitech-faq-header">
                       <h4>Stress-Reducing Automation:</h4>
-                      <div className="lonyo-active-icon">
+                      <div className="multitech-active-icon">
                         <img className="plasicon" src="/assets/images/v1/mynus.svg" alt="" />
                         <img className="mynusicon" src="/assets/images/v1/plas.svg" alt="" />
                       </div>
                     </div>
-                    <div className="lonyo-faq-body">
+                    <div className="multitech-faq-body">
                       <p>Automatically and syncs with bank accounts and credit cards to provide instant updates on spending, helping users stay aware of their all daily transactions.</p>
                     </div>
                   </div> */}

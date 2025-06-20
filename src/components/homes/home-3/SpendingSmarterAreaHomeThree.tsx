@@ -80,7 +80,7 @@ const SpendingSmarterAreaHomeThree = () => {
   return (
     <>
  <div
-        className="lonyo-content-shape1"
+        className="multitech-content-shape1"
         style={{
           height: "140px",
           backgroundImage: "url('/assets/images/shape/shape1.svg')", // Corrected URL syntax
@@ -89,9 +89,9 @@ const SpendingSmarterAreaHomeThree = () => {
           backgroundRepeat: "no-repeat", // Prevent image repetition
         }}
       ></div>
-      <div className="lonyo-section-padding2">
+      <div className="multitech-section-padding2">
         <div className="container">
-          <div className="lonyo-default-content">
+          <div className="multitech-default-content">
             <h2>Cea mai largă ofertă de tehnologie</h2>
             <p className="data">Când vine vorba de marcare, vă oferim soluția potrivită prin cea mai largă gamă de tehnologii de pe piață.</p>
             <p></p>
@@ -103,11 +103,11 @@ const SpendingSmarterAreaHomeThree = () => {
                 className="col-xl-4 col-lg-6 col-md-6 mb-4 d-flex"
               >
                 <div
-                  className="lonyo-service-wrap light-bg d-flex flex-column h-100"
+                  className="multitech-service-wrap light-bg d-flex flex-column h-100"
                   data-aos="fade-up"
                   data-aos-duration={service.duration}
                 >
-                  <div className="lonyo-service-title ">
+                  <div className="multitech-service-title ">
                     <h4>{service.title}</h4>
                     <img
                       src={service.image}
@@ -116,10 +116,10 @@ const SpendingSmarterAreaHomeThree = () => {
                     />
                     
                   </div>
-                  <div className="lonyo-service-data flex-grow-1">
+                  <div className="multitech-service-data flex-grow-1">
                     <p>{service.description}</p>
                   </div>
-                  <div className="lonyo-service-links d-flex flex-wrap gap-3 mt-auto">
+                  <div className="multitech-service-links d-flex flex-wrap gap-3 mt-auto">
                     {" "}
                     {/* Added gap and mt-auto for pushing links to bottom */}
                     {service.links.map((link, linkIndex) => (
@@ -155,7 +155,7 @@ const SpendingSmarterAreaHomeThree = () => {
         </div>
       </div>
      <div
-        className="lonyo-content-shape3"
+        className="multitech-content-shape3"
         style={{
           height: "25px",
           backgroundImage: "url('/assets/images/shape/shape2.svg')", // Corrected URL syntax

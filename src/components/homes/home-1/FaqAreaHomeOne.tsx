@@ -56,38 +56,38 @@ const FaqAreaHomeOne = ({ style_2, style_3, style_4 }: any) => {
   return (
     <>
       <div
-        className={`lonyo-section-padding4 ${style_4 ? "section" : ""} ${
+        className={`multitech-section-padding4 ${style_4 ? "section" : ""} ${
           style_2 ? "section" : style_3 ? "section pt-0" : ""
         }`}
       >
         <div className="container">
-          <div className="lonyo-section-title center">
+          <div className="multitech-section-title center">
             <h2>Găsește răspunsuri la toate întrebările de mai jos</h2>
           </div>
-          {style_3 ? null : style_4 ? null : <div className="lonyo-faq-shape"></div>}
-          <div className="lonyo-faq-wrap1">
+          {style_3 ? null : style_4 ? null : <div className="multitech-faq-shape"></div>}
+          <div className="multitech-faq-wrap1">
             {faq_data.map((item, i) => (
               <div
                 key={i}
-                className={`lonyo-faq-item item2 ${activeIndex === i ? "open" : ""}`}
+                className={`multitech-faq-item item2 ${activeIndex === i ? "open" : ""}`}
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
-                <div className="lonyo-faq-header" onClick={() => setActiveIndex(i)}>
+                <div className="multitech-faq-header" onClick={() => setActiveIndex(i)}>
                   <h4>{item.question}</h4>
-                  <div className="lonyo-active-icon">
+                  <div className="multitech-active-icon">
                     <img className="plasicon" src="/assets/images/v1/mynus.svg" alt="" />
                     <img className="mynusicon" src="/assets/images/v1/plas.svg" alt="" />
                   </div>
                 </div>
-                <div className="lonyo-faq-body body2">
+                <div className="multitech-faq-body body2">
                   <p>{item.answer}</p>
                 </div>
               </div>
             ))}
           </div>
           <div className="faq-btn" data-aos="fade-up" data-aos-duration="700">
-            <Link className="lonyo-default-btn faq-btn2" href="/faq">
+            <Link className="multitech-default-btn faq-btn2" href="/faq">
               Nu găsești răspunsul tău?
             </Link>
           </div>

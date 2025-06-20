@@ -3,35 +3,35 @@ import React from "react";
 const SingleTeamArea = () => {
   return (
     <>
-      <section className="lonyo-section-padding9">
+      <section className="multitech-section-padding9">
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
-              <div className="lonyo-team-d-thumb" data-aos="fade-up" data-aos-duration="700">
+              <div className="multitech-team-d-thumb" data-aos="fade-up" data-aos-duration="700">
                 <img src="/assets/images/about-us/t13.png" alt="" />
               </div>
             </div>
             <div className="col-lg-7 d-flex align-items-center">
               <div
-                className="lonyo-default-content pl-50"
+                className="multitech-default-content pl-50"
                 data-aos="fade-up"
                 data-aos-duration="900"
               >
                 <h2>About Michael Chen</h2>
                 <p>
-                  As the Chief Executive Officer of Lonyo, Michael Chen brings over a decade of
+                  As the Chief Executive Officer of multitech, Michael Chen brings over a decade of
                   leadership and expertise in finance and technology.{" "}
                 </p>
                 <p>
                   With a passion for innovation, he has been instrumental in shaping the company’s
                   vision to empower individuals and businesses with smarter financial solutions.
-                  Under his guidance, Lonyo has grown into a trusted name in the finance software
+                  Under his guidance, multitech has grown into a trusted name in the finance software
                   industry, known for its user-centric design, cutting-edge technology.{" "}
                 </p>
                 <p className="mb-0">
                   Michael's strategic approach and dedication to fostering a culture of excellence
                   have been key to the company's success. Michael enjoys mentoring young
-                  entrepreneurs and staying updated on the latest fintech trends to keep Lonyo ahead
+                  entrepreneurs and staying updated on the latest fintech trends to keep multitech ahead
                   of the curve.
                 </p>
                 <div className="tag-share-social social2 mt-50">
@@ -115,7 +115,7 @@ const SingleTeamArea = () => {
           </div>
           <div className="row">
             <div className="col-xl-4 col-lg-6">
-              <div className="lonyo-team-d-content" data-aos="fade-up" data-aos-duration="500">
+              <div className="multitech-team-d-content" data-aos="fade-up" data-aos-duration="500">
                 <h4>Qualifications:</h4>
                 <ul>
                   <li>
@@ -134,7 +134,7 @@ const SingleTeamArea = () => {
               </div>
             </div>
             <div className="col-xl-4 col-lg-6">
-              <div className="lonyo-team-d-content" data-aos="fade-up" data-aos-duration="700">
+              <div className="multitech-team-d-content" data-aos="fade-up" data-aos-duration="700">
                 <h4>Attributes:</h4>
                 <ul>
                   <li>
@@ -158,41 +158,41 @@ const SingleTeamArea = () => {
             </div>
             <div className="col-xl-4 col-lg-6">
               <div
-                className="lonyo-team-d-content pl-30"
+                className="multitech-team-d-content pl-30"
                 data-aos="fade-up"
                 data-aos-duration="900"
               >
                 <h4>Professional Skills:</h4>
-                <div className="lonyo-skill-item">
-                  <div className="lonyo-skill-title">
+                <div className="multitech-skill-item">
+                  <div className="multitech-skill-title">
                     <h6>Problem solving</h6>
                   </div>
-                  <div className="lonyo-skill-line">
-                    <div className="lonyo-skill-bar bar-one"></div>
+                  <div className="multitech-skill-line">
+                    <div className="multitech-skill-bar bar-one"></div>
                   </div>
                 </div>
-                <div className="lonyo-skill-item">
-                  <div className="lonyo-skill-title">
+                <div className="multitech-skill-item">
+                  <div className="multitech-skill-title">
                     <h6>Networking Skills:</h6>
                   </div>
-                  <div className="lonyo-skill-line2">
-                    <div className="lonyo-skill-bar2 bar-two"></div>
+                  <div className="multitech-skill-line2">
+                    <div className="multitech-skill-bar2 bar-two"></div>
                   </div>
                 </div>
-                <div className="lonyo-skill-item">
-                  <div className="lonyo-skill-title">
+                <div className="multitech-skill-item">
+                  <div className="multitech-skill-title">
                     <h6>Leadership Skills:</h6>
                   </div>
-                  <div className="lonyo-skill-line2">
-                    <div className="lonyo-skill-bar2 bar-three"></div>
+                  <div className="multitech-skill-line2">
+                    <div className="multitech-skill-bar2 bar-three"></div>
                   </div>
                 </div>
-                <div className="lonyo-skill-item">
-                  <div className="lonyo-skill-title">
+                <div className="multitech-skill-item">
+                  <div className="multitech-skill-title">
                     <h6>Leadership Skills:</h6>
                   </div>
-                  <div className="lonyo-skill-line2">
-                    <div className="lonyo-skill-bar2 bar-four"></div>
+                  <div className="multitech-skill-line2">
+                    <div className="multitech-skill-bar2 bar-four"></div>
                   </div>
                 </div>
               </div>

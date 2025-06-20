@@ -206,7 +206,7 @@ const ProductPage = () => {
 
       <Breadcrumb title="Products" subtitle="Shop" />
 
-      <div className="lonyo-section-padding10">
+      <div className="multitech-section-padding10">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 d-none d-lg-block">

@@ -94,36 +94,36 @@ const OffCanvas = ({ setMenuOpen, menuOpen }: any) => {
 
   return (
     <>
-      <div className={`lonyo-menu-wrapper ${menuOpen ? "lonyo-body-visible" : ""}`}>
+      <div className={`multitech-menu-wrapper ${menuOpen ? "multitech-body-visible" : ""}`}>
         <div 
           ref={menuRef}
-          className="lonyo-menu-area text-center"
+          className="multitech-menu-area text-center"
         >
-          <div className="lonyo-menu-mobile-top">
+          <div className="multitech-menu-mobile-top">
             <div className="mobile-logo">
               <Link href="/" onClick={handleInnerLinkClick}>
                 <img src="/assets/images/logo/logo-dark.svg" alt="logo" />
               </Link>
             </div>
-            <button className="lonyo-menu-toggle mobile" onClick={() => setMenuOpen(false)}>
+            <button className="multitech-menu-toggle mobile" onClick={() => setMenuOpen(false)}>
               <i className="ri-close-line"></i>
             </button>
           </div>
-          <div className="lonyo-mobile-menu">
+          <div className="multitech-mobile-menu">
             <ul>
               {menu_data.map((item, i) => (
                 <li
                   key={i}
                   className={`${
-                    item.has_dropdown ? "menu-item-has-children lonyo-item-has-children" : ""
-                  } ${navTitle === item.title ? "lonyo-active" : ""}`}
+                    item.has_dropdown ? "menu-item-has-children multitech-item-has-children" : ""
+                  } ${navTitle === item.title ? "multitech-active" : ""}`}
                 >
                   <Link 
                     href={item.link} 
                     onClick={(e) => handleMobileMenuClick(e, item)}
                   >
                     {item.title}
-                    {item.has_dropdown && <span className="lonyo-mean-expand"></span>}
+                    {item.has_dropdown && <span className="multitech-mean-expand"></span>}
                   </Link>
                   {item.has_dropdown && (
                     <ul
@@ -133,8 +133,8 @@ const OffCanvas = ({ setMenuOpen, menuOpen }: any) => {
                       {item.sub_menus?.map((sub_item, index) => (
                         <li
                           key={index}
-                          className={`menu-item-has-children lonyo-item-has-children ${
-                            navTitle2 === sub_item.title ? "lonyo-active" : ""
+                          className={`menu-item-has-children multitech-item-has-children ${
+                            navTitle2 === sub_item.title ? "multitech-active" : ""
                           }`}
                         >
                           <Link
@@ -142,11 +142,11 @@ const OffCanvas = ({ setMenuOpen, menuOpen }: any) => {
                             onClick={(e) => handleSubMenuClick(e, sub_item)}
                           >
                             {sub_item.title}
-                            {sub_item.inner_submenu && <span className="lonyo-mean-expand"></span>}
+                            {sub_item.inner_submenu && <span className="multitech-mean-expand"></span>}
                           </Link>
                           {sub_item.inner_submenu && (
                             <ul
-                              className="sub-menu lonyo-submenu"
+                              className="sub-menu multitech-submenu"
                               style={{ display: navTitle2 === sub_item.title ? "block" : "none" }}
                             >
                               {sub_item.sub_menu?.map((inner_sub_item, inner_index) => (
@@ -169,8 +169,8 @@ const OffCanvas = ({ setMenuOpen, menuOpen }: any) => {
               ))}
             </ul>
           </div>
-          <div className="lonyo-mobile-menu-btn">
-            <Link className="lonyo-default-btn sm-size w-100 text-center" href="/contact" data-text="Get in Touch">
+          <div className="multitech-mobile-menu-btn">
+            <Link className="multitech-default-btn sm-size w-100 text-center" href="/contact" data-text="Get in Touch">
               <span className="btn-wraper text-center d-flex m-auto">Contact</span>
             </Link>
             

@@ -42,22 +42,22 @@ const FinancialDecisionsHomeTwo = ({ style_2, style_3 }: any) => {
       <section
         className={`${
           style_2
-            ? "lonyo-section-padding"
+            ? "multitech-section-padding"
             : style_3
-            ? "lonyo-section-padding7"
-            : "lonyo-section-padding5"
+            ? "multitech-section-padding7"
+            : "multitech-section-padding5"
         } `}
       >
         <div className="container">
           <div className="row">
             <div className="col-lg-5">
-              <div className="lonyo-content-thumb2" data-aos="fade-right" data-aos-duration="700">
+              <div className="multitech-content-thumb2" data-aos="fade-right" data-aos-duration="700">
                 <img src="/assets/images/v2/content1.png" alt="" />
               </div>
             </div>
             <div className="col-lg-7 d-flex align-items-center">
               <div
-                className="lonyo-default-content pl-50"
+                className="multitech-default-content pl-50"
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
@@ -68,22 +68,22 @@ const FinancialDecisionsHomeTwo = ({ style_2, style_3 }: any) => {
                   of your finances like never before!
                 </p>
                 <div className="mt-50">
-                  <div className="lonyo-faq-wrap1">
+                  <div className="multitech-faq-wrap1">
                     {faq_data.map((item, i) => (
                       <div
                         key={i}
-                        className={`lonyo-faq-item ${activeIndex === i ? "open" : ""}`}
+                        className={`multitech-faq-item ${activeIndex === i ? "open" : ""}`}
                         data-aos="fade-up"
                         data-aos-duration={item.delay}
                       >
-                        <div className="lonyo-faq-header" onClick={() => setActiveIndex(i)}>
+                        <div className="multitech-faq-header" onClick={() => setActiveIndex(i)}>
                           <h4>{item.question}</h4>
-                          <div className="lonyo-active-icon">
+                          <div className="multitech-active-icon">
                             <img className="plasicon" src="/assets/images/v1/mynus.svg" alt="" />
                             <img className="mynusicon" src="/assets/images/v1/plas.svg" alt="" />
                           </div>
                         </div>
-                        <div className="lonyo-faq-body">
+                        <div className="multitech-faq-body">
                           <p>{item.answer}</p>
                         </div>
                       </div>

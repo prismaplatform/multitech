@@ -28,7 +28,7 @@ const Breadcrumb = ({ title, subtitle }: any) => {
       </div>
 
         <div
-        className="lonyo-content-shape"
+        className="multitech-content-shape"
         style={{
           height: "25px",
           backgroundImage: "url('/assets/images/shape/shape2_rotate.svg')", // Corrected URL syntax

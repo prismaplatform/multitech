@@ -39,17 +39,17 @@ const FinancialUpdatesHomeTwo = () => {
 
   return (
     <>
-      <div className="lonyo-section-padding3">
+      <div className="multitech-section-padding3">
         <div className="container">
           <div className="row">
             <div className="col-lg-5 order-lg-2">
-              <div className="lonyo-faq-thumb" data-aos="fade-left" data-aos-duration="700">
+              <div className="multitech-faq-thumb" data-aos="fade-left" data-aos-duration="700">
                 <img src="/assets/images/v2/faq-thumb.png" alt="" />
               </div>
             </div>
             <div className="col-lg-7 d-flex align-items-center">
               <div
-                className="lonyo-default-content pr-100"
+                className="multitech-default-content pr-100"
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
@@ -59,22 +59,22 @@ const FinancialUpdatesHomeTwo = () => {
                   all updates into a single dashboard.
                 </p>
                 <div className="mt-50">
-                  <div className="lonyo-faq-wrap1">
+                  <div className="multitech-faq-wrap1">
                     {faq_data.map((item, i) => (
                       <div
                         key={i}
-                        className={`lonyo-faq-item ${activeIndex === i ? "open" : ""}`}
+                        className={`multitech-faq-item ${activeIndex === i ? "open" : ""}`}
                         data-aos="fade-up"
                         data-aos-duration={item.delay}
                       >
-                        <div className="lonyo-faq-header" onClick={() => setActiveIndex(i)}>
+                        <div className="multitech-faq-header" onClick={() => setActiveIndex(i)}>
                           <h4>{item.question}</h4>
-                          <div className="lonyo-active-icon">
+                          <div className="multitech-active-icon">
                             <img className="plasicon" src="/assets/images/v1/mynus.svg" alt="" />
                             <img className="mynusicon" src="/assets/images/v1/plas.svg" alt="" />
                           </div>
                         </div>
-                        <div className="lonyo-faq-body">
+                        <div className="multitech-faq-body">
                           <p>{item.answer}</p>
                         </div>
                       </div>

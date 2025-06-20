@@ -7,12 +7,12 @@ const SingleServiceArea = () => {
 
   return (
     <>
-      <section className="lonyo-section-padding9 overflow-hidden">
+      <section className="multitech-section-padding9 overflow-hidden">
         <div className="container">
-          <div className="lonyo-section-title" data-aos="fade-up" data-aos-duration="700">
+          <div className="multitech-section-title" data-aos="fade-up" data-aos-duration="700">
             <img src="/assets/images/service/dashboard.png" alt="" />
           </div>
-          <div className="lonyo-default-content max-1100 pb-35">
+          <div className="multitech-default-content max-1100 pb-35">
             <h2>Key Features of expense tracking:</h2>
             <p>
               Expense tracking is a core feature of finance apps that helps users monitor and
@@ -45,12 +45,12 @@ const SingleServiceArea = () => {
           </div>
           <div className="row">
             <div className="col-lg-7">
-              <div className="lonyo-hero-dashbord" data-aos="fade-right" data-aos-duration="700">
+              <div className="multitech-hero-dashbord" data-aos="fade-right" data-aos-duration="700">
                 <img src="/assets/images/hero/dashboard.png" alt="" />
               </div>
             </div>
             <div className="col-lg-5">
-              <div className="lonyo-video-thumb2" data-aos="fade-left" data-aos-duration="700">
+              <div className="multitech-video-thumb2" data-aos="fade-left" data-aos-duration="700">
                 <img src="/assets/images/hero/video1.png" alt="" />
                 <a
                   className="play-btn video-init"
@@ -65,7 +65,7 @@ const SingleServiceArea = () => {
               </div>
             </div>
           </div>
-          <div className="lonyo-default-content max-1100 pt-40">
+          <div className="multitech-default-content max-1100 pt-40">
             <h2>Key Features of expense tracking:</h2>
             <p>
               Integration Feature means any Service feature that collects metrics by means other

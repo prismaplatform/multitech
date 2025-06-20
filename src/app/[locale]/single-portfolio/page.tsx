@@ -4,8 +4,8 @@ import Wrapper from "@/layouts/Wrapper";
 import SinglePortfolio from "@/components/single-portfolio";
 
 export const metadata: Metadata = {
-	title: "Portfolio Details - Lonyo - IT Solution & Technology Temaptle",
-	description: "Lonyo - IT Solution & Technology Temaptle",
+	title: "Portfolio Details - Multitech | Efficiency on the Production Line",
+	description: "Multitech | Efficiency on the Production Line",
 };
 
 const index = () => {

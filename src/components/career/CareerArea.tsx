@@ -4,18 +4,18 @@ import React from "react";
 const CareerArea = () => {
   return (
     <>
-      <div className="lonyo-section-padding4">
+      <div className="multitech-section-padding4">
         <div className="container">
-          <div className="lonyo-section-title center max-width-750">
+          <div className="multitech-section-title center max-width-750">
             <h2>Explore our exciting opportunities available</h2>
           </div>
-          <div className="lonyo-service-table-wrap">
-            <div className="lonyo-service-table-item" data-aos="fade-up" data-aos-duration="500">
-              <div className="lonyo-service-table-title">
+          <div className="multitech-service-table-wrap">
+            <div className="multitech-service-table-item" data-aos="fade-up" data-aos-duration="500">
+              <div className="multitech-service-table-title">
                 <h4>Financial Analyst</h4>
                 <p>We are looking for a skilled financial analyst to join our team</p>
               </div>
-              <div className="lonyo-service-table-body">
+              <div className="multitech-service-table-body">
                 <ul>
                   <li>
                     <img src="/assets/images/career/clock.svg" alt="" />
@@ -31,18 +31,18 @@ const CareerArea = () => {
                   </li>
                 </ul>
               </div>
-              <div className="lonyo-service-table-btn">
-                <Link className="lonyo-default-btn career-btn" href="/single-career">
+              <div className="multitech-service-table-btn">
+                <Link className="multitech-default-btn career-btn" href="/single-career">
                   Apply now
                 </Link>
               </div>
             </div>
-            <div className="lonyo-service-table-item" data-aos="fade-up" data-aos-duration="700">
-              <div className="lonyo-service-table-title">
+            <div className="multitech-service-table-item" data-aos="fade-up" data-aos-duration="700">
+              <div className="multitech-service-table-title">
                 <h4>Software Developer</h4>
                 <p>We’re looking for a 3+ year experienced software developer.</p>
               </div>
-              <div className="lonyo-service-table-body">
+              <div className="multitech-service-table-body">
                 <ul>
                   <li>
                     <img src="/assets/images/career/clock.svg" alt="" />
@@ -58,18 +58,18 @@ const CareerArea = () => {
                   </li>
                 </ul>
               </div>
-              <div className="lonyo-service-table-btn">
-                <Link className="lonyo-default-btn career-btn" href="/single-career">
+              <div className="multitech-service-table-btn">
+                <Link className="multitech-default-btn career-btn" href="/single-career">
                   Apply now
                 </Link>
               </div>
             </div>
-            <div className="lonyo-service-table-item" data-aos="fade-up" data-aos-duration="900">
-              <div className="lonyo-service-table-title">
+            <div className="multitech-service-table-item" data-aos="fade-up" data-aos-duration="900">
+              <div className="multitech-service-table-title">
                 <h4>Marketing Specialist</h4>
                 <p>We are looking for a skilled financial analyst to join our team</p>
               </div>
-              <div className="lonyo-service-table-body">
+              <div className="multitech-service-table-body">
                 <ul>
                   <li>
                     <img src="/assets/images/career/clock.svg" alt="" />
@@ -85,22 +85,22 @@ const CareerArea = () => {
                   </li>
                 </ul>
               </div>
-              <div className="lonyo-service-table-btn">
-                <Link className="lonyo-default-btn career-btn" href="/single-career">
+              <div className="multitech-service-table-btn">
+                <Link className="multitech-default-btn career-btn" href="/single-career">
                   Apply now
                 </Link>
               </div>
             </div>
             <div
-              className="lonyo-service-table-item mb-0"
+              className="multitech-service-table-item mb-0"
               data-aos="fade-up"
               data-aos-duration="1100"
             >
-              <div className="lonyo-service-table-title">
+              <div className="multitech-service-table-title">
                 <h4>UI/UX Designer</h4>
                 <p>We’re looking for a 5+ year experienced software developer.</p>
               </div>
-              <div className="lonyo-service-table-body">
+              <div className="multitech-service-table-body">
                 <ul>
                   <li>
                     <img src="/assets/images/career/clock.svg" alt="" />
@@ -116,8 +116,8 @@ const CareerArea = () => {
                   </li>
                 </ul>
               </div>
-              <div className="lonyo-service-table-btn">
-                <Link className="lonyo-default-btn career-btn" href="/single-career">
+              <div className="multitech-service-table-btn">
+                <Link className="multitech-default-btn career-btn" href="/single-career">
                   Apply now
                 </Link>
               </div>

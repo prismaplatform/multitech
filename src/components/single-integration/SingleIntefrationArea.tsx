@@ -4,11 +4,11 @@ import React from "react";
 const SingleIntefrationArea = () => {
   return (
     <>
-      <div className="lonyo-section-padding">
+      <div className="multitech-section-padding">
         <div className="integration-shape"></div>
         <div className="container">
-          <div className="lonyo-integration-d-wrap">
-            <div className="lonyo-integration-d-title">
+          <div className="multitech-integration-d-wrap">
+            <div className="multitech-integration-d-title">
               <ul>
                 <li>
                   <Link href="/integration">
@@ -25,7 +25,7 @@ const SingleIntefrationArea = () => {
                 </li>
               </ul>
             </div>
-            <div className="lonyo-default-content pb-35">
+            <div className="multitech-default-content pb-35">
               <h2>Key features of the integration:</h2>
               <p className="mb-0">
                 This integration is designed to save you time, reduce financial errors and give you
@@ -34,7 +34,7 @@ const SingleIntefrationArea = () => {
                 for smart financial management.
               </p>
             </div>
-            <div className="lonyo-default-content pb-35">
+            <div className="multitech-default-content pb-35">
               <h2>Why this integration matters:</h2>
               <p>
                 Integration Feature means any Service feature that collects metrics by means other
@@ -71,7 +71,7 @@ const SingleIntefrationArea = () => {
                 </li>
               </ul>
             </div>
-            <div className="lonyo-default-content pb-35">
+            <div className="multitech-default-content pb-35">
               <h2>How it works:</h2>
               <p>
                 This software should have a user-friendly interface, and present data in an
@@ -82,7 +82,7 @@ const SingleIntefrationArea = () => {
                 <p>
                   <span>1. Connect Your Accounts:</span> Link your bank, credit cards, and other
                   financial platforms via this tool to start syncing transactions directly into
-                  Lonyo.
+                  multitech.
                 </p>
                 <p>
                   <span>2. Automate and Organize:</span> Once connected, transactions are
@@ -95,13 +95,13 @@ const SingleIntefrationArea = () => {
                   and reminders to stay on top of your bills and spending.
                 </p>
                 <p className="mb-0">
-                  Integrating any tool with Lonyo is quick and easy. Start today and take control of
+                  Integrating any tool with multitech is quick and easy. Start today and take control of
                   your finances with automation.
                 </p>
               </div>
             </div>
-            <div className="lonyo-default-content">
-              <Link href="/contact-us" className="lonyo-default-btn faq-btn2">
+            <div className="multitech-default-content">
+              <Link href="/contact-us" className="multitech-default-btn faq-btn2">
                 Installing the plugin
               </Link>
             </div>
@@ -112,15 +112,15 @@ const SingleIntefrationArea = () => {
       <div className="container">
         <div className="dividead"></div>
       </div>
-      <section className="lonyo-section-padding7">
+      <section className="multitech-section-padding7">
         <div className="container">
-          <div className="lonyo-section-title center max-width-760">
+          <div className="multitech-section-title center max-width-760">
             <h2>Make all your tools work together seamlessly</h2>
           </div>
           <div className="row">
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="lonyo-integration-wrap" data-aos="fade-up" data-aos-duration="500">
-                <div className="lonyo-integration-content">
+              <div className="multitech-integration-wrap" data-aos="fade-up" data-aos-duration="500">
+                <div className="multitech-integration-content">
                   <h4>SalesForecast</h4>
                   <p>Integrates with accounting to streamline financial reporting.</p>
                   <Link className="title-btn" href="/integration">
@@ -143,14 +143,14 @@ const SingleIntefrationArea = () => {
                     </svg>
                   </Link>
                 </div>
-                <div className="lonyo-integration-icon">
+                <div className="multitech-integration-icon">
                   <img src="/assets/images/integration/in4.svg" alt="" />
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="lonyo-integration-wrap" data-aos="fade-up" data-aos-duration="700">
-                <div className="lonyo-integration-content">
+              <div className="multitech-integration-wrap" data-aos="fade-up" data-aos-duration="700">
+                <div className="multitech-integration-content">
                   <h4>TaskMaster</h4>
                   <p>Accounts to track performance, dividends and also capital gains.</p>
                   <Link className="title-btn" href="/integration">
@@ -173,14 +173,14 @@ const SingleIntefrationArea = () => {
                     </svg>
                   </Link>
                 </div>
-                <div className="lonyo-integration-icon">
+                <div className="multitech-integration-icon">
                   <img src="/assets/images/integration/in5.svg" alt="" />
                 </div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-6 col-md-6">
-              <div className="lonyo-integration-wrap" data-aos="fade-up" data-aos-duration="900">
-                <div className="lonyo-integration-content">
+              <div className="multitech-integration-wrap" data-aos="fade-up" data-aos-duration="900">
+                <div className="multitech-integration-content">
                   <h4>Zalack</h4>
                   <p>Payroll services to automate salary payments, deductions.</p>
                   <Link className="title-btn" href="/integration">
@@ -203,7 +203,7 @@ const SingleIntefrationArea = () => {
                     </svg>
                   </Link>
                 </div>
-                <div className="lonyo-integration-icon">
+                <div className="multitech-integration-icon">
                   <img src="/assets/images/integration/in6.svg" alt="" />
                 </div>
               </div>
@@ -213,7 +213,7 @@ const SingleIntefrationArea = () => {
       </section>
 
  <div
-        className="lonyo-content-shape"
+        className="multitech-content-shape"
         style={{
           height: "25px",
           backgroundImage: "url('/assets/images/shape/shape2.svg')", // Corrected URL syntax

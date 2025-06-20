@@ -5,8 +5,8 @@ import Wrapper from '@/layouts/Wrapper';
 import SingleCareer from '@/components/single-career';
 
 export const metadata: Metadata = {
-  title: "Career Details - Lonyo - IT Solution & Technology Temaptle",
-  description: "Lonyo - IT Solution & Technology Temaptle",
+  title: "Career Details - Multitech | Efficiency on the Production Line",
+  description: "Multitech | Efficiency on the Production Line",
 }
 
 

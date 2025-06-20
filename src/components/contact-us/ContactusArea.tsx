@@ -100,10 +100,10 @@ const ContactusArea = () => {
 
   return (
     <>
-      <div className="lonyo-section-padding">
+      <div className="multitech-section-padding">
         <div className="container">
           <div
-            className="lonyo-section-title text-center"
+            className="multitech-section-title text-center"
             data-aos="fade-up"
             data-aos-duration="700"
           >
@@ -155,19 +155,19 @@ const ContactusArea = () => {
           </div>
         </div>
       </div>
-      <div className="lonyo-section-padding2">
+      <div className="multitech-section-padding2">
         <div className="container">
           <div className="row mt-3" data-aos="fade-up" data-aos-duration="900">
             <div className="col-lg-6">
-              <div className="lonyo-default-content">
+              <div className="multitech-default-content">
                 <h2>Informații de contact</h2>
                 <p className="max-w616">
                   Contactați-ne pentru orice întrebare sau informații
                   suplimentare despre produsele și serviciile noastre.
                 </p>
                 <div className="mt-50">
-                  <div className="lonyo-contact-us-info-item">
-                    <div className="lonyo-contact-us-icon">
+                  <div className="multitech-contact-us-info-item">
+                    <div className="multitech-contact-us-icon">
                       <a
                         href="https://maps.google.com/?q=Bd.+Brașovului+145,+505600+Săcele,+Brașov,+România"
                         target="_blank"
@@ -180,7 +180,7 @@ const ContactusArea = () => {
                         />
                       </a>
                     </div>
-                    <div className="lonyo-contact-us-content">
+                    <div className="multitech-contact-us-content">
                       <a
                         href="https://maps.google.com/?q=Bd.+Brașovului+145,+505600+Săcele,+Brașov,+România"
                         target="_blank"
@@ -198,13 +198,13 @@ const ContactusArea = () => {
                     </div>
                   </div>
 
-                  <div className="lonyo-contact-us-info-item">
-                    <div className="lonyo-contact-us-icon">
+                  <div className="multitech-contact-us-info-item">
+                    <div className="multitech-contact-us-icon">
                       <a href="tel:0772268584">
                         <Phone size={24} className="text-primary" />
                       </a>
                     </div>
-                    <div className="lonyo-contact-us-content">
+                    <div className="multitech-contact-us-content">
                       <a href="tel:0772268584">
                         <h4>Telefon</h4>
                         <p>Vânzări & Service: 0-7722-MULTI (0-7722-68584)</p>
@@ -212,11 +212,11 @@ const ContactusArea = () => {
                     </div>
                   </div>
 
-                  <div className="lonyo-contact-us-info-item">
-                    <div className="lonyo-contact-us-icon">
+                  <div className="multitech-contact-us-info-item">
+                    <div className="multitech-contact-us-icon">
                       <Clock size={24} className="text-primary" />
                     </div>
-                    <div className="lonyo-contact-us-content">
+                    <div className="multitech-contact-us-content">
                       <h4>Program de lucru</h4>
                       <p>
                         Luni-Vineri: 9:00 – 17:00
@@ -226,11 +226,11 @@ const ContactusArea = () => {
                     </div>
                   </div>
 
-                  <div className="lonyo-contact-us-info-item pb-0">
-                    <div className="lonyo-contact-us-icon">
+                  <div className="multitech-contact-us-info-item pb-0">
+                    <div className="multitech-contact-us-icon">
                       <Building2 size={24} className="text-primary" />
                     </div>
-                    <div className="lonyo-contact-us-content">
+                    <div className="multitech-contact-us-content">
                       <h4>Date companie</h4>
                       <p>
                         Denumire: Multitech Industrial SRL
@@ -351,7 +351,7 @@ const ContactusArea = () => {
                         className="text-muted mt-2 d-block"
                         style={{ fontSize: ".875em" }}
                       >
-                        Accept
+                        Accept {" "}
                         <Link
                           href="/data-privacy-policy"
                           target="_blank"
@@ -359,12 +359,12 @@ const ContactusArea = () => {
                         >
                           politica de confidențialitate
                         </Link>
-                        {""}
+                        {" "}
                         și sunt de acord ca Multitech Industrial SRL să poată
                         prelucra datele mele personale furnizate în conformitate
                         cu termenii politicii.
                       </label>
-                      Translated with DeepL.com (free version)
+                     
                     </div>
                     {formErrors.acceptedPrivacyPolicy && (
                       <span className="error-text block mt-1">
@@ -398,7 +398,7 @@ const ContactusArea = () => {
       </div>
       <div className="responsive-map">
         <iframe
-          className="lonyo-contact-us-map"
+          className="multitech-contact-us-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889"
           width="600"
           height="450"

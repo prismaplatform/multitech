@@ -10,10 +10,11 @@ import Link from "next/link";
 
 const FooterOne = ({ style_2 }: any) => {
   style_2 = 1;
+ const currentYear = new Date().getFullYear();
   return (
     <>
       <div
-        className="lonyo-content-shape3"
+        className="multitech-content-shape3"
         style={{
           height: "25px",
           backgroundImage: "url('/assets/images/shape/shape2.svg')", // Corrected URL syntax
@@ -22,13 +23,13 @@ const FooterOne = ({ style_2 }: any) => {
           backgroundRepeat: "no-repeat", // Prevent image repetition
         }}
       ></div>
-      <footer className="lonyo-footer-section">
+      <footer className="multitech-footer-section">
         <div className="container">
-          <div className="lonyo-footer-one">
+          <div className="multitech-footer-one">
             <div className="row">
               <div className="col-xxl-4 col-xl-12 col-md-6">
                 <div
-                  className={`lonyo-footer-textarea ${
+                  className={`multitech-footer-textarea ${
                     style_2 ? "textarea2" : ""
                   }`}
                 >
@@ -46,7 +47,7 @@ const FooterOne = ({ style_2 }: any) => {
                     Livrare din stoc și service în 24h.
                   </p>
 
-                  <div className="lonyo-social-wrap2">
+                  <div className="multitech-social-wrap2">
                     <ul>
                       <li>
                         <a href="https://www.facebook.com">
@@ -78,7 +79,7 @@ const FooterOne = ({ style_2 }: any) => {
                 </div>
               </div>
               <div className="col-xxl-3 col-xl-4 col-md-6">
-                <div className={`lonyo-footer-menu ${style_2 ? "menu2" : ""}`}>
+                <div className={`multitech-footer-menu ${style_2 ? "menu2" : ""}`}>
                   <div className="footer-menu">
                     <h4>Produse</h4>
                     <ul>
@@ -117,7 +118,7 @@ const FooterOne = ({ style_2 }: any) => {
                 </div>
               </div>
               <div className="col-xxl-2 col-xl-4 col-md-6">
-                <div className="lonyo-footer-menu pl-30 menu2">
+                <div className="multitech-footer-menu pl-30 menu2">
                   <h4>Aplicații</h4>
                   <ul>
                     <li>
@@ -139,7 +140,7 @@ const FooterOne = ({ style_2 }: any) => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-footer-menu pl-30 menu2">
+                <div className="multitech-footer-menu pl-30 menu2">
                   <h4 className="mt-4">Industrii</h4>
                   <ul>
                     <li>
@@ -163,7 +164,7 @@ const FooterOne = ({ style_2 }: any) => {
               </div>
               <div className="col-xxl-3 col-xl-4 col-md-6">
                 <div
-                  className={`lonyo-footer-menu pl-31 mb-0 ${
+                  className={`multitech-footer-menu pl-31 mb-0 ${
                     style_2 ? "menu2" : ""
                   }`}
                 >
@@ -171,8 +172,8 @@ const FooterOne = ({ style_2 }: any) => {
                   <div
                     className={`${
                       style_2
-                        ? "lonyo-subscription-field3"
-                        : "lonyo-subscription-field2"
+                        ? "multitech-subscription-field3"
+                        : "multitech-subscription-field2"
                     }`}
                   >
                     <form onSubmit={(e) => e.preventDefault()}>
@@ -182,7 +183,7 @@ const FooterOne = ({ style_2 }: any) => {
                         className="w-100"
                       />
                       <button
-                        className="lonyo-default-btn d-block button-black"
+                        className="multitech-default-btn d-block button-black"
                         type="submit"
                       >
                         Subscribe
@@ -193,13 +194,17 @@ const FooterOne = ({ style_2 }: any) => {
               </div>
             </div>
           </div>
-          <div className={`lonyo-footer-bottom-text ${style_2 ? "text2" : ""}`}>
-            <p>
-              © Copyright{" "}
-              <span id="current-year">{new Date().getFullYear()}</span>, All
-              Rights Reserved by Mthemeus
-            </p>
+          <div className={`multitech-footer-bottom-text ${style_2 ? "text2" : ""}`}>
+            <div className="text-center py-3">
+              <p className="mb-1">
+                Copyright © {currentYear}. All Rights Reserved | <strong>Multitech</strong>
+              </p>
+              <p className="mb-0">
+                Designed & Developed | <strong><Link href="https://prismasolutions.ro" className="text-white">Prisma Solutions</Link></strong>
+              </p>
+            </div>
           </div>
+          
         </div>
       </footer>
     </>

@@ -10,13 +10,13 @@ const SigninArea = () => {
   };
 
   return (
-    <div className="lonyo-account-section light-bg">
+    <div className="multitech-account-section light-bg">
       <div className="container">
-        <div className="lonyo-account-title">
+        <div className="multitech-account-title">
           <h1>Sign In</h1>
-          <p>Step inside Lonyo and start managing finances like never before</p>
+          <p>Step inside multitech and start managing finances like never before</p>
         </div>
-        <div className="lonyo-account-box" data-aos="fade-up" data-aos-duration="700">
+        <div className="multitech-account-box" data-aos="fade-up" data-aos-duration="700">
           <div className="login-with-google">
             <a href="https://www.google.com/">
               <img src="/assets/images/account/a1.svg" alt="Google Sign-in" />
@@ -26,13 +26,13 @@ const SigninArea = () => {
           <div className="or">
             <p>or</p>
           </div>
-          <div className="lonyo-contact-box2">
+          <div className="multitech-contact-box2">
             <form onSubmit={(e) => e.preventDefault()}>
-              <div className="lonyo-main-field">
+              <div className="multitech-main-field">
                 <p>Email address*</p>
                 <input className="light-bg" type="email" placeholder="Your email address" />
               </div>
-              <div className="lonyo-main-field">
+              <div className="multitech-main-field">
                 <p>Password*</p>
                 <input
                   id="password-field"
@@ -48,7 +48,7 @@ const SigninArea = () => {
                   onClick={togglePasswordVisibility}
                 ></div>
               </div>
-              <button className="lonyo-default-btn extra-btn d-block" type="button">
+              <button className="multitech-default-btn extra-btn d-block" type="button">
                 Sign In
               </button>
               <div className="login">

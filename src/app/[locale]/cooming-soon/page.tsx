@@ -6,8 +6,8 @@ import Wrapper from '@/layouts/Wrapper';
 import CoomingSoon from '@/components/cooming-soon';
 
 export const metadata: Metadata = {
-  title: "Cooming Soon - Lonyo - IT Solution & Technology Temaptle",
-  description: "Lonyo - IT Solution & Technology Temaptle",
+  title: "Cooming Soon - Multitech | Efficiency on the Production Line",
+  description: "Multitech | Efficiency on the Production Line",
 }
 
  

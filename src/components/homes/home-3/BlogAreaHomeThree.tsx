@@ -4,16 +4,16 @@ import React from "react";
 const BlogAreaHomeThree = () => {
   return (
     <>
-      <div className="lonyo-section-padding6 overflow-hidden">
+      <div className="multitech-section-padding6 overflow-hidden">
         <div className="container">
-          <div className="lonyo-section-title">
+          <div className="multitech-section-title">
             <div className="row">
               <div className="col-xl-8 col-lg-8">
                 <h2>Check out the latest articles and news</h2>
               </div>
               <div className="col-xl-4 col-lg-4 d-flex align-items-center justify-content-end">
-                <div className="lonyo-title-btn" data-aos="fade-up" data-aos-duration="500">
-                  <Link className="lonyo-default-btn blog-title-btn" href="/blog">
+                <div className="multitech-title-btn" data-aos="fade-up" data-aos-duration="500">
+                  <Link className="multitech-default-btn blog-title-btn" href="/blog">
                     Browse all articles
                   </Link>
                 </div>
@@ -22,11 +22,11 @@ const BlogAreaHomeThree = () => {
           </div>
           <div className="row">
             <div className="col-lg-6">
-              <div className="lonyo-blog-wrap" data-aos="fade-right" data-aos-duration="500">
-                <div className="lonyo-blog-thumb">
+              <div className="multitech-blog-wrap" data-aos="fade-right" data-aos-duration="500">
+                <div className="multitech-blog-thumb">
                   <img src="/assets/images/blog/b1.png" alt="" />
                 </div>
-                <div className="lonyo-blog-meta">
+                <div className="multitech-blog-meta">
                   <ul>
                     <li>
                       <Link href="/single-blog">
@@ -41,7 +41,7 @@ const BlogAreaHomeThree = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-blog-content">
+                <div className="multitech-blog-content">
                   <Link href="/single-blog">
                     <h2>A guide to free personal finance software</h2>
                   </Link>
@@ -50,19 +50,19 @@ const BlogAreaHomeThree = () => {
                     all in one place — sounds like a...
                   </p>
                 </div>
-                <div className="lonyo-blog-btn">
-                  <Link href="/single-blog" className="lonyo-default-btn blog-btn">
+                <div className="multitech-blog-btn">
+                  <Link href="/single-blog" className="multitech-default-btn blog-btn">
                     continue reading
                   </Link>
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="lonyo-blog-wrap" data-aos="fade-left" data-aos-duration="500">
-                <div className="lonyo-blog-thumb">
+              <div className="multitech-blog-wrap" data-aos="fade-left" data-aos-duration="500">
+                <div className="multitech-blog-thumb">
                   <img src="/assets/images/blog/b2.png" alt="" />
                 </div>
-                <div className="lonyo-blog-meta">
+                <div className="multitech-blog-meta">
                   <ul>
                     <li>
                       <Link href="/single-blog">
@@ -77,7 +77,7 @@ const BlogAreaHomeThree = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="lonyo-blog-content">
+                <div className="multitech-blog-content">
                   <Link href="/single-blog">
                     <h2>AI-powered tools for increasing productivity</h2>
                   </Link>
@@ -86,8 +86,8 @@ const BlogAreaHomeThree = () => {
                     of finance and financial planning and analysis...
                   </p>
                 </div>
-                <div className="lonyo-blog-btn">
-                  <Link href="/single-blog" className="lonyo-default-btn blog-btn">
+                <div className="multitech-blog-btn">
+                  <Link href="/single-blog" className="multitech-default-btn blog-btn">
                     continue reading
                   </Link>
                 </div>

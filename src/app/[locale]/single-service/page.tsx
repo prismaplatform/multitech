@@ -6,8 +6,8 @@ import Wrapper from '@/layouts/Wrapper';
 import SingleService from '@/components/single-service';
 
 export const metadata: Metadata = {
-  title: "Service Details - Lonyo - IT Solution & Technology Temaptle",
-  description: "Lonyo - IT Solution & Technology Temaptle",
+  title: "Service Details - Multitech | Efficiency on the Production Line",
+  description: "Multitech | Efficiency on the Production Line",
 }
 
 const index = () => {

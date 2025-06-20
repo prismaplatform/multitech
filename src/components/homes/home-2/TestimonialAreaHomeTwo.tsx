@@ -104,9 +104,9 @@ const TestimonialAreaHomeTwo = () => {
   return (
     <>
       {/* Fontos: Győződj meg róla, hogy a CSS-edben ez az osztály rendelkezik 'overflow: hidden;'-nel! */}
-      <div className="lonyo-section-padding2 position-relative overflow-hidden">
+      <div className="multitech-section-padding2 position-relative overflow-hidden">
         <div className="container">
-          <div className="lonyo-section-title">
+          <div className="multitech-section-title">
             <div className="row">
               <div className="col-xl-8 col-lg-8">
                 <h2>Nu ne crede pe cuvânt, verifică recenziile utilizatorilor</h2>
@@ -118,20 +118,20 @@ const TestimonialAreaHomeTwo = () => {
         {/* Adunk egy 'key' propot a Slidernek, ami a testimonials.length-hez van kötve. */}
         {/* Ez biztosítja, hogy a Slider újrarenderelődjön, ha az elemek száma változik. */}
         {testimonials.length > 0 ? (
-          <Slider key={testimonials.length} {...settings} className="lonyo-testimonial-slider-init">
+          <Slider key={testimonials.length} {...settings} className="multitech-testimonial-slider-init">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="lonyo-t-wrap wrap2 light-bg">
-                <div className="lonyo-t-ratting">
+              <div key={index} className="multitech-t-wrap wrap2 light-bg">
+                <div className="multitech-t-ratting">
                   <img src="/assets/images/shape/star.svg" alt="" />
                 </div>
-                <div className="lonyo-t-text">
+                <div className="multitech-t-text">
                   <p>{testimonial.text}</p>
                 </div>
-                <div className="lonyo-t-author">
-                  <div className="lonyo-t-author-thumb">
+                <div className="multitech-t-author">
+                  <div className="multitech-t-author-thumb">
                     <img src={testimonial.image} alt={testimonial.author} />
                   </div>
-                  <div className="lonyo-t-author-data">
+                  <div className="multitech-t-author-data">
                     <p>{testimonial.author}</p>
                     <span>{testimonial.title}</span>
                   </div>
@@ -143,7 +143,7 @@ const TestimonialAreaHomeTwo = () => {
           // Ezt a részt akkor jelenítjük meg, ha nincs tesztimoniál
           <p className="text-center">Nu există recenzii disponibile momentan.</p>
         )}
-        <div className="lonyo-t-overlay2">
+        <div className="multitech-t-overlay2">
           <img src="/assets/images/v2/overlay.png" alt="" />
         </div>
       </div>
