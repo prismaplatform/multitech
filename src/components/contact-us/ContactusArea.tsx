@@ -4,11 +4,24 @@ import contact_data from "@/data/contact-data";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight, Building, Building2, Calculator, Clock, Contact2, FileText, Mail, MapPin, MessageSquare, Phone, User } from "lucide-react";
+import {
+  ArrowRight,
+  Building,
+  Building2,
+  Calculator,
+  Clock,
+  Contact2,
+  FileText,
+  Mail,
+  MapPin,
+  MessageSquare,
+  Phone,
+  User,
+} from "lucide-react";
 import { useNotification } from "@/context/NotificationContext";
 
 const ContactusArea = () => {
-    const { showNotification } = useNotification();
+  const { showNotification } = useNotification();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -19,7 +32,7 @@ const ContactusArea = () => {
   });
   const [formErrors, setFormErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
+
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -27,9 +40,9 @@ const ContactusArea = () => {
   ) => {
     const { name, value, type } = e.target;
     const checked = (e.target as HTMLInputElement).checked; // Checkbox esetén
-    
+
     // Kezeljük a checkbox külön
-    if (type === 'checkbox') {
+    if (type === "checkbox") {
       setForm((prev) => ({ ...prev, [name]: checked }));
     } else {
       setForm((prev) => ({ ...prev, [name]: value }));
@@ -49,7 +62,9 @@ const ContactusArea = () => {
     else if (!/\S+@\S+\.\S+/.test(form.email))
       errors.email = "Érvénytelen email formátum";
     if (!form.phone.trim()) errors.phone = "Telefonszám megadása kötelező";
-    if (!form.acceptedPrivacyPolicy) errors.acceptedPrivacyPolicy = "Az adatvédelmi nyilatkozat elfogadása kötelező";
+    if (!form.acceptedPrivacyPolicy)
+      errors.acceptedPrivacyPolicy =
+        "Az adatvédelmi nyilatkozat elfogadása kötelező";
 
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
@@ -100,7 +115,10 @@ const ContactusArea = () => {
           </div>
           <div className="row d-flex justify-content-center">
             {contact_data.map((item, i) => (
-              <div key={i} className="col-xl-4 col-lg-6 col-md-6 d-flex mb-4 mb-lg-0">
+              <div
+                key={i}
+                className="col-xl-4 col-lg-6 col-md-6 d-flex mb-4 mb-lg-0"
+              >
                 <div
                   className="summary-card h-100 d-flex flex-column w-100 "
                   data-aos="fade-up"
@@ -233,36 +251,34 @@ const ContactusArea = () => {
                 data-aos="fade-up"
                 data-aos-duration="700"
               >
-                 <div className="form-header">
+                <div className="form-header">
                   <div className="form-icon">
                     <Contact2 size={24} />
                   </div>
                   <div>
                     <h3 className="form-title">Formular de contact</h3>
-                    <p className="form-subtitle">
-                      Formular de contact
-                    </p>
+                    <p className="form-subtitle">Formular de contact</p>
                   </div>
                 </div>
                 <form onSubmit={handleSubmit} className="quote-form">
                   <div className="form-group">
                     <label className="form-label">
                       <MessageSquare size={16} />
-                      Megjegyzés
+                      Mesaj
                     </label>
                     <textarea
                       name="message"
                       className="form-textarea"
                       value={form.message}
                       onChange={handleChange}
-                      placeholder="További információk, speciális igények..."
+                      placeholder="Pentru mai multe informații, cereri speciale..."
                       rows={3}
                     />
                   </div>
                   <div className="form-group">
                     <label className="form-label">
                       <User size={16} />
-                      Teljes név *
+                      Nume *
                     </label>
                     <input
                       type="text"
@@ -319,8 +335,6 @@ const ContactusArea = () => {
                     </div>
                   </div>
 
-                  
-
                   {/* GDPR CHECKBOX */}
                   <div className="form-group">
                     <div className="d-flex items-start gap-2">
@@ -332,18 +346,25 @@ const ContactusArea = () => {
                         onChange={handleChange}
                         className="mt-1"
                       />
-                      <label htmlFor="privacyPolicy" className="text-muted mt-2 d-block" style={{fontSize: ".875em"}}>
-                        Elfogadom az{" "}
+                      <label
+                        htmlFor="privacyPolicy"
+                        className="text-muted mt-2 d-block"
+                        style={{ fontSize: ".875em" }}
+                      >
+                        Accept
                         <Link
-                          href="/adatvedelmi-tajekoztato"
+                          href="/data-privacy-policy"
                           target="_blank"
                           className="text-primary underline"
                         >
-                          adatvédelmi tájékoztatót
-                        </Link>{" "}
-                        és hozzájárulok, hogy a Multitech Industrial SRL a megadott
-                        adataimat az abban foglaltak szerint kezelje.
+                          politica de confidențialitate
+                        </Link>
+                        {""}
+                        și sunt de acord ca Multitech Industrial SRL să poată
+                        prelucra datele mele personale furnizate în conformitate
+                        cu termenii politicii.
                       </label>
+                      Translated with DeepL.com (free version)
                     </div>
                     {formErrors.acceptedPrivacyPolicy && (
                       <span className="error-text block mt-1">
@@ -360,11 +381,11 @@ const ContactusArea = () => {
                     {isSubmitting ? (
                       <>
                         <div className="loading-spinner"></div>
-                        Küldés...
+                        Trimite...
                       </>
                     ) : (
                       <>
-                       Trimite
+                        Trimite
                         <ArrowRight size={16} />
                       </>
                     )}
