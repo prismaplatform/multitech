@@ -40,7 +40,7 @@ const VideoAreaHomeOne = ({style_2} : any) => {
 <div
         className="lonyo-content-shape1"
         style={{
-          height: "105px",
+          height: "140px",
           backgroundImage: "url('/assets/images/shape/shape1.svg')", // Corrected URL syntax
           backgroundSize: "cover", // Ensure the image covers the area
           backgroundPosition: "left", // Center the background image

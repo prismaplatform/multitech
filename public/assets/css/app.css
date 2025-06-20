@@ -2922,6 +2922,7 @@ a.light-color {
   -webkit-animation: updown 3s ease-in-out infinite;
   animation: updown 3s ease-in-out infinite;
   background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
+  display: none;
 }
 @media (max-width: 1800px) {
   .lonyo-content-shape2 {
@@ -7022,6 +7023,7 @@ textarea::placeholder {
   position: absolute;
   border-radius: 100px;
   background: linear-gradient(47.56deg, #FFEAC0 -40.67%, #f6f4ef 78.6%);
+   display: none;
 }
 @media (max-width: 1800px) {
   .lonyo-section-padding4.section::before {
