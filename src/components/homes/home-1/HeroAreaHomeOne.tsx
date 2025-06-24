@@ -9,7 +9,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 
-// Define interface for slide data
 interface SlideItem {
   id: number;
   highlight: string;
@@ -20,8 +19,6 @@ interface SlideItem {
 
 const HeroAreaHomeOne = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-
-  // Initialize AOS
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -29,12 +26,10 @@ const HeroAreaHomeOne = () => {
     });
   }, []);
 
-  // Refresh AOS on slide change
   useEffect(() => {
     AOS.refresh();
   }, [activeIndex]);
 
-  // Slider settings with TypeScript typing
   const settings: Settings = {
     dots: true,
     infinite: true,
@@ -48,7 +43,7 @@ const HeroAreaHomeOne = () => {
     beforeChange: (current: number, next: number) => setActiveIndex(next),
   };
 
-  // Slide data
+
   const slides: SlideItem[] = [
     {
       id: 1,
@@ -73,7 +68,6 @@ const HeroAreaHomeOne = () => {
           <div key={slide.id}>
             <div className="container">
               <div className="row h-100">
-                {/* Text Content - Fades up */}
                 <div className="col-lg-7 d-flex align-items-center h-100">
                   <div 
                     className="multitech-hero-content"
@@ -98,7 +92,7 @@ const HeroAreaHomeOne = () => {
                   </div>
                 </div>
                 
-                {/* Image - Fades left */}
+
                 <div className="col-lg-5 h-100">
                   <div 
                     className="multitech-hero-thumb"

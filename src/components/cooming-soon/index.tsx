@@ -3,37 +3,25 @@ import HeaderOne from "@/layouts/headers/HeaderOne";
 import React, { useEffect, useState } from "react";
 
 const CoomingSoon = () => {
-  // Set initial state for days, hours, minutes, and seconds
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    // Specify the deadline date
     const deadlineDate = new Date("December 31, 2025 23:59:59").getTime();
-
-    // Update the countdown every 1 second (1000 milliseconds)
     const intervalId = setInterval(() => {
-      // Get current date and time
       const currentDate = new Date().getTime();
 
-      // Calculate the distance between current date and time and the deadline date
       const distance = deadlineDate - currentDate;
-
-      // Calculate the remaining days, hours, minutes, and seconds
       const calculatedDays = Math.floor(distance / (1000 * 60 * 60 * 24));
       const calculatedHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const calculatedMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const calculatedSeconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Update the state with the calculated values
       setDays(calculatedDays);
       setHours(calculatedHours);
       setMinutes(calculatedMinutes);
       setSeconds(calculatedSeconds);
-
-      // If the countdown reaches zero, clear the interval
       if (distance < 0) {
         clearInterval(intervalId);
         setDays(0);
@@ -43,7 +31,7 @@ const CoomingSoon = () => {
       }
     }, 1000);
 
-    // Cleanup interval on component unmount
+
     return () => clearInterval(intervalId);
   }, []);
 

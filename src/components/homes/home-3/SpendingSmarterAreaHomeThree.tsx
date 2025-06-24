@@ -83,10 +83,10 @@ const SpendingSmarterAreaHomeThree = () => {
         className="multitech-content-shape1"
         style={{
           height: "140px",
-          backgroundImage: "url('/assets/images/shape/shape1.svg')", // Corrected URL syntax
-          backgroundSize: "cover", // Ensure the image covers the area
-          backgroundPosition: "left", // Center the background image
-          backgroundRepeat: "no-repeat", // Prevent image repetition
+          backgroundImage: "url('/assets/images/shape/shape1.svg')",
+          backgroundSize: "cover", 
+          backgroundPosition: "left", 
+          backgroundRepeat: "no-repeat", 
         }}
       ></div>
       <div className="multitech-section-padding2">
@@ -112,7 +112,7 @@ const SpendingSmarterAreaHomeThree = () => {
                     <img
                       src={service.image}
                       alt=""
-                      className="ms-3" // Added margin-bottom
+                      className="ms-3"
                     />
                     
                   </div>
@@ -121,12 +121,12 @@ const SpendingSmarterAreaHomeThree = () => {
                   </div>
                   <div className="multitech-service-links d-flex flex-wrap gap-3 mt-auto">
                     {" "}
-                    {/* Added gap and mt-auto for pushing links to bottom */}
+
                     {service.links.map((link, linkIndex) => (
                       <Link
                         key={linkIndex}
                         className="title-btn bg-transparent"
-                        href={link.href} // Changed to use link.href
+                        href={link.href}
                       >
                         {link.text}
                         <svg
@@ -158,10 +158,10 @@ const SpendingSmarterAreaHomeThree = () => {
         className="multitech-content-shape3"
         style={{
           height: "25px",
-          backgroundImage: "url('/assets/images/shape/shape2.svg')", // Corrected URL syntax
-          backgroundSize: "cover", // Ensure the image covers the area
-          backgroundPosition: "center", // Center the background image
-          backgroundRepeat: "no-repeat", // Prevent image repetition
+          backgroundImage: "url('/assets/images/shape/shape2.svg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center", 
+          backgroundRepeat: "no-repeat", 
         }}
       ></div>
     </>

@@ -1,4 +1,3 @@
-// components/HeaderOne.tsx
 "use client";
 
 import Link from "next/link";
@@ -30,33 +29,29 @@ const HeaderOne = () => {
 
   const { sticky } = useSticky();
   const router = useRouter();
-  const pathname = usePathname(); // Ezt fogjuk összehasonlítani a menülinkekkel
+  const pathname = usePathname();
   const { showCartDrawer } = useNotification();
   const languageDropdownRef = useRef<HTMLDivElement>(null);
   const currentLocale = useLocale();
 
-  // Sticky scroll state
   useEffect(() => {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Kezdeti állapot beállítása
-
+    handleScroll();
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  // Nyelv konfigurációk
   const languageConfig = {
     en: { flag: "/assets/images/flags/en.png", name: "English" },
     ro: { flag: "/assets/images/flags/ro.webp", name: "Română" },
     hu: { flag: "/assets/images/flags/hu.webp", name: "Magyar" },
   };
 
-  // Kívülre kattintás kezelése a nyelv dropdownhoz
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -82,10 +77,10 @@ const HeaderOne = () => {
     showCartDrawer();
   };
 
-  // Segédfüggvény az almenük rekurzív ellenőrzéséhez
-  // Ez a függvény megnézi, hogy az aktuális útvonal (currentPath) pontosan megegyezik-e
-  // bármelyik almenü (vagy annak al-almenüje stb.) linkjével.
-  const checkSubMenusForExactMatch = (subMenus: any[] | undefined, currentPath: string): boolean => {
+  const checkSubMenusForExactMatch = (
+    subMenus: any[] | undefined,
+    currentPath: string
+  ): boolean => {
     if (!subMenus) return false;
     for (const subItem of subMenus) {
       if (subItem.link === currentPath) {
@@ -100,28 +95,26 @@ const HeaderOne = () => {
     return false;
   };
 
-  // Aktív főmenüpont ellenőrzése
-  // Ez a függvény dönti el, hogy egy felső szintű menüelem aktívnak minősül-e.
   const isMainMenuActive = (item: any) => {
-    // 1. Ha az aktuális útvonal pontosan megegyezik a főmenü elem linkjével
     if (pathname === item.link) {
       return true;
     }
-
-    // 2. Ha a főmenü elem linkje az aktuális útvonal "előtagja"
-    // Például: item.link = "/shop", pathname = "/shop/videojet/1280" -> aktív
-    // KIVÉVE a gyökér útvonalat ("/"), mert az mindenhol aktívvá tenné a "Home" linket.
     if (item.link !== "/" && pathname.startsWith(item.link)) {
-        return true;
+      return true;
     }
 
-    // 3. Ha a főmenünek van almenüje, és valamelyik almenü (bármely mélységben)
-    // pontosan megegyezik az aktuális útvonallal.
     if (item.has_dropdown && item.sub_menus) {
       return checkSubMenusForExactMatch(item.sub_menus, pathname);
     }
 
     return false;
+  };
+
+  const handleDemoClick = () => {
+    const phoneNumber = "40772268584";
+    const message = encodeURIComponent("Bună ziua, aș dori un demo!");
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -160,13 +153,19 @@ const HeaderOne = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-7 col-sm-9  text-end">
+            <div className="col-lg-7 col-sm-9  text-end">
               <div className="contact-info">
                 <PhoneCall size={16} className="me-2" />
-                <Link href="tel:0772268584"><span className="text-white">Vânzări & Service: 0-7722-MULTI (0-7722-68584)</span></Link>
+                <Link href="tel:0772268584">
+                  <span className="text-white">
+                    Vânzări & Service: 0-7722-MULTI (0-7722-68584)
+                  </span>
+                </Link>
                 <div className="language-dropdown" ref={languageDropdownRef}>
                   <button
-                    onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                    onClick={() =>
+                      setLanguageDropdownOpen(!languageDropdownOpen)
+                    }
                     className={`language-dropdown-trigger `}
                     aria-label="Nyelvválasztó menü"
                   >
@@ -271,28 +270,22 @@ const HeaderOne = () => {
                     {menu_data.map((item, i) => (
                       <li
                         key={i}
-                        // Csak a főmenü `li` elemre alkalmazzuk az 'active' class-t
                         className={`${
                           item.has_dropdown ? "menu-item-has-children" : ""
                         } ${isMainMenuActive(item) ? "active" : ""}`}
                       >
-                        {/* A Link komponensre NEM kerül 'active' class itt! */}
-                        <Link href={item.link}>
-                          {item.title}
-                        </Link>
+                        <Link href={item.link}>{item.title}</Link>
                         {item.has_dropdown && item.sub_menus && (
                           <ul className="sub-menu shadow-lg rounded-md">
                             {item.sub_menus.map((sub_item, index) => (
                               <li
                                 key={index}
-                                // Az almenü `li` elemek NEM kapnak 'active' class-t
                                 className={`${
                                   sub_item.inner_submenu
                                     ? "menu-item-has-children"
                                     : ""
                                 }`}
                               >
-                                {/* Az almenü Link komponensre NEM kerül 'active' class */}
                                 <Link
                                   href={sub_item.link}
                                   className={`${
@@ -309,15 +302,12 @@ const HeaderOne = () => {
                                         (inner_item, inner_index) => (
                                           <li
                                             key={inner_index}
-                                            // Az al-almenü `li` elemek SEM kapnak 'active' class-t
                                             className={`${
-                                              (inner_item as any)
-                                                .inner_submenu
+                                              (inner_item as any).inner_submenu
                                                 ? "menu-item-has-children"
                                                 : ""
                                             }`}
                                           >
-                                            {/* Az al-almenü Link komponensre SEM kerül 'active' class */}
                                             <Link
                                               href={inner_item.link}
                                               className={`${
@@ -372,10 +362,11 @@ const HeaderOne = () => {
                 <div className={`multitech-header-info-content content2}`}>
                   <ul>
                     <li>
-                      <Link href="/sign-in">Demo</Link>
+                      <button onClick={handleDemoClick}>Demo</button>
                     </li>
                   </ul>
                 </div>
+
                 <button
                   className={`multitech-default-btn multitech-header-btn `}
                   onClick={handleCartClick}
@@ -385,7 +376,6 @@ const HeaderOne = () => {
                 </button>
               </div>
 
-              {/* Mobilmenü gomb */}
               <div className="multitech-header-menu">
                 <nav className="navbar site-navbar justify-content-between">
                   <button

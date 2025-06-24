@@ -28,7 +28,7 @@ const ContactusArea = () => {
     phone: "",
     message: "",
 
-    acceptedPrivacyPolicy: false, // GDPR checkbox állapota
+    acceptedPrivacyPolicy: false, 
   });
   const [formErrors, setFormErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -39,16 +39,13 @@ const ContactusArea = () => {
     >
   ) => {
     const { name, value, type } = e.target;
-    const checked = (e.target as HTMLInputElement).checked; // Checkbox esetén
+    const checked = (e.target as HTMLInputElement).checked; 
 
-    // Kezeljük a checkbox külön
     if (type === "checkbox") {
       setForm((prev) => ({ ...prev, [name]: checked }));
     } else {
       setForm((prev) => ({ ...prev, [name]: value }));
     }
-
-    // Töröljük a hibát ha a felhasználó elkezd gépelni
     if (formErrors[name]) {
       setFormErrors((prev) => ({ ...prev, [name]: "" }));
     }
@@ -80,13 +77,10 @@ const ContactusArea = () => {
 
     setIsSubmitting(true);
 
-    // Szimulált API hívás
     setTimeout(() => {
       console.log("Form submitted:", form);
       showNotification("Ajánlatkérés sikeresen elküldve!");
       setIsSubmitting(false);
-
-      // Form reset
       setForm({
         name: "",
         email: "",

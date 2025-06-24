@@ -6,7 +6,6 @@ import { LazyLoadTypes } from "react-slick";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// A tesztimoniál adatok tömbje – IDE TEHETED BE A TÉNYLEGES ADATOKAT
 const testimonials = [
   {
     text: "Această aplicație mi-a transformat bugetarea! Am acum o viziune clară și nu mai trebuie să-mi fac griji pentru cheltuieli și obiectivele de economii. A fost un succes!",
@@ -38,13 +37,6 @@ const testimonials = [
     title: "CEO la RoyexLeaf Organics",
     image: "/assets/images/v1/img6.png",
   },
-  // KEVESEBB ELEM TESZTELÉSÉHEZ: kommentezz ki néhányat, pl:
-  // {
-  //   text: "Még egy tesztimoniál.",
-  //   author: "Teszt Elek",
-  //   title: "Tesztelő",
-  //   image: "/assets/images/v1/img1.png",
-  // },
 ];
 
 const TestimonialAreaHomeTwo = () => {
@@ -53,14 +45,10 @@ const TestimonialAreaHomeTwo = () => {
   }, []);
 
   useEffect(() => {
-    AOS.refresh(); // Frissíti az AOS-t állapotváltozás esetén
+    AOS.refresh(); 
   }, []);
 
-  // Slider beállítások
   const settings = {
-    // A slidesToScroll alapértelmezésben 1.
-    // Ha azt szeretnéd, hogy annyi dia "scroll"-oljon, amennyi látható, állítsd Math.min(testimonials.length, X)-re.
-    // De a legtöbb esetben az 1 a jó választás, különösen, ha autoscroll van.
     slidesToScroll: 1,
     dots: false,
     autoplay: true,
@@ -69,32 +57,28 @@ const TestimonialAreaHomeTwo = () => {
     arrows: false,
     pauseOnHover: false,
     cssEase: "linear",
-    // CENTER PADDING: Próbáld meg ezt 0px-re állítani, ha a probléma továbbra is fennáll.
-    // Esetleg egy kisebb értékre, pl. "10px".
     centerPadding: "20px",
     lazyLoad: "progressive" as LazyLoadTypes,
-
-    // DINAMIKUS slidesToSHow BEÁLLÍTÁS: A legfontosabb rész!
-    slidesToShow: Math.min(testimonials.length, 4), // Alapértelmezett: maximum 4, vagy amennyi elem van
+    slidesToShow: Math.min(testimonials.length, 4),
 
     responsive: [
       {
         breakpoint: 1199,
         settings: {
-          slidesToShow: Math.min(testimonials.length, 2), // Tableteken és kisebb képernyőkön
+          slidesToShow: Math.min(testimonials.length, 2),
         },
       },
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: Math.min(testimonials.length, 1), // Mobil eszközökön
-          centerPadding: "50px", // Igazítva kisebb képernyőkhöz
+          slidesToShow: Math.min(testimonials.length, 1),
+          centerPadding: "50px",
         },
       },
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: Math.min(testimonials.length, 1), // Még kisebb mobil eszközökön
+          slidesToShow: Math.min(testimonials.length, 1),
           centerPadding: "0px",
         },
       },
@@ -103,7 +87,7 @@ const TestimonialAreaHomeTwo = () => {
 
   return (
     <>
-      {/* Fontos: Győződj meg róla, hogy a CSS-edben ez az osztály rendelkezik 'overflow: hidden;'-nel! */}
+    
       <div className="multitech-section-padding2 position-relative overflow-hidden">
         <div className="container">
           <div className="multitech-section-title">
@@ -114,9 +98,7 @@ const TestimonialAreaHomeTwo = () => {
             </div>
           </div>
         </div>
-        {/* Feltételesen rendereljük a slidert, ha van elég elem. */}
-        {/* Adunk egy 'key' propot a Slidernek, ami a testimonials.length-hez van kötve. */}
-        {/* Ez biztosítja, hogy a Slider újrarenderelődjön, ha az elemek száma változik. */}
+       
         {testimonials.length > 0 ? (
           <Slider key={testimonials.length} {...settings} className="multitech-testimonial-slider-init">
             {testimonials.map((testimonial, index) => (
@@ -140,7 +122,7 @@ const TestimonialAreaHomeTwo = () => {
             ))}
           </Slider>
         ) : (
-          // Ezt a részt akkor jelenítjük meg, ha nincs tesztimoniál
+         
           <p className="text-center">Nu există recenzii disponibile momentan.</p>
         )}
         <div className="multitech-t-overlay2">
