@@ -147,7 +147,7 @@ const ModernCartPage = () => {
               </div>
             </div>
 
-            <h2 className="empty-title">Coșul este gol</h2>
+            <h2 className="empty-title">Cerere este gol</h2>
             <p className="empty-subtitle">
               Începe să cumperi și alege dintre produsele excelente!
             </p>
@@ -194,7 +194,7 @@ const ModernCartPage = () => {
         <div className="cart-header-section">
           <div className="cart-header-content">
             <div className="cart-header-info">
-              <h3>Coș</h3>
+              <h3>Cere ofertă</h3>
               <p className="cart-subtitle">
                 Alege dintre opțiunile de mai jos
               </p>

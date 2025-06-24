@@ -107,7 +107,7 @@ const CartDrawer = ({ isOpen, onClose }: CartDrawerProps) => {
                   
                 </div>
               </div>
-              <h4 className="empty-title">Coș gol</h4>
+              <h4 className="empty-title">Cerere gol</h4>
               <p className="empty-subtitle">
                 Adaugă produse pentru a cere o ofertă personalizată.
               </p>

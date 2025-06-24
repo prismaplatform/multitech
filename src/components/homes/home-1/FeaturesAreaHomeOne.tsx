@@ -75,12 +75,11 @@ const FeaturesAreaHomeOne = ({ style_2, style_3 }: any) => {
                     <p className="card-description">{item.description}</p>
                   </div>
 
-                  <div className="d-flex flex-wrap gap-2 justify-content-center mt-auto">
+                  <div className="d-flex flex-wrap gap-2 justify-content-start mt-auto">
                     {item.features.map((item2, i2) => (
                       <Link key={i2} href="#">
-                        <span className="service-badge px-3 py-2 d-flex align-items-center">
-                          {item2.title}
-                        </span>
+
+                        <p className="card-description">{item2.title},</p>
                       </Link>
                     ))}
                   </div>
@@ -89,7 +88,9 @@ const FeaturesAreaHomeOne = ({ style_2, style_3 }: any) => {
             ))}
           </div>
         </div>
-        
+         {/* <span className="service-badge px-3 py-2 d-flex align-items-center">
+                          {item2.title}
+                        </span> */}
       </div>
     </>
   );

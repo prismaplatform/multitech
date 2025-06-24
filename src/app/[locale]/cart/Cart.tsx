@@ -9,7 +9,7 @@ const Cart = () => {
   return (
     <>
       <HeaderOne />
-      <Breadcrumb title="Coș" subtitle="Coș" />
+      <Breadcrumb title="Cere ofertă " subtitle="Cere ofertă" />
       <CartPage />
       {/* <CtaAreaHomeOne style_2={true} /> */}
       <FooterOne />

@@ -3,6 +3,7 @@ import {
   FacebookIcon,
   InstagramIcon,
   Linkedin,
+  Send,
   TwitterIcon,
   YoutubeIcon,
 } from "lucide-react";
@@ -10,17 +11,17 @@ import Link from "next/link";
 
 const FooterOne = ({ style_2 }: any) => {
   style_2 = 1;
- const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <div
         className="multitech-content-shape3"
         style={{
           height: "25px",
-          backgroundImage: "url('/assets/images/shape/shape2.svg')", // Corrected URL syntax
-          backgroundSize: "cover", // Ensure the image covers the area
-          backgroundPosition: "center", // Center the background image
-          backgroundRepeat: "no-repeat", // Prevent image repetition
+          backgroundImage: "url('/assets/images/shape/shape2.svg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       ></div>
       <footer className="multitech-footer-section">
@@ -79,7 +80,9 @@ const FooterOne = ({ style_2 }: any) => {
                 </div>
               </div>
               <div className="col-xxl-3 col-xl-4 col-md-6">
-                <div className={`multitech-footer-menu ${style_2 ? "menu2" : ""}`}>
+                <div
+                  className={`multitech-footer-menu ${style_2 ? "menu2" : ""}`}
+                >
                   <div className="footer-menu">
                     <h4>Produse</h4>
                     <ul>
@@ -162,49 +165,139 @@ const FooterOne = ({ style_2 }: any) => {
                   </ul>
                 </div>
               </div>
+
               <div className="col-xxl-3 col-xl-4 col-md-6">
-                <div
-                  className={`multitech-footer-menu pl-31 mb-0 ${
-                    style_2 ? "menu2" : ""
-                  }`}
-                >
+                <div className="multitech-footer-menu pl-31 mb-0 menu2">
                   <h4>Newsletter</h4>
-                  <div
-                    className={`${
-                      style_2
-                        ? "multitech-subscription-field3"
-                        : "multitech-subscription-field2"
-                    }`}
-                  >
-                    <form onSubmit={(e) => e.preventDefault()}>
+                  <div className="multitech-subscription-field2">
+                    <form
+                      onSubmit={(e) => e.preventDefault()}
+                      className="position-relative"
+                    >
                       <input
                         type="email"
-                        placeholder="Enter your e-mail"
-                        className="w-100"
+                        placeholder="Adresa de e-mail"
+                        className="form-control w-100 ps-3 pe-5 py-3"
+                        style={{
+                          backgroundColor: "#f8f9fa",
+                          color: "#333",
+                          border: "1px solid #dee2e6",
+                          borderRadius: "6px",
+                          height: "50px",
+                        }}
                       />
-                      <button
-                        className="multitech-default-btn d-block button-black"
-                        type="submit"
-                      >
-                        Subscribe
+                      <button className="newsletter-submit-btn">
+                        <Send size={20} />
                       </button>
                     </form>
+                  </div>
+                  {/* GDPR Checkbox for Newsletter */}
+                  <div className="form-group mt-3">
+                    {" "}
+                    {/* Added margin-top for spacing */}
+                    <div className="d-flex items-start gap-2">
+                      <input
+                        type="checkbox"
+                        name="acceptedPrivacyPolicyNewsletter" // New name for this specific checkbox
+                        id="privacyPolicyNewsletter"
+                        // You'll need to manage the checked state for this checkbox in your parent component
+                        // checked={form.acceptedPrivacyPolicyNewsletter}
+                        // onChange={handleChange}
+                        className="mt-1"
+                      />
+                      <label
+                        htmlFor="privacyPolicyNewsletter"
+                        className="text-white mt-0 d-block" // Changed to text-white for better visibility
+                        style={{ fontSize: ".875em" }}
+                      >
+                        Accept{" "}
+                        <strong>
+                          <Link
+                            href="/data-privacy-policy"
+                            target="_blank"
+                            className="text-primary underline text-white"
+                          >
+                            politica de confidențialitate
+                          </Link>
+                        </strong>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="mt-3">
+                    <Link
+                      href="https://anpc.ro/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="/assets/images/anpc/anpc.svg"
+                        alt="ANPC"
+                        style={{ height: "50px" }}
+                      />
+                    </Link>
+                    <Link
+                      href="https://anpc.ro/sol-online/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="/assets/images/anpc/soal.svg"
+                        alt="SOL"
+                        style={{ height: "50px" }}
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className={`multitech-footer-bottom-text ${style_2 ? "text2" : ""}`}>
-            <div className="text-center py-3">
-              <p className="mb-1">
-                Copyright © {currentYear}. All Rights Reserved | <strong>Multitech</strong>
-              </p>
-              <p className="mb-0">
-                Designed & Developed | <strong><Link href="https://prismasolutions.ro" className="text-white">Prisma Solutions</Link></strong>
-              </p>
+          <div
+            className={`multitech-footer-bottom-text ${style_2 ? "text2" : ""}`}
+          >
+            <div className="row align-items-center">
+              <div className="col-md-6 text-center text-md-start order-2 order-md-1 mt-5 mt-md-0">
+                <p className="mb-1">
+                  Copyright © {currentYear}. All Rights Reserved |{" "}
+                  <strong>Multitech</strong>
+                </p>
+                <p className="mb-0">
+                  Designed & Developed |{" "}
+                  <strong>
+                    <Link
+                      href="https://prismasolutions.ro"
+                      className="text-white"
+                    >
+                      Prisma Solutions
+                    </Link>
+                  </strong>
+                </p>
+              </div>
+              <div className="col-md-6 text-center text-md-end order-1 order-md-2 ">
+                <ul className="list-inline mb-0">
+                  <li className="list-inline-item me-3">
+                    <Link href="/terms-of-use" className="text-white">
+                      Terms of Use
+                    </Link>
+                  </li>
+                  <li className="list-inline-item me-3">
+                    <Link href="/privacy-policy" className="text-white">
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li className="list-inline-item me-3">
+                    <Link href="/privacy-policy" className="text-white">
+                      Cookie Policy
+                    </Link>
+                  </li>
+                  <li className="list-inline-item">
+                    <Link href="/dispute-resolution" className="text-white">
+                      Dispute Resolution
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          
         </div>
       </footer>
     </>

@@ -1,120 +1,55 @@
 "use client";
+import Link from "next/link";
 import React from "react";
-import Slider from "react-slick";
-
-const setting = {
-  slidesToShow: 7,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 0,
-  speed: 5000,
-  arrows: false,
-  pauseOnHover: false,
-  cssEase: "linear",
-  responsive: [
-    {
-      breakpoint: 1699,
-      settings: {
-        slidesToShow: 5,
-      },
-    },
-    {
-      breakpoint: 1399,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-  ],
-};
 
 const BrandAreaHomeTwo = () => {
+  const brands = [
+    { img: "/assets/images/service/autovehicule.svg", title: "Autovehicule" },
+    { img: "/assets/images/service/bauturi.svg", title: "Băuturi" },
+    { img: "/assets/images/service/carne.svg", title: "Carne" },
+    { img: "/assets/images/service/cosmetice.svg", title: "Cosmetice" },
+    { img: "/assets/images/service/electronice.svg", title: "Electronice" },
+    { img: "/assets/images/service/farmaceutice.svg", title: "Farmaceutice" },
+    { img: "/assets/images/service/lactate.svg", title: "Lactate" },
+    { img: "/assets/images/service/oua.svg", title: "Ouă" },
+  ];
+
   return (
     <>
       <div className="multitech-section-padding4">
         <div className="container">
-          <h4 className="text-center">
-           Aveţi nevoie să marcați un cod pe ambalaj? Doriți să automatizați procesul de producție? Avem soluţii pentru îndeplinirea acestor cerinţe! Selectați mai jos domeniul de activitate:
+          <h4 className="text-center mb-5">
+            Aveţi nevoie să marcați un cod pe ambalaj? Doriți să automatizați procesul de producție? Avem soluţii pentru îndeplinirea acestor cerinţe! Selectați mai jos domeniul de activitate:
           </h4>
-        </div>
-        <Slider {...setting} className="brand-slider-js-init my-5">
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand3.svg" alt="" />
+        
+          {/* Brands Grid - Now with 8 items in a row on large screens */}
+          <div className="row justify-content-center align-items-stretch">
+            {brands.map((brand, index) => (
+              <div 
+                key={index} 
+                className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1_5  d-flex flex-column"
+              >
+                <div className="multitech-brand-grid-item flex-grow-1 d-flex align-items-center justify-content-center mb-3">
+                  <img 
+                    src={brand.img} 
+                    alt={brand.title} 
+                    className="img-fluid mx-auto"
+                    style={{ maxHeight: '70px' }}
+                  />
+                </div>
+                <div className="brand-title-container">
+                  <h5 className="brand-title mb-0">{brand.title}</h5>
+                </div>
+              </div>
+            ))}
           </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand2.svg" alt="" />
+          
+          {/* Additional Services Button */}
+          <div className="text-center mt-3">
+           <Link href="/event" className="multitech-default-btn hero-btn mt-4">
+                  Vedeți toate
+                  </Link>
           </div>
-          <div className="multitech-brand-slider-item ml-10">
-            <img src="/assets/images/brand/brand4.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand5.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand6.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand7.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand5.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand2.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand3.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item ml-10">
-            <img src="/assets/images/brand/brand4.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand5.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand5.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand2.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand3.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item ml-10">
-            <img src="/assets/images/brand/brand4.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand5.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand6.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand7.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand3.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand2.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand3.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item ml-10">
-            <img src="/assets/images/brand/brand4.svg" alt="" />
-          </div>
-          <div className="multitech-brand-slider-item">
-            <img src="/assets/images/brand/brand5.svg" alt="" />
-          </div>
-        </Slider>
-        <div className="multitech-brand-shape">
-          <img src="/assets/images/brand/overlay.svg" alt="" />
         </div>
       </div>
     </>

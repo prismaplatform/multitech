@@ -1492,14 +1492,14 @@ a.log-in-btn:hover:after {
   color: var(--text-primary);
 }
 
-.shop-toolbar {
+/* .shop-toolbar {
   background: white;
   border: 1px solid #e9ecef;
   border-radius: 10px;
   padding: 1.5rem;
   margin-bottom: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
+} */
 
 .search-wrapper {
   position: relative;
@@ -1510,7 +1510,7 @@ a.log-in-btn:hover:after {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: #6c757d;
+  color: #4E4E4E;
   z-index: 10;
 }
 
@@ -1548,7 +1548,7 @@ a.log-in-btn:hover:after {
 
 .view-toggle .btn:not(.active) {
   background: transparent;
-  color: #6c757d;
+  color: #4E4E4E;
 }
 
 .view-toggle .btn.active {
@@ -1623,7 +1623,7 @@ a.log-in-btn:hover:after {
 }
 
 .results-counter {
-  color: #6c757d;
+  color: #4E4E4E;
   font-size: 0.875rem;
   border-top: 1px solid #e9ecef;
   margin-top: 1rem;
@@ -1729,7 +1729,7 @@ a.log-in-btn:hover:after {
 
 .meta-tag {
   background: #f2f2f2;
-  color: #6c757d;
+  color: #4E4E4E;
   padding: 2px 8px;
   border-radius: 10px;
   font-size: 0.75rem;
@@ -1737,7 +1737,7 @@ a.log-in-btn:hover:after {
 }
 
 .card-description {
-  color: #6c757d;
+  color: #4E4E4E;
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -1863,7 +1863,7 @@ a.log-in-btn:hover:after {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #6c757d;
+  color: #4E4E4E;
   font-size: 0.875rem;
 }
 
@@ -1873,7 +1873,7 @@ a.log-in-btn:hover:after {
 }
 
 .list-description {
-  color: #6c757d;
+  color: #4E4E4E;
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -2087,7 +2087,7 @@ a.log-in-btn:hover:after {
 .tabs-container {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow);
   overflow: hidden;
 }
 
@@ -2107,7 +2107,7 @@ a.log-in-btn:hover:after {
 .tab-btn {
   background: none;
   border: none;
-  color: #6c757d;
+  color: #4E4E4E;
   font-weight: 500;
   cursor: pointer;
   white-space: nowrap;
@@ -3194,7 +3194,7 @@ a.log-in-btn:hover:after {
   }
 }
 .button-black {
-  background-color: #1e1e1e !important;
+  background-color: #1A1A1A !important;
   color: #fff !important;
 }
 
@@ -3220,7 +3220,7 @@ a.log-in-btn:hover:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1e1e1e;
+  color: #1A1A1A;
   margin: 0 auto;
   /* animation: emptyFloat 4s ease-in-out infinite; */
   /* box-shadow: 0 20px 40px rgba(0, 139, 205, 0.2); */
@@ -3231,7 +3231,7 @@ a.log-in-btn:hover:after {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 16px;
-  color: #1e1e1e;
+  color: #1A1A1A;
   /* background: linear-gradient(135deg, #008BCD 0%, #5bc2e7 100%); */
   /* background-color: #008BCD; */
   /* -webkit-background-clip: text;
@@ -3803,7 +3803,7 @@ a.log-in-btn:hover:after {
   color: white;
   border: none;
   padding: 16px 24px;
-  border-radius: 10px;
+  border-radius: 6px;
   font-size: 16px;
   font-weight: 700;
   display: flex;
@@ -3812,7 +3812,7 @@ a.log-in-btn:hover:after {
   gap: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 139, 205, 0.3);
+  /* box-shadow: 0 8px 20px rgba(0, 139, 205, 0.3); */
   position: relative;
   overflow: hidden;
 }
@@ -3928,7 +3928,8 @@ a.log-in-btn:hover:after {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 12px;
+  color:#fff;
+  padding:0px 12px;
   /* border: 1px solid #e2e8f0; */
   border-radius: 8px;
   /* background: white; */
@@ -3939,8 +3940,8 @@ a.log-in-btn:hover:after {
 }
 
 .language-dropdown-trigger:hover {
-  background: #f8f9fa;
-  border-color: #cbd5e0;
+  /* background: #f8f9fa; */
+  /* border-color: #cbd5e0; */
 }
 
 .current-language {
@@ -3955,13 +3956,13 @@ a.log-in-btn:hover:after {
 }
 
 .language-name {
-  color: #374151;
+  color: #fff;
   font-weight: 500;
 }
 
 .chevron {
   transition: transform 0.2s ease;
-  color: #6b7280;
+  color: #fff;
 }
 
 .chevron.rotated {
@@ -4017,8 +4018,8 @@ a.log-in-btn:hover:after {
 }
 
 .language-option.active {
-  /* background: #f0f9ff;
-  color: #0369a1; */
+  background: #f0f9ff;
+  color: #0369a1;
 }
 
 .language-option:disabled {
@@ -4041,4 +4042,86 @@ a.log-in-btn:hover:after {
     right: -20px;
     min-width: 130px;
   }
+}
+
+
+/* Custom CSS for integrated input button */
+.multitech-subscription-field3 .form-control {
+  padding-right: 50px !important;
+}
+.multitech-subscription-field3 .form-control::placeholder {
+  color: #000;
+}
+
+
+.multitech-subscription-field2 .form-control {
+  padding-right: 50px !important;
+}
+
+.multitech-subscription-field3 button,
+.multitech-subscription-field2 button {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.newsletter-submit-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #007bcd;
+  border: none;
+  border-radius:6px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.newsletter-submit-btn:hover {
+  background: #0066b3;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.newsletter-submit-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .newsletter-input {
+    padding: 10px 45px 10px 12px;
+    font-size: 13px;
+  }
+  
+  .newsletter-submit-btn {
+    width: 32px;
+    height: 32px;
+    right: 6px;
+  }
+  
+  .newsletter-submit-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+.newsletter-subscription.modern-style .newsletter-submit-btn {
+  background: linear-gradient(135deg, #007bcd, #0066b3);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  right: 3px;
+}
+
+.newsletter-subscription.modern-style .newsletter-submit-btn:hover {
+  background: linear-gradient(135deg, #0066b3, #004d87);
 }

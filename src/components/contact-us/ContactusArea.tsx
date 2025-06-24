@@ -111,7 +111,10 @@ const ContactusArea = () => {
               Număr unic de relații clienți:{" "}
               <span className="highlight">0-7722-MULTI</span>
             </h2>
+            <Link href="tel:0772268584">
             <h5 className="mb-0">0-7722-68584, disponibil și pe WhatsApp!</h5>
+            </Link>
+            
           </div>
           <div className="row d-flex justify-content-center">
             {contact_data.map((item, i) => (
@@ -168,7 +171,7 @@ const ContactusArea = () => {
                 <div className="mt-50">
                   <div className="multitech-contact-us-info-item">
                     <div className="multitech-contact-us-icon">
-                      <a
+                      <Link
                         href="https://maps.google.com/?q=Bd.+Brașovului+145,+505600+Săcele,+Brașov,+România"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -178,10 +181,10 @@ const ContactusArea = () => {
                           className="text-primary"
                           color="#008BCD"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="multitech-contact-us-content">
-                      <a
+                      <Link
                         href="https://maps.google.com/?q=Bd.+Brașovului+145,+505600+Săcele,+Brașov,+România"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -194,21 +197,21 @@ const ContactusArea = () => {
                             Apăsați aici pentru Google Maps
                           </span>
                         </p>
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
                   <div className="multitech-contact-us-info-item">
                     <div className="multitech-contact-us-icon">
-                      <a href="tel:0772268584">
+                      <Link href="tel:0772268584">
                         <Phone size={24} className="text-primary" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="multitech-contact-us-content">
-                      <a href="tel:0772268584">
+                      <Link href="tel:0772268584">
                         <h4>Telefon</h4>
                         <p>Vânzări & Service: 0-7722-MULTI (0-7722-68584)</p>
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -237,9 +240,9 @@ const ContactusArea = () => {
                         <br />
                         CUI: RO14445831
                       </p>
-                      <small className="text-muted mt-2 d-block">
+                      {/* <small className="text-muted mt-2 d-block">
                         Multitech şi logo-ul Multitech sunt mărci înregistrate.
-                      </small>
+                      </small> */}
                     </div>
                   </div>
                 </div>
