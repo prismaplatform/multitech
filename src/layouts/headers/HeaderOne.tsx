@@ -119,7 +119,7 @@ const HeaderOne = () => {
 
   return (
     <>
-      <div className="top-bar-blue">
+      <div className="top-bar-blue d-none d-md-block">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 col-sm-3 d-none d-sm-block">
@@ -372,7 +372,7 @@ const HeaderOne = () => {
                   onClick={handleCartClick}
                 >
                   {" "}
-                  <ShoppingCart size={20} className="me-2" /> Cere ofertă
+                  <ShoppingCart size={26} className="me-2" /><span className="d-none d-md-block d-lg-none d-xl-block">Cere ofertă</span>
                 </button>
               </div>
 

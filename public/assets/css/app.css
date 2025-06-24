@@ -1899,7 +1899,7 @@ header.multitech-header-section.multitech-header-two.sticky-menu {
 .multitech-header-info-data ul li {
   display: inline-block;
   margin-right: 20px;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   font-weight: 600;
   color: var(--white-color);
@@ -2312,7 +2312,7 @@ a.multitech-header-info img {
   padding: 5px 10px 5px 20px;
 }
 .main-menu ul.sub-menu li a {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 30px;
   display: inline-block;
   position: relative;
@@ -2611,7 +2611,7 @@ a.light-color {
   margin-bottom: 0;
 }
 .multitech-footer-menu ul li a {
-  font-size: 16px;
+  font-size: 17px;
   position: relative;
   transition: all 0.4s;
   color: var(--heading-color);
@@ -3300,7 +3300,7 @@ a.light-color {
   padding-bottom: 10px;
 }
 .multitech-list-icon-data p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   color: var(--heading-color);
 }
@@ -4182,7 +4182,7 @@ a.light-color {
 }
 .multitech-faq-body.body2 p {
   font-size: 17px;
-  line-height: 1.3em;
+  line-height: 13px;
   max-width: 900px;
 }
 @media (max-width: 991px) {
@@ -4983,14 +4983,14 @@ th span {
   border-radius: 100px;
 }
 .multitech-blog-d-comment-data1 span {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 22px;
 }
 .multitech-blog-d-comment-data1 p {
   padding-top: 15px;
 }
 .multitech-blog-d-comment-data span {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 22px;
 }
 .multitech-blog-d-comment-data p {
@@ -6119,7 +6119,7 @@ blockquote::before {
 }
 .multitech-iconbox-btn a {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   transition: all 0.4s;
   color: var(--heading-color);
@@ -8251,7 +8251,7 @@ a.current {
   position: relative;
   padding: 15px;
   line-height: 1;
-  font-size: 16px;
+  font-size: 17px;
   text-transform: capitalize;
   color: #000 !important;
   font-weight: 500;
@@ -8274,7 +8274,7 @@ a.current {
   right: 0;
   top: 3px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   /* width: 60%; */
   height: 40px;
   padding: 0 15px;
@@ -8330,7 +8330,7 @@ a.current {
 }
 
 a.multitech-default-btn.sm-size {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1;
   padding: 17px 15px;
   border-radius: 6px;

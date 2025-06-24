@@ -40,8 +40,8 @@ const ProductPage = () => {
     brand: "Videojet",
     model: "9560",
     description: `
-      <p class="fs-5 lh-base mb-3">Cu noua imprimantă Videojet 1280, Videojet redefinește fiabilitatea și simplitatea în utilizare. De la interfața intuitivă și până la caracteristicile de design inteligent, imprimanta Videojet 1280 cu jet continuu de cerneală (Continuous InkJet) se poate utiliza cu ușurință de către orice operator.</p>
-      <p class="fs-5 lh-base mb-3">Imprimanta dispune de interfața SIMPLICiTY™, o interfață intuitivă cu ecran tactil de 8” inspirată de la tablete, care reduce considerabil interacțiunile operatorului cu imprimanta pentru a ajuta la eliminarea erorilor potențiale.</p>
+      <p class="mb-3">Cu noua imprimantă Videojet 1280, Videojet redefinește fiabilitatea și simplitatea în utilizare. De la interfața intuitivă și până la caracteristicile de design inteligent, imprimanta Videojet 1280 cu jet continuu de cerneală (Continuous InkJet) se poate utiliza cu ușurință de către orice operator.</p>
+      <p class="mb-3">Imprimanta dispune de interfața SIMPLICiTY™, o interfață intuitivă cu ecran tactil de 8” inspirată de la tablete, care reduce considerabil interacțiunile operatorului cu imprimanta pentru a ajuta la eliminarea erorilor potențiale.</p>
       <h5 class="mt-4 mb-3">Beneficii cheie:</h5>
       <ul>
         <li>Reducerea erorilor operatorului prin interfața SIMPLICiTY™</li>
@@ -190,7 +190,7 @@ const ProductPage = () => {
                 </div>
               </div>
 
-              <p className="fs-5 lh-base text-secondary mb-4">
+              <p className="mb-4">
                 {/* Displaying a short description here, full description in tab */}
                 {product.description.split("</p>")[0].replace(/<[^>]*>/g, '')}...
               </p>
@@ -268,7 +268,7 @@ const ProductPage = () => {
                 <div>
                   <h4 className="mb-3">Descriere</h4>
                   <div
-                    className="fs-5 lh-base"
+                    className=""
                     dangerouslySetInnerHTML={{ __html: product.description }}
                   />
                 </div>
@@ -279,7 +279,7 @@ const ProductPage = () => {
                   <h4 className="mb-3">Aplicații / Industrii</h4>
                   <ul className="list-group list-group-flush">
                     {product.applications.map((app, index) => (
-                      <li key={index} className="list-group-item fs-5 py-2">
+                      <li key={index} className="list-group-item py-2">
                         <HardHat size={16} className="me-2 text-primary" />
                         {app}
                       </li>

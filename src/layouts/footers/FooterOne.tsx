@@ -79,7 +79,7 @@ const FooterOne = ({ style_2 }: any) => {
                   </div>
                 </div>
               </div>
-              <div className="col-xxl-3 col-xl-4 col-md-6">
+              <div className="col-xxl-2 col-xl-4 col-md-6">
                 <div
                   className={`multitech-footer-menu ${style_2 ? "menu2" : ""}`}
                 >
@@ -120,7 +120,7 @@ const FooterOne = ({ style_2 }: any) => {
                   </div>
                 </div>
               </div>
-              <div className="col-xxl-2 col-xl-4 col-md-6">
+              <div className="col-xxl-3 col-xl-4 col-md-6">
                 <div className="multitech-footer-menu pl-30 menu2">
                   <h4>Aplicații</h4>
                   <ul>

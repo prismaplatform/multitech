@@ -747,7 +747,7 @@
     line-height: 50px;
     text-align: center;
     color: #000000;
-    font-size: 16px;
+    font-size: 17px;
     display: none;
   }
   .site-header .menu-block .mobile-menu-head.active .go-back {
@@ -948,7 +948,7 @@ li.sub-menu--item.nav-item-has-children i {
   z-index: 5;
   border-radius: 6px;
   border: 0;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   height: 40px;
   min-width: 130px;
@@ -1105,7 +1105,7 @@ a.log-in-btn:hover:after {
   color: white;
   padding: 14px 24px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   margin-top: 24px;
   transition: all 0.3s ease;
@@ -1921,12 +1921,7 @@ a.log-in-btn:hover:after {
   }
 }
 
-.product-page {
-  background-color: #ffffff;
-  min-height: 100vh;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-}
+
 
 .header-gradient {
   /* background: linear-gradient(135deg, #008BCD 0%, #5bc2e7 100%); */
@@ -2353,15 +2348,7 @@ a.log-in-btn:hover:after {
   line-height: 1.2;
 }
 
-.cart-subtitle {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
+
 
 .item-count {
   color: #008bcd;
@@ -2477,7 +2464,7 @@ a.log-in-btn:hover:after {
 .empty-subtitle {
   margin: 0;
   color: #666;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
   max-width: 280px;
 }
@@ -2576,7 +2563,7 @@ a.log-in-btn:hover:after {
 
 .item-name {
   margin: 0;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   color: #1a1a1a;
   line-height: 1.4;
@@ -2671,7 +2658,7 @@ a.log-in-btn:hover:after {
 .quantity {
   font-weight: 700;
   color: #008bcd;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .remove-btn {
@@ -2737,7 +2724,7 @@ a.log-in-btn:hover:after {
   padding: 18px 24px;
   border: none;
   border-radius: 10px;
-  font-size: 16px;
+  
   font-weight: 600;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -3260,7 +3247,7 @@ a.log-in-btn:hover:after {
   border: none;
   padding: 16px 32px;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -3311,7 +3298,7 @@ a.log-in-btn:hover:after {
 }
 
 .recommended-content h4 {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   margin-bottom: 12px;
   color: #1a1a1a;
@@ -3391,8 +3378,8 @@ a.log-in-btn:hover:after {
 
 .cart-subtitle {
   color: #666;
-  margin: 4px 0 0 0;
-  font-size: 16px;
+  /* margin: 4px 0 0 6px */
+
 }
 
 .cart-header-actions {
@@ -3583,7 +3570,7 @@ a.log-in-btn:hover:after {
   text-align: center;
   font-weight: 700;
   color: #008bcd;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .item-action-buttons {
@@ -3661,7 +3648,7 @@ a.log-in-btn:hover:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .summary-value {
@@ -3684,7 +3671,7 @@ a.log-in-btn:hover:after {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
+  font-size: 17px;
   color: #666;
 }
 
@@ -3758,6 +3745,7 @@ a.log-in-btn:hover:after {
   gap: 8px;
   font-size: 14px;
   font-weight: 600;
+  margin-bottom: 0px;
   color: #1a1a1a;
 }
 
@@ -3804,7 +3792,7 @@ a.log-in-btn:hover:after {
   border: none;
   padding: 16px 24px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -3951,7 +3939,7 @@ a.log-in-btn:hover:after {
 }
 
 .flag {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1;
 }
 
