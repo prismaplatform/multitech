@@ -15,7 +15,7 @@ import FooterOne from "@/layouts/footers/FooterOne";
 const HomeTwo = () => {
 	return (
 		<>
-			<HeaderOne style_2={true} toggle_color={true} />
+			<HeaderOne />
       <HeroAreaHomeTwo />
       <BannerAreaHomeTwo />
       <BrandAreaHomeTwo />

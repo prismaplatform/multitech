@@ -14,7 +14,7 @@ import CtaAreaHomeThree from "./CtaAreaHomeThree";
 const HomeThree = () => {
   return (
     <>
-      <HeaderOne style_3={true} />
+      <HeaderOne/>
       <HeroAreaHomeThree />
       <TestimonialAreaHomeThree />
       <FinancialDecisionsHomeTwo style_2={true} />
